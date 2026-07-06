@@ -1,0 +1,6729 @@
+AS 5100.3—2004 
+AP-G15.3/04 
+(Incorporating Amendment No. 1) 
+
+Australian Standard® 
+
+Bridge design 
+
+Part 3:  Foundations and soil-supporting 
+structures 
+
+A
+S
+
+5
+1
+0
+0
+.
+3
+—
+2
+0
+0
+4
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+This Australian Standard® was prepared by Committee BD-090, Bridge Design. It was 
+approved on behalf of the Council of Standards Australia on 1 August 2003. 
+This Standard was published on 23 April 2004. 
+
+The following are represented on Committee BD-090: 
+
+Association of Consulting Engineers Australia 
+Australasian Railway Association 
+Austroads 
+
+(cid:129) 
+(cid:129) 
+(cid:129) 
+(cid:129)  Bureau of Steel Manufacturers of Australia 
+(cid:129)  Cement and Concrete Association of Australia 
+(cid:129) 
+Institution of Engineers Australia 
+(cid:129)  Queensland University of Technology 
+(cid:129) 
+(cid:129)  University of Western Sydney 
+
+Steel Reinforcement Institute of Australia 
+
+This Standard was issued in draft form for comment as DR 00376. 
+
+Standards Australia wishes to acknowledge the participation of the expert individuals that 
+contributed to the development of this Standard through their representation on the 
+Committee and through the public comment period. 
+
+Keeping Standards up-to-date 
+Australian Standards® are living documents that reflect progress in science, technology and 
+systems. To maintain their currency, all Standards are periodically reviewed, and new editions 
+are published. Between editions, amendments may be issued. 
+
+Standards may also be withdrawn. It is important that readers assure themselves they are 
+using a current Standard, which should include any amendments that may have been 
+published since the Standard was published. 
+
+Detailed information about Australian Standards, drafts, amendments and new projects can 
+be found by visiting www.standards.org.au 
+
+Standards Australia welcomes suggestions for improvements, and encourages readers to 
+notify us immediately of any apparent inaccuracies or ambiguities. Contact us via email at 
+mail@standards.org.au, or write to Standards Australia, GPO Box 476, Sydney, NSW 2001. 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+AP-G15.3/04 
+(Incorporating Amendment No. 1) 
+
+Australian Standard® 
+
+Bridge design 
+
+Part 3:  Foundations and soil-supporting 
+structures 
+
+0
+1
+0
+2
+
+Originated as HB 77.3—1996. 
+Revised and redesignated as AS 5100.3—2004. 
+Reissued incorporating Amendment No. 1 (April 2010). 
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+COPYRIGHT 
+
+© Standards Australia  
+
+All rights are reserved. No part of this work may be reproduced or copied in any form or by 
+any  means,  electronic  or  mechanical,  including  photocopying,  without  the  written 
+permission of the publisher. 
+
+Published by Standards Australia GPO Box 476, Sydney, NSW 2001, Australia 
+
+ISBN 0 7337 5478 3 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+2 
+
+PREFACE 
+
+This Standard was prepared by the Standards Australia Committee BD-090, Bridge Design 
+to supersede HB 77.3—1996, Australian Bridge Design Code, Section 3:  Foundations. 
+
+This  Standard  incorporates  Amendment  No. 1  (April  2010).  The  changes  required  by  the 
+Amendment are indicated in the text by a marginal bar and amendment number against the 
+clause, note, table, figure or part thereof affected. 
+
+The  AS 5100  series  represents  a  revision  of  the  1996  HB 77  series,  Australian  Bridge 
+Design  Code,  which  contained  a  separate  Railway  Supplement  to  Sections 1  to 5,  together 
+with Section 6, Steel and composite construction, and Section 7, Rating. AS 5100 takes the 
+requirements  of  the  Railway  Supplement  and  incorporates  them  into  Parts 1  to 5  of  the 
+present  series,  to  form  integrated  documents  covering  requirements  for  both  road  and  rail 
+bridges. In addition, technical material has been updated. 
+
+This Standard is also designated as AUSTROADS publication AP-G15.3/04. 
+
+The objectives of AS 5100 are to provide nationally acceptable requirements for—  
+
+(a) 
+
+(b) 
+
+the design of road, rail, pedestrian and bicycle-path bridges; 
+
+the  specific  application  of  concrete,  steel  and  composite  steel/concrete  construction, 
+which  embody  principles  that  may  be  applied  to  other  materials  in  association  with 
+relevant Standards; and 
+
+(c) 
+
+the assessment of the load capacity of existing bridges. 
+
+These  requirements  are  based  on  the  principles  of  structural  mechanics  and  knowledge  of 
+material  properties,  for  both  the  conceptual  and  detailed  design,  to  achieve  acceptable 
+probabilities that the bridge or associated structure being designed will not become unfit for 
+use during its design life. 
+
+Whereas  earlier  editions  of  the  Australian  Bridge  Design  Code  were  essentially 
+administered by the infrastructure owners and applied to their own inventory, an increasing 
+number  of  bridges  are  being  built  under  the  design-construct-operate  principle  and  being 
+handed  over  to  the  relevant  statutory  authority  after  several  years  of  operation.  This 
+Standard  includes  clauses  intended  to  facilitate  the  specification  to  the  designer  of  the 
+long-term  performance  and 
+functional  requirements  of 
+serviceability of the bridge and associated structure. 
+
+the  owner, 
+
+to  ensure 
+
+the 
+
+0
+1
+0
+2
+
+Significant differences between this Standard and HB 77.3 are the following: 
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+(i) 
+
+Foundation  design  principles   In  recognition  that  geotechnical  engineering  design 
+principles differ from structural engineering design principles, the design procedures 
+have been extensively revised. Designers are required to use geotechnical engineering 
+methods  appropriate  to  the  foundation  problem  at  hand,  together  with  appropriate 
+characteristic  values  and  factors,  when  deriving  economical  and  safe  solutions.  It  is 
+further  required  that  designers  apply  engineering  judgement  to  the  application  of 
+sound rational design methods outlined in texts, technical literature and other design 
+codes to supplement the design requirements of this Standard. 
+
+(ii)  Design  procedures   Substructures  have  been  classified  as  either  foundations,  where 
+most of the loads on the substructure come from the bridge structure and loads on it, 
+or  as  soil-supporting  structures,  where  most  of  the  applied  loads  are  from  earth 
+pressure. Different design procedures are required for each. The loads and resistances 
+for a soil-supporting structure will largely depend on the soil properties, whereas the 
+loads for a foundation will not be as dependent on the soil properties. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+
+AS 5100.3—2004 
+
+(iii)  Relevant  Standard   The  philosophy  used  for  the  design  of  earth-retaining  structures 
+in  this  Standard  differs  from  that  contained  in  AS 4678,  Earth-retaining  structures, 
+which  was prepared  by Standards  Australia  Committee  CE-032.  It is considered that 
+for bridges and road-related structures, where soil/structure interaction occurs and the 
+loads  are  predominantly  soil-imposed,  the  design  method  adopted  is  more  realistic. 
+However, AS 4678 contains much useful information that can be used to supplement 
+the design of structures covered by this Standard. 
+
+In  line  with  Standards  Australia  policy,  the  words  ‘shall’  and  ‘may’  are  used  consistently 
+throughout this Standard to indicate respectively, a mandatory provision and an acceptable 
+or permissible alternative. 
+
+Statements expressed in mandatory terms in Notes to Tables are deemed to be requirements 
+of this Standard. 
+
+The  terms  ‘normative’  and  ‘informative’  have  been  used  in  this  Standard  to  define  the 
+application of the appendix to which they apply. A ‘normative’ appendix is an integral part 
+of the Standard, whereas an ‘informative’ appendix is only for information and guidance. 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+4 
+
+CONTENTS 
+
+Page 
+SCOPE........................................................................................................................ 5 
+
+1 
+
+2  APPLICATION .......................................................................................................... 5 
+
+3  REFERENCED DOCUMENTS.................................................................................. 5 
+
+4  DEFINITIONS............................................................................................................ 6 
+
+5  NOTATION................................................................................................................ 7 
+
+6 
+
+SITE INVESTIGATION............................................................................................. 8 
+
+7  DESIGN REQUIREMENTS..................................................................................... 10 
+
+8  LOADS AND LOAD COMBINATIONS ................................................................. 13 
+
+9  DURABILITY .......................................................................................................... 16 
+
+10 
+
+11 
+
+SHALLOW FOOTINGS........................................................................................... 17 
+
+PILED FOUNDATIONS .......................................................................................... 22 
+
+12  ANCHORAGES ....................................................................................................... 25 
+13  RETAINING WALLS AND ABUTMENTS ............................................................ 31 
+
+14  BURIED STRUCTURES.......................................................................................... 34 
+
+APPENDICES 
+
+ASSESSMENT OF GEOTECHNICAL STRENGTH REDUCTION FACTORS (φg) 
+FOR PILES................................................................................................................ 37 
+ON-SITE ASSESSMENT TESTS OF ANCHORAGES............................................ 39
+
+  A 
+
+  B 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+
+AS 5100.3—2004 
+
+STANDARDS AUSTRALIA 
+
+Australian Standard 
+
+Bridge design 
+
+Part 3:  Foundations and soil-supporting structures 
+
+1   SCOPE 
+
+This Standard sets out minimum design requirements and procedures for the design in limit 
+states  format  of  foundations  and  soil-supporting  structures  for  road,  rail  and  pedestrian 
+bridges, culverts not specifically covered by other Standards, and subways of conventional 
+size and form. 
+
+Foundations include shallow footings, piles and anchorages. 
+
+Soil-supporting structures include retaining walls, abutments and buried structures. 
+
+The  provisions  also  covers  the  design  of  foundations  for  road  furniture,  such  as  lighting 
+poles and sign support structures and noise barriers. 
+
+The Standard does not cover the design of— 
+(a) 
+(b) 
+(c) 
+
+reinforced soil structures. 
+
+corrugated steel pipes and arches (see AS 1762, AS/NZS 2041 and AS 3703.2); 
+
+underground concrete drainage pipes (see AS 3725 and AS 4058); and 
+
+The  requirements  for  structural  design  and  detailing  of  concrete  and  steel  are  specified  in 
+AS 5100.5 and AS 5100.6; however, a number of specific structural design provisions that 
+result from soil-structure interaction are covered by this Standard. 
+
+2   APPLICATION 
+
+For  the  design  of  foundations  for  overhead  wiring  structures  for  electrified  railway  lines, 
+the requirements of the relevant authority shall apply. 
+
+The loads to be applied shall be those specified in AS 5100.2, together with earth pressure 
+loads determined in accordance with this Standard. 
+
+The general design procedures to be adopted shall be as specified in this Standard. Unless 
+specified otherwise by the relevant authority, the detailed methods and formulae to be used 
+shall be those specified in the relevant Standard for the geotechnical or structural element. 
+Where  no  Australian  Standard  exists  covering  the  design  of  the  geotechnical  or  structural 
+element,  rational  design  methods  outlined  in  texts  or  other  design  Standards  and  technical 
+literature shall be used, as approved by the relevant authority. 
+
+3   REFERENCED DOCUMENTS 
+
+The following Standards are referred to in this Standard: 
+
+AS 
+1597 
+1597.2 
+
+1726 
+
+1762 
+
+Precast reinforced concrete box culverts 
+Part 2:  Large  culverts  (from  1500 mm  span  and up  to  and  including 
+
+4200 mm span and 4200 mm height) 
+
+Geotechnical site investigations 
+
+Helical lock-seam corrugated steel pipes—Design and installation 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+6 
+
+AS 
+2159 
+
+3703 
+3703.2 
+
+3725 
+
+4058 
+
+Piling—Design and installation 
+
+Long-span corrugated steel structures 
+Part 2:  Design and installation 
+
+Loads on buried concrete pipes 
+
+Precast concrete pipes (pressure and non-pressure) 
+
+5100 
+5100.1 
+5100.2 
+5100.5 
+5100.6 
+5100.3 Supp 1  Bridge 
+
+Bridge design 
+Part 1:  Scope and general principles 
+Part 2:  Design loads 
+Part 5:  Concrete 
+Part 6:  Steel and composite construction 
+design—Foundations 
+
+and 
+
+soil-supporting 
+
+structures—
+
+Commentary (Supplement to AS 5100.3—2003) 
+
+AS/NZS 
+1554 
+1554.1 
+1554.3 
+
+2041 
+
+Structural steel welding 
+Part 1:  Welding of steel structures 
+Part 3:  Welding of reinforcing steel 
+
+Buried corrugated metal structures 
+
+4   DEFINITIONS 
+
+For  the  purpose  of  this  Standard,  the  definitions  below  apply.  Definitions  peculiar  to  the 
+particular Clause are also given in that Clause. 
+
+4.1   Bond length 
+
+That length  at the end of  a  tendon  within  which provision  is  made for  the load transfer to 
+the surrounding rock. 
+
+4.2   Design values 
+
+The values of variables entered into the calculations. 
+
+4.3   Design working load 
+
+The long-term load that is required in the tendon. 
+
+4.4   Effective free length 
+
+The apparent length over which the tendon is assumed to extend elastically, as determined 
+by stressing tests. 
+
+4.5   Free length 
+
+That length of a tendon between the anchorage assembly and the bond length (or transition 
+length)  that  does  not  transfer  any  tendon  load  to  the  surrounding  rock,  concrete  or  other 
+material through which the anchor passes. 
+
+4.6   Geotechnical engineer 
+
+A  suitably  qualified  engineer  with  relevant  geotechnical  experience  in  charge  of 
+geotechnical investigation or design, or both. 
+
+4.7   Initial load 
+
+The initial load selected for proof load and acceptance tests. 
+
+4.8   Lift-off test 
+
+The test to determine the residual load in the tendon. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7 
+
+AS 5100.3—2004 
+
+4.9   Lock-off load 
+
+The load equal to the design working load plus an allowance for loss of prestress. 
+
+4.10   Minimum breaking load 
+
+The minimum breaking load of the tendon. 
+
+4.11   Residual load 
+
+The load remaining in the tendon at any time after lock-off, usually measured by a lift-off 
+test. 
+
+4.12   Test load 
+
+The  maximum  load  to  which  a  tendon  is  subjected  in  the  short  term  for  proof  load  and 
+acceptance tests. 
+
+5   NOTATION 
+
+The symbols used in this Standard are listed in Table 5. 
+
+TABLE   5 
+
+NOTATION 
+
+Symbol 
+
+Description 
+
+At 
+
+Epr 
+
+Et 
+
+Fem 
+
+Fes 
+
+Fnf 
+
+Hug 
+Lef 
+Lfr 
+Lv 
+Ru 
+Rug 
+Rus 
+
+Ra 
+
+Rak 
+Ram 
+Se 
+S* 
+
+T 
+
+TA 
+TD 
+
+cross-sectional area of tendon (in millimetres square) as determined 
+by testing 
+
+ultimate passive resistance of the soil in front of the footing 
+
+modulus of elasticity of steel tendon (megapascals) as determined by 
+testing 
+
+moments, forces or loads in the foundation induced by lateral ground 
+movements 
+
+compressive and tensile loads in the foundation, structure or its 
+element caused by vertical ground movement 
+
+negative friction loads on the foundation caused by consolidation of 
+surrounding soil 
+
+ultimate shear resistance at the base of the footing 
+
+effective free length 
+
+free length 
+
+bond length 
+
+ultimate strength 
+
+ultimate geotechnical strength 
+
+ultimate structural strength 
+
+anchorage resistance 
+
+characteristic anchorage strength 
+
+measured anchorage capacity 
+
+soil imposed action effects 
+
+design action effects 
+
+anchor load 
+
+initial load 
+
+design working load 
+
+Clause reference 
+
+Paragraph B2.11 
+
+10.3.3.4 
+
+Paragraph B2.11 
+
+8.2.2 
+
+8.2.2 
+
+8.2.2 
+
+8.3.3.4 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+12.3.3 
+
+7.3.1 
+
+7.3.1 
+
+12.6.2 
+
+12.6.2 
+
+12.6.2 
+
+7.3.2 
+
+7.3.1 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+(continued)
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+8 
+
+Symbol 
+
+Description 
+
+TABLE   5   (continued) 
+
+lock-off load 
+
+test load 
+
+residual load 
+
+calculated residual load immediately after lock-off 
+
+minimum breaking load 
+
+total extension of tendon relative to a datum 
+
+elastic extension of tendon at each load stage 
+calculated elastic extension of tendon under test load (Tp) 
+
+Clause reference 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+Paragraph B2.11 
+
+plastic or non-recoverable extension of tendon at each load stage 
+
+Paragraph B2.11 
+
+strength reduction factor 
+
+conversion factor 
+
+geotechnical strength reduction factor 
+
+importance category reduction factor 
+
+structural strength reduction factor 
+
+12.3.3 
+
+12.6.2 
+
+7.3.1 
+
+12.3.3 
+
+7.3.1 
+
+To 
+Tp 
+TR 
+TRC 
+Tu 
+δL 
+
+δLe 
+δLr 
+δLpl 
+φ 
+
+φc 
+φg 
+φn 
+φs 
+
+6   SITE INVESTIGATION 
+
+6.1   General 
+
+A  site  investigation  shall  be  carried  out  for  all  structures,  to  provide  the  necessary 
+geotechnical  information required  for  the  design and construction  of foundations  and  soil-
+supporting structures. 
+
+The  investigation  shall  be  carried  out  under  the  supervision  of  a  geotechnical  engineer 
+unless approved otherwise by the relevant authority. 
+
+The site investigations shall be carried out in accordance with AS 1726. 
+
+Investigations may be one of the following: 
+(a)  Preliminary investigation   An investigation conducted at the feasibility stage in order 
+to  assess  alternative  sites  or  routes,  to  prepare  conceptual  designs,  to  determine 
+preliminary costings and to define constraints for the design. 
+
+hydrogeology; 
+
+field reconnaissance; 
+
+The  extent  and  coverage  of  the  preliminary  investigation  shall  be  as  required  by  the 
+relevant authority, and may include— 
+(i) 
+(ii) 
+topography; 
+(iii)  hydrology; 
+(iv)  geomorphology; 
+(v) 
+(vi)  examination of neighbouring structures and excavations; 
+(vii)  geological and geotechnical maps and records; 
+(viii)  previous site investigations and construction experience in the vicinity; 
+(ix)  aerial photographs; 
+(x)  maps; 
+(xi) 
+regional seismicity; or 
+(xii)  any other relevant information. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9 
+
+AS 5100.3—2004 
+
+(b)  Design  investigation   Design  investigation  shall  provide  sufficient  geotechnical 
+
+information for the design and construction of the project. 
+
+The  extent  and  coverage  of  the  design  investigation  shall  be  as  required  by  the 
+relevant authority, and shall include the following: 
+(i)  Nature  and  size  of  the  structure  and  its  elements,  including  any  special 
+
+requirements. 
+
+(ii)  Conditions  with  regard 
+
+to  the  surroundings  of  the  structure,  such  as 
+neighbouring  structures,  traffic,  utilities,  services  and  utilities,  hazardous 
+chemicals and the like. 
+
+(iii)  Ground conditions with particular regard to geological complexity. 
+(iv)  Ground water conditions. 
+(v)  Regional seismicity. 
+(vi) 
+
+Influence of the environment of the structure, such as hydrology, surface water, 
+subsidence and the like. 
+
+(vii)  Aggressivity  of  soil  and  ground  water  with  respect  to  materials  used  in  the 
+
+structure, e.g., acid sulphate soils. 
+
+(viii)  Scour effects. 
+(ix)  Working in the vicinity of electrified railway lines. 
+(x)  Other relevant factors. 
+
+6.2   Design investigations 
+
+The number of  boreholes  or  other in situ tests, or both,  depends  on the  proposed structure 
+and the inferred uniformity of the subsoil conditions. 
+
+Unless  otherwise  specified  by  the  relevant  authority,  the  minimum  number  of  boreholes 
+shall be as follows: 
+(a)  For bridge foundations   One per pier and abutment. 
+(b)  For  culverts,  retaining  walls  and  the  like   One  at  each  end,  and  for  intermediate 
+
+locations, one at not more than 30 m intervals. 
+
+NOTES:  
+
+1  This  minimum  level  of  investigation  would  only  be  satisfactory  for  sites  with  relatively 
+
+uniform subsoil strata and easily defined foundation conditions. 
+
+2  Additional  boreholes  or  test  locations  would  be  required  where  bridge  approaches  involve 
+cuttings or embankments, in order to check that these earthworks would not cause vertical or 
+lateral  ground  movements,  or  slope  instability,  which  could  adversely  affect  the  bridge  or 
+associated structures. 
+
+Boreholes,  pits  or  other  in  situ  tests,  as  required,  shall  extend  through  any  strata  that  may 
+influence  strength,  stability  or  serviceability,  or  otherwise  influence  foundations  or  soil-
+supporting structures during or after construction. 
+
+The presence of ground water and its effects shall be investigated. 
+
+NOTE: Specific ground water effects may include— 
+
+(a) 
+
+the level and fluctuations of the permanent water table; 
+
+(b) 
+
+the inflow rates into excavations; 
+
+(c)  effects of dewatering on the water table and on adjacent structures; 
+
+(d) 
+
+the presence of and pressures associated with artesian and subartesian conditions; and 
+
+(e) 
+
+the potential aggressiveness of the ground water to buried concrete, steel and the like. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+10 
+
+The  results  of  a  geotechnical  investigation  shall  be  compiled  in  a  geotechnical  report 
+verified by a geotechnical engineer. 
+
+7   DESIGN REQUIREMENTS 
+
+7.1   Aim 
+
+The aim  of the  design  of  structures covered by this Standard is to provide a foundation or 
+soil-supporting structure that is durable, stable and has adequate strength while serving its 
+intended  function  and  that  also  satisfies  other  relevant  requirements,  such  as  robustness, 
+ease  of  construction,  minimum  disruption  of  normal  operations  during  construction  and 
+minimal  effects  on  adjacent  existing  structures  accounting  for  effects  of  future  works. 
+Foundation  behaviour  shall  be  compatible  with  the  superstructure  so  that  both  remain 
+serviceable and can perform their intended functions. 
+
+NOTE: Worked examples to demonstrate the design process are given in AS 5100.3 Supp 1. 
+
+7.2   Design 
+
+The  design  of  foundations  or  soil-supporting  structures  shall  take  into  account,  as 
+appropriate,  strength,  stability,  serviceability,  durability  and  other  relevant  design 
+requirements in accordance with this Standard. 
+
+7.3   Design for strength 
+
+7.3.1   General 
+
+Foundations  and  soil-supporting  structures  shall  be  designed  for  both  structural  and 
+geotechnical strength as follows: 
+(a)  For foundations where the loads are imposed predominantly from or via the structure 
+or  loads  applied  to  the  structure,  e.g.,  shallow  footings,  piles  and  anchorages,  the 
+strength shall be determined in accordance with Clause 7.3.2. 
+
+(b)  For soil-supporting structures where the loads are predominantly soil-imposed loads, 
+e.g., abutments and buried structures, the strength shall be determined in accordance 
+with Clause 7.3.3. 
+
+Where  structures  act  as  both  foundations  and  soil-supporting  structures,  e.g.,  diaphragm 
+walls  supporting  bridge  abutments,  such  structures  shall  be  designed  to  satisfy  the 
+requirements of both foundations and soil-supporting structures. 
+
+7.3.2   Foundations 
+
+Foundations shall be designed as follows: 
+(a)  The  appropriate  loads  and  other  actions  shall  be  determined  in  accordance  with 
+
+Clause 8.2. 
+
+(b)  The  loads  and  action  effects  shall  be  factored  and  combined  in  accordance  with 
+Clause 8.3.2, to determine the design action loads (S*) for strength for the foundation 
+and its components for each appropriate load combination. 
+
+(c)  The  ultimate  geotechnical  strength  (Rug)  and  the  ultimate  structural  strength  (Rus) 
+shall  be  determined  in  accordance  with  Clause 10,  11  or 12,  and  AS 5100.5  or 
+AS 5100.6,  as  appropriate,  using  unfactored  characteristic  values  of  material 
+parameters. 
+
+(d)  The foundation and structural components shall be proportioned so that— 
+
+φ
+
+R ≥
+ug
+
+g
+
+*
+
+S
+
+φ
+
+R ≥
+us
+
+s
+
+*
+
+S
+
+. . . 7.3.2(1)
+
+. . . 7.3.2(2)
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11 
+
+AS 5100.3—2004 
+
+where (φg) is a geotechnical strength reduction factor and (φs) is a structural strength 
+reduction factor. φg shall be selected in accordance with Clause 7.3.5. 
+
+7.3.3   Soil-supporting structures 
+
+Soil-supporting structures shall be designed as follows: 
+(a)  The  appropriate  loads  and  other  actions  shall  be  determined  in  accordance  with 
+
+Clause 8.2. 
+
+(b)  The  loads  and  action  effects  shall  be  combined  in  accordance  with  Clause 8.3.3,  to 
+
+determine the design loads for strength and stability. 
+
+(c)  An  appropriate  engineering  analysis  shall  be  carried  out  with  all  loads  and  load 
+combinations unfactored to determine the action effects imposed through the soil (Se) 
+for— 
+(i) 
+
+the  soil-supporting  structure  as  a  whole  for  geotechnical  strength  design,  e.g., 
+active pressure on a retaining wall, or earth pressure on a buried structure; and 
+
+(ii) 
+
+each  component  of  the  structure  for  structural  strength  design,  e.g.,  bending 
+moments or shear forces. 
+
+NOTE: As an example, for geotechnical strength design of a retaining wall, the action effects 
+would  include  the  earth  pressure  arising  from  dead  loading,  surcharge  loading,  pressures 
+arising  from  compaction,  earthquake  loading  and  water  pressure.  For  geotechnical  strength 
+design  of  a  buried  structure,  the  action  effects  would  include  both  vertical  and  lateral  earth 
+pressures arising from the above sources. 
+
+(d)  The  ultimate  geotechnical  strength  (Rug)  shall  be  determined  in  accordance  with 
+Clause 13  or 14,  as  appropriate,  using  unfactored  characteristic  values  of  material 
+parameters. 
+
+(e)  The design geotechnical strength, e.g., passive resistance on a retaining wall, shall be 
+determined using the ultimate geotechnical strength (Rug) multiplied by a geotechnical 
+strength reduction factor (φg). 
+
+The structure shall be proportioned so that— 
+
+φ
+
+R ≥
+ug
+
+g
+
+*
+
+S
+
+. . . 7.3.3(1)
+
+where  S*  is  equal  to  1.0Se  for  geotechnical  strength  design  and  φg  is  selected  in 
+accordance with Clause 7.3.5. 
+NOTE: φg for soil-supporting structures takes into account the load factors being 1.0. 
+(f)  The  design  structural  strength  for  each  structural  component  shall  be  determined  in 
+accordance with AS 5100.5 or AS 5100.6, as appropriate, by multiplying the ultimate 
+structural strength (Rus) by the appropriate strength reduction factor (φs). 
+
+Each of the structural components shall be proportioned so that— 
+
+φ
+
+R ≥
+us
+
+S
+
+s
+
+*
+
+. . . 7.3.3(2)
+
+where S* is equal to 1.5Se for structural strength design, unless required otherwise. 
+
+7.3.4   Characteristic values 
+
+Characteristic  values  of  the  soil  and  rock  parameters  shall  be  selected,  based  on  the 
+following considerations: 
+(a)  Geological and geotechnical background information. 
+(b)  The possible modes of failure. 
+(c)  Results of laboratory and field measurements, taking into account the accuracy of the 
+
+test method used. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+12 
+
+(d)  A careful assessment of the range of values that might be encountered in the field. 
+(e)  The ranges of in situ and imposed stresses likely to be encountered in the field. 
+(f)  The  potential  variability  of  the  parameter  values  and  the  sensitivity  of  the  design  to 
+
+these variabilities. 
+
+(g)  The  extent  of  the  zone  of  influence  governing  the  soil  behaviour,  for  the  limit  state 
+
+being considered. 
+
+(h)  The influence of workmanship on artificially placed or improved soils. 
+(i) 
+
+The effects of construction activities on the properties of the in situ soil. 
+
+NOTES:  
+
+1 
+
+In  general,  the  characteristic  value  of  geotechnical  parameter  should  be  a  conservatively 
+assessed  value  of  that  parameter.  Engineering  judgement  needs  to  be  exercised  in  making 
+such an assessment, with geotechnical engineering advice being obtained as required. 
+
+2  Many  soil  parameters  are  not  constants,  but  depend  on  factors  such  as  the  level  of  stress  or 
+strain,  the  mode  of  deformation,  drainage  conditions,  moisture  contents  and  their  variations 
+over time. 
+
+3 
+
+It  should  be  recognized  that  a  low  characteristic  value  of  a  geotechnical  parameter  is  not 
+always  necessarily  a  conservative  value.  For  example,  in  cases  involving  dynamic  or 
+earthquake  loads,  conservatism  may  require  the  selection  of  a  high  value  of  a  particular 
+parameter.  The  sensitivity  of  the  calculated  result  to  the  relevant  parameter  should  be  taken 
+into consideration. 
+
+4  Bending  moments  in  buried  structures  are  sensitive  to  the  relative  stiffness  of  the  structure 
+and  the  surrounding  soil. The design  should  consider  variation  in the  stiffness parameters of 
+both the soil and the structure. 
+
+5  Except  where  specifically  noted,  the  term  soil  includes  soil  and  rock.  In  many  cases,  weak 
+weathered rock can be analyzed as for soil; however, special techniques may be required for 
+the analysis of strong rock. 
+
+7.3.5   Geotechnical strength reduction factors (φg) 
+
+Imperfections in construction. 
+
+The geotechnical strength reduction factors specified in this Standard shall be used, taking 
+into account the following: 
+(a)  Methods used to assess the geotechnical strength. 
+(b)  Variations in the soil conditions. 
+(c) 
+(d)  Nature of the structure and the mode of failure. 
+(e) 
+(f) 
+(g)  Load variations and cyclic effects. 
+Values of  φg for specific cases are set out in Clauses 10, 11, 12, 13 and 14. 
+
+Standards of workmanship and supervision of the construction. 
+
+Importance of the structure and consequences of failure. 
+
+The  geotechnical  strength  reduction  factors  selected  shall  be  approved  by  the  relevant 
+authority. 
+
+7.4   Design for stability 
+
+The  structure  as  a  whole,  and  each  of  its  elements,  including  the  foundations,  shall  be 
+designed to prevent instability due to overturning, uplift or sliding, as follows: 
+(a)  Loads determined in accordance with Clause 8.2 shall be subdivided into components 
+
+tending to cause instability and components tending to resist instability. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13 
+
+AS 5100.3—2004 
+
+(b)  The  design  action  effects  (S*)  shall  be  calculated  from  the  components  of  the  load 
+tending to cause instability, using the load combinations specified in Clause 8.3. 
+(c)  The ultimate resistance shall be calculated as set out in Clauses 10, 11, 12, 13 and 14. 
+The design resistance shall be computed by multiplying the ultimate resistance by the 
+appropriate strength reduction factor. 
+
+(d)  The  whole  or  part  of  the  structure  shall  be  proportioned  so  that  the  design  action 
+
+effects are less than or equal to the design resistance. 
+
+7.5   Design for serviceability 
+
+Foundations  and  soil-supporting  structures  shall  be  designed  for  serviceability  by 
+controlling or limiting settlement, horizontal displacement and cracking. 
+
+Under  the  load  combinations  for  serviceability  design  specified  in  Clause 8.4,  deflections 
+and  horizontal  displacements  shall  be  limited  to  ensure  that  the  foundations  and  the 
+structure remain serviceable over their design lives. 
+
+7.6   Design for strength, stability and serviceability by load testing a prototype 
+
+Notwithstanding  the  requirements  of  Clauses 7.3,  7.4  and 7.5,  foundations  or  soil-
+supporting  structures  may  be  designed  for  strength,  stability  or  serviceability  by  load 
+testing  using  appropriate  test  loads.  If  this  alternative  procedure  is  adopted,  the 
+requirements  for  durability  (see  Clause 9)  and  other  relevant  design  requirements  (see 
+Clause 7.8) shall still apply. 
+
+7.7   Design for durability 
+
+Foundations  and  soil-supporting  structures  shall  be  designed  for  durability  in  accordance 
+with Clause 9. 
+
+7.8   Design for other relevant design requirements 
+
+Any special design criteria, such as scour, fatigue, flood or collision loading, cyclic loading 
+or  liquefaction  arising  from  seismic  actions  shall  be  considered.  Where  relevant,  these 
+design criteria shall be taken into account in the design of the foundation or the structure in 
+accordance with the principles of the Standard. 
+
+When designing new foundations close to existing structures, the effect of the new structure 
+on  existing  work, during construction and  subsequently, shall  be considered. The effect of 
+possible  future  developments  on  the  proposed  work  after  it  is  completed  shall  also  be 
+considered, if required by the relevant authority. 
+
+NOTE: Some of the circumstances specified in this Clause may lead to either additional loadings 
+(in  the  case  of  floods  and  collisions),  a  reduction  in  the  depth  of  soil-resisting  loadings  (in  the 
+case of scour), or to a reduction in soil strength and stiffness (in the case of scour, flood, fatigue, 
+cyclic  loading  and  liquefaction),  or  a  combination  of  these  effects.  In  the  case  of  collision 
+loading,  the  rapid  rate  of  load  application  may  provide  a  basis  to  adopt  increases  in  the  design 
+strength  and  stiffness  of  the  soil,  but  such  increases  are  generally  ignored  for  the  purposes  of 
+design. 
+
+8   LOADS AND LOAD COMBINATIONS 
+
+8.1   General 
+
+The loads and load combinations for strength, stability and serviceability design shall be as 
+specified in Clauses 8.2, 8.3 and 8.4. 
+
+8.2   Loads 
+
+8.2.1   General 
+
+The design for ultimate and serviceability limit states shall take into account the appropriate 
+action effects arising from the following: 
+(a)  All loads and other actions specified in AS 5100.2. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+14 
+
+(b)  Soil  movement  resulting  from  slip,  reactive  soils,  consolidation,  heaving  and  other 
+
+vertical and lateral earth movements. 
+
+(c)  Loads from surcharges. 
+(d)  Distribution of wheel loads through fill. 
+(e)  Water pressure loads and seepage forces. 
+(f) 
+(g)  Compaction pressures. 
+(h)  Displacement pressures from piling. 
+(i)  Any additional loads and actions that may be applied. 
+
+Increase in loads on buried structures because of differential soil movements. 
+
+8.2.2   Loads induced by soil movement 
+
+Allowance shall be made for loads induced by soil movements as follows: 
+(a)  Where  foundations  are  situated  in  soil  undergoing  settlement,  allowance  shall  be 
+
+made for loads (Fnf) resulting from negative friction on the foundation. 
+
+(b)  Where  foundations  are  situated  in  expansive  soils,  such  as  reactive  clays  or  those 
+subject to frost action, allowance shall be made for the compressive and tensile loads 
+(Fes) which may develop in the foundation, structure or its elements. 
+
+(c)  Where foundations are subject to lateral ground movements, allowance shall be made 
+for bending moments, shear forces and axial loads (Fem) induced by such movements. 
+(d)  Where heave may arise because of unloading of the ground as a result of excavation, 
+allowance  shall  be  made  for  the  bending  moments,  shears  and  axial  forces  (Fem) 
+induced by the resulting ground movements. 
+
+NOTE: Consideration  should  be  given  to  each  of  the  following  conditions  when  earth  pressure 
+loads on retaining structures are being determined: 
+
+(a)  Configuration, nature and drainage properties of the backfill material. 
+
+(b)  Displacement characteristics of the wall. 
+
+(c) 
+
+Interface conditions between the wall and the backfill. 
+
+(d)  Method of compaction of the backfill material. 
+
+(e)  Sequences of excavation and placement of anchorages and struts. 
+
+In  spill-through  abutments,  to  take  into  account  the  possible  arching  of  fill  between 
+columns, one of the following procedures shall be adopted: 
+
+(i)  A detailed ground-structure interaction analysis shall be carried out to determine the 
+
+earth pressures acting on the columns. 
+
+(ii) 
+
+In  the absence  of  a detailed analysis, no reduction  of earth pressure loading  shall  be 
+made, to allow for a space between columns if that space is less than twice the width 
+across  the  back  of  the  columns.  For  greater  spacings,  friction  on  the  sides  of  the 
+columns  or  counterforts  shall  be  considered  and  the  earth  pressure  loading  on  each 
+column  shall  be  taken  on  an  equivalent  width  not  less  than  twice  the  actual  width 
+across the back of the columns. 
+
+8.2.3   Construction loads 
+
+Loads and actions that arise  from  construction activities shall  be evaluated, and those that 
+affect the requirements for strength, stability or serviceability shall be taken into account. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+15 
+
+AS 5100.3—2004 
+
+8.2.4   Water pressure 
+
+The loads applied by hydrostatic pressure of water or ground water seepage forces, or both, 
+shall be taken into account in the design of foundations and soil-supporting structures. The 
+effects of buoyancy on the structural components and on soil shall be included. 
+
+8.3   Load combinations for strength and stability design 
+
+8.3.1   General 
+
+The  load  combinations  for  strength  and  stability  design  shall  be  as  specified  in 
+Clauses 8.3.2 and 8.3.3. 
+
+8.3.2   Foundations 
+
+For  foundations  where  the  loads  are  imposed  predominantly  from  the  structure  or  from 
+loads applied to the structure, the load combinations shall be as follows: 
+(a)  The  design  loads  for  a  foundation  shall  be  the  combination  of  factored  loads  that 
+produces the most adverse effect on the foundation in accordance with AS 5100.2. 
+
+(b) 
+
+If  there  are  loads  caused  by  soil  movements  (see  Clause 8.2.1),  the  loads  shall  be 
+considered  as  permanent  effects  and  shall  be  factored  and  combined  with  the  other 
+load combinations specified in AS 5100.2 as follows: 
+(i) 
+
+For structural strength and stability design, the loads caused by soil movements 
+shall be factored as follows: 
+
+(A)  1.2Fnf—  For  negative  friction  loads  caused  by  consolidation  of  the
+
+surrounding soil. 
+
+(B)  1.5Fes—  For  compressive  and  tensile  loads  caused  by  vertical  soil
+
+movements other than consolidation of the surrounding soil. 
+
+(C)  1.5Fem— For  bending  moments,  shear  forces  and  axial  loads  caused  by
+
+lateral soil movements and heave. 
+
+(ii)  For geotechnical strength design, the possibility of soil movements altering the 
+
+ultimate geotechnical strength shall be considered. 
+
+NOTE: Usually, soil movements have little or no effects on ultimate geotechnical strength of 
+foundations; however, soils susceptible to strain-softening may be affected. 
+
+Where  other  additional  loads  and  actions  are  to  be  applied  and  no  load  factor  is  given  in 
+AS 5100.2 for these loads  and  actions,  a  load  factor  not  less  than 1.5  shall  be  adopted  for 
+both structural and geotechnical design. 
+
+8.3.3   Soil-supporting structures 
+
+For soil-supporting structures where the loads are imposed predominantly from the soil, the 
+design loads and other actions for strength and stability design of a soil-supporting structure 
+shall be the combination of loads that produces the most adverse effect on the structure in 
+accordance with AS 5100.2. The loads shall be combined using a load factor of 1.0 for each 
+of the loads. 
+
+8.4   Load combinations for serviceability design 
+
+The  design  loads  and  other  actions  for  serviceability  design  of  foundations  and  soil-
+supporting  structures  shall  be  taken  from  the  appropriate  combination  of  factored  loads  in 
+accordance  with  AS 5100.2.  The  design  loads  shall  include  loads  resulting  from  soil 
+movements  and  other  additional  loads  specified  in  Clause 8.2,  where  appropriate,  using  a 
+load factor of 1.0 for each of these loads. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+16 
+
+9   DURABILITY 
+
+9.1   General 
+
+The objective of the design of the structure with respect to durability shall be— 
+(a) 
+(b) 
+
+to achieve, with appropriate maintenance, the specified service life; and 
+
+that  all  the  specified  design  criteria  continue  to  be  satisfied  throughout  the  service 
+life. 
+
+Consideration shall be given to the possibility of deterioration of structural components of 
+foundations  and  soil-supporting  structures  as  a  result  of  aggressive  substances  in  soils  or 
+rocks,  in  ground  water,  seawater  and  water  in  streams.  Account  shall  also  be  taken  of  the 
+abrading effects of waterborne sands and gravels. 
+
+In  addition,  other  specific  durability  criteria  may  apply,  as  required  by  the  relevant 
+authority. 
+
+9.2   Durability of timber 
+
+Untreated  timber  shall  not  be  used  as  permanent  components  of  foundations  or  soil-
+supporting structures unless permitted by the relevant authority. Any untreated timber shall 
+be  located  below  the  permanent  ground  water  level.  Where  borers  exist,  untreated  timber 
+shall not be used in marine conditions. 
+
+Where  permitted  by  the  relevant  authority,  suitably  treated  timber  of  durable  species  may 
+be  used  as  permanent  components  of  foundations  or  soil-supporting  structures,  but  its  use 
+shall  be  limited,  having  due  regard  to  consequences  of  failure  and  replacement  and  the 
+degree to which the treatment is effective over the entire cross-section. 
+
+NOTE: The  use  of  timber  in  foundations  and  soil-supporting  structures  should  be  limited  to 
+temporary structures or to the repair of existing timber structures. 
+
+9.3   Durability of concrete 
+
+The requirements for design for durability of concrete components of foundations and soil-
+supporting structures given in AS 5100.5 shall apply. 
+
+For buried concrete structures where stray currents are likely to be present, e.g., adjacent to 
+electrified  railway  lines,  action  shall  be  taken  as  required  by  the  relevant  authority  to 
+prevent corrosion of the reinforcement. 
+
+9.4   Durability of steel 
+
+Unless  more  site-specific  information  is  available  and  unless  required  otherwise  by  the 
+relevant  authority,  the  following  rates  of  corrosion  for  unprotected  steel  surfaces  shall  be 
+used for design purposes: 
+(a) 
+
+1.5 mm total for the life of the structure for each face in contact with soil, above and 
+below  ground  water,  provided  the  soil  is  undisturbed  or  comprises  compacted,  well-
+graded, chemically neutral, structural fill. 
+
+(b) 
+
+(c) 
+(d) 
+
+0.025 mm per year for each face in contact with open-graded or rubble fill, or sands 
+and gravels that have moving ground water. 
+
+0.05 mm per year for each face exposed to fresh water and not in contact with soil. 
+
+0.08 mm per year for each face exposed to seawater, except in the splash zone where 
+twice this rate shall be used. 
+
+NOTES:  
+
+1  The presence of  high  concentrations of chloride  ions, oxygen  and  sulphate-reducing  bacteria 
+
+are significant in determining the level of corrosion to steel surfaces. 
+
+2  Buried  or  immersed  steel  surfaces  may  be  protected  by  galvanizing  or  coating  with  various 
+materials  including  bitumen,  flake-filled  polyesters,  epoxy  mastics,  polyethylene  and  others. 
+The expected life of the galvanizing or coatings should be taken into account in the design. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+17 
+
+AS 5100.3—2004 
+
+For steel surfaces exposed to the atmosphere, the rate of corrosion will depend on the type 
+of  protective  coating,  level  of  stress,  structural  details,  the  extent  of  routine  maintenance 
+and atmospheric conditions. The rate of corrosion to be adopted shall be as required by the 
+relevant authority. 
+
+For  buried  steel  structures  where  stray  currents  are  likely  to  be  present,  e.g.,  adjacent  to 
+electrified  railway  lines,  action  as  required  by  the  relevant  authority  shall  be  taken  to 
+minimize corrosion. 
+
+9.5   Durability of slip layers 
+
+Slip layer coatings applied to piling shall be as approved by the relevant authority. 
+
+9.6   Durability of other materials 
+
+Where foundations or soil-supporting structures are to be constructed from  materials other 
+than  those  covered  specifically  by  this  Standard,  reference  shall  be  made  to  other 
+appropriate  Standards  and  current  technical  literature  for  material-specific  information  on 
+durability.  Where  possible,  durability  of  such  materials  shall  be  assessed  using  testing 
+appropriate to the particular situation. 
+
+The durability of other materials shall be as required by the relevant authority. 
+
+10   SHALLOW FOOTINGS 
+
+10.1   Scope 
+
+This Clause applies to all types of shallow footings, such as pad, strip and raft footings for 
+structures  and  retaining  walls.  For  the  purpose  of  this  Standard,  a  shallow  footing  is  one 
+that  is  founded  at  shallow  depth  and  where  the  contribution  of  the  strength  of  the  ground 
+above the footing level does not influence the bearing resistance significantly. 
+
+10.2   Load and load combinations 
+
+Shallow footings shall be designed for the loads and other actions set out in Clause 8.2. 
+
+The  load  combinations  for  strength,  stability  and  serviceability  shall  be  as  specified  in 
+Clauses 8.3.2 and 8.4. 
+
+10.3   Design requirements 
+
+10.3.1   General 
+
+0
+1
+0
+2
+
+The  magnitude  and  disposition  of  the  structural  loads  and  actions,  and  the  bearing 
+resistance of the ground, shall be considered when selecting the appropriate type of shallow 
+footing. 
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+The  footing  shall  be  designed  to  satisfy  the  strength  design  requirements  set  out  in 
+Clause 7.3.2 and the serviceability design requirements set out in Clause 7.5. 
+
+10.3.2   Footing depth and size 
+
+When determining the footing depth, the following shall be considered: 
+(a)  The depth of an adequate bearing stratum. 
+(b)  The effects of scour. 
+(c) 
+
+In  the  case  of  clay  soils,  the  depth  of  appreciable  ground  movement  caused  by 
+shrinkage and swelling due to moisture changes resulting from seasonal variations or 
+trees and shrubs. 
+
+(d)  The depth to which frost heave is likely to cause appreciable ground movements. 
+(e)  Subsequent nearby construction work such as trenches for services. 
+(f) 
+
+Possible ground movements. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+18 
+
+(g)  The level of the ground water table and the problems that may occur if excavation for 
+
+the foundation is required below this level. 
+
+When  determining  the  footing  width,  consideration  should  be  given  to  issues  related  to 
+practical excavation constraints, setting-out tolerances, working space requirements and the 
+dimensions of the substructure supported by the footing. 
+
+10.3.3   Design for geotechnical strength 
+
+10.3.3.1   General 
+
+Ultimate  limit  states  corresponding  to  a  mechanism  in  the  ground  or  rupture  of  a  critical 
+section of the structure because of ground movements shall be evaluated using the ultimate 
+limit state actions and loads, and the ultimate resistance factored by an appropriate strength 
+reduction factor. 
+
+10.3.3.2   Overall stability 
+
+Consideration  shall  be  given  to  the  possibility  of  failure  resulting  from  loss  of  overall 
+stability. 
+
+The  design  resistance  for  stability  failure  of  the  ground  mass  shall  be  not  less  than  the 
+design strength effect of any possible modes of failure. 
+
+NOTE: Situations in which overall stability may be particularly important include— 
+
+(a) 
+
+footings near or on an inclined site, a natural slope or an embankment; 
+
+(b) 
+
+footings near an excavation or a retaining structure; 
+
+(c) 
+
+footings near a river, canal, lake, reservoir or the sea shore; and 
+
+(d) 
+
+footings near mine workings or buried structures. 
+
+10.3.3.3   Ultimate bearing failure 
+
+Footings  subjected  to  vertical  or  inclined  loads  or  overturning  moments  shall  be 
+proportioned  such  that  the  design  bearing  capacity  is  greater  than  or  equal  to  the  design 
+action effect (S*), i.e.— 
+
+φ
+
+R ≥
+ug
+
+g
+
+*
+
+S
+
+where 
+
+. . . 10.3.3.3
+
+φg  =  geotechnical strength reduction factor 
+
+Rug  =  ultimate geotechnical strength (bearing capacity) of the footing 
+
+In  assessing  S*,  allowance  shall  be  made  for  the  weight  of  the  footing  and  any  backfill 
+material on the footing. 
+
+The value of Rug shall be established by using the results of field or laboratory testing of the 
+ground. Allowance shall be made for the effects of the following: 
+(a)  Variations in the level of the ground water table and rapid draw down. 
+(b)  Any weak or soft zones in the soil or rock below the founding level. 
+(c)  Unfavourable bedding or jointing of rock strata, especially in sloping ground. 
+(d)  Possible influence of time effects and transient, repeated or vibratory loads on the soil 
+
+shear strength. 
+
+(e)  Load eccentricity and inclination. In assessing the ultimate geotechnical strength (Rug) 
+of footings subjected to eccentric loads, allowance shall be made for the possibility of 
+very high edge stresses and a reduced effective contact area between the footing and 
+the ground as a result of load eccentricity. 
+
+(f) 
+
+Presence of sloping ground or nearby excavations. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+19 
+
+AS 5100.3—2004 
+
+NOTE: The  ultimate  bearing  capacity  of  a  footing  may  be  estimated  analytically  by  using  soil 
+shear  strengths  measured  in  appropriate  laboratory or  field  tests, or by  using  empirical or quasi-
+analytical relationships developed from the results of in situ tests such as the standard penetration 
+test, the static cone penetration test, the plate loading test, the vane shear test or the pressuremeter 
+test. 
+
+The  geotechnical  strength  reduction  factor  (φg)  shall  be  selected  in  accordance  with 
+Clause 7.3.5, and Tables 10.3.3(A) and 10.3.3(B). 
+
+TABLE   10.3.3(A) 
+
+RANGE OF VALUES OF GEOTECHNICAL STRENGTH 
+REDUCTION FACTOR (φg) FOR SHALLOW FOOTINGS 
+
+Method of assessment of ultimate geotechnical strength 
+
+Range of values of φg 
+
+Analysis using geotechnical parameters based on appropriate 
+advanced in situ tests 
+
+Analysis using geotechnical parameters from appropriate 
+advanced laboratory tests 
+
+Analysis using CPT tests 
+
+Analysis using SPT tests 
+
+0.50–0.65 
+
+0.45–0.60 
+
+0.40–0.50 
+
+0.35–0.40 
+
+NOTE: Examples of testing regimes are given in AS 5100.3 Supp 1. 
+
+TABLE   10.3.3(B) 
+
+GUIDE FOR ASSESSMENT OF GEOTECHNICAL STRENGTH 
+REDUCTION FACTOR (φg) FOR SHALLOW FOOTINGS 
+
+Lower end of range  
+
+Upper end of range  
+
+Limited site investigation 
+
+Comprehensive site investigation 
+
+Simple methods of calculation 
+
+More sophisticated design method 
+
+Limited construction control 
+
+Rigorous construction control 
+
+Severe consequences of failure 
+
+Less severe consequences of failure 
+
+Significant cyclic loading 
+
+Mainly static loading 
+
+Foundations for permanent structures 
+
+Foundations for temporary structures 
+
+Use of published correlations for design 
+parameters 
+
+Use of site-specific correlations for design 
+parameters 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+10.3.3.4   Failure by sliding 
+
+Footings  subjected  to  horizontal  loads  shall  be  proportioned  such  that  the  design  action 
+effect (S*) shall satisfy the following: 
+
+H
+
+φ
+
+g
+
+ug
+
++ φ
+
+E
+
+g
+
+pr
+
+≥
+
+S
+
+*
+
+where 
+
+. . . 10.3.3.4
+
+Hug
+
+  =  ultimate shear resistance at the base of the footing 
+
+Epr  =  ultimate passive resistance of the ground in front of the footing 
+φg  =  geotechnical strength reduction factor,  which shall  be selected in accordance 
+
+with Clause 7.3.5, and Tables 10.3.3(A) and 10.3.3(B) 
+
+NOTE: The values of both Hugφg and Eprφg should be related to the scale of movement anticipated 
+under the limit state being considered. For large movements associated with ultimate limit states, 
+the possible relevance of post-peak softening behaviour should be considered. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+20 
+
+For  foundations  on  clay  soils  bearing  within  the  zone  of  seasonal  movements,  the 
+possibility  that  the  clay  could  shrink  away  from  the  vertical  faces  of  foundations  shall  be 
+considered. 
+
+The possibility that the soil in front of the foundation may be removed by erosion or human 
+activity shall be considered. 
+
+10.3.4   Design for structural strength 
+
+10.3.4.1   General 
+The design structural strength  (
+
+)*
+sR  of the footing shall satisfy the following: 
+
+*
+R ≥
+s
+
+*
+
+S
+
+where 
+
+*
+sR   = 
+
+s Rφ
+
+us
+
+. . . 10.3.4.1
+
+φs  =  structural strength reduction factor 
+Rus  =  ultimate structural strength 
+
+φs shall be obtained from AS 5100.5 or AS 5100.6, as appropriate. 
+
+When calculating Rus for strip footings or raft footings, consideration shall be given to the 
+distribution of soil pressure at the base of the footing. 
+
+10.3.4.2   Structural failure as a result of footing movement 
+
+Differential  vertical  and  horizontal  displacements  of  a  footing  or  between  footings  under 
+the  serviceability  limit  state  design  actions  and  ground  deformation  parameters  shall  be 
+considered.  The  footing  shall  be  designed  such  that  these  displacements  do  not  lead  to  an 
+ultimate limit state occurring in the supported structure. 
+
+10.3.5   Design for serviceability limit states 
+
+10.3.5.1   General 
+
+Consideration shall be given, as appropriate, to the following: 
+(a)  The displacement of a single footing. 
+(b)  Displacements  and  differential  displacements  of  footing  groups,  footing  beams  or 
+
+rafts. 
+
+0
+1
+0
+2
+
+(c)  Vibrations arising from repetitive, vibratory or dynamic loads. 
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+Footing  displacements  shall  be  calculated  using  the  serviceability  loads  and  actions. 
+Calculated footing displacements shall satisfy the following: 
+
+(i) 
+The displacement shall not be greater than the serviceability limit displacement. 
+(ii)  The differential displacement shall not be greater than the serviceability limit value. 
+
+The  serviceability  limit  values  of  displacement  and  differential  displacement  shall  be 
+selected such that they do not result in detrimental effects on the structure being supported. 
+
+In  estimating  the  displacements,  consideration shall  be  given  to the following  components 
+of displacement: 
+
+(A) 
+
+Immediate displacement. 
+
+(B)  Time-dependent displacements caused by soil consolidation. 
+
+(C)  Long-term soil creep displacements. 
+
+Any  possible  additional  settlement  caused  by  self-compaction  of  the  soil  shall  also  be 
+assessed. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+21 
+
+AS 5100.3—2004 
+
+The differential settlements and relative rotations shall be assessed, taking account of both 
+the distribution of loads and the possible variability of the ground. 
+
+NOTE: Differential settlements calculated without taking account of the stiffness of the structure 
+tend  to  be  overpredictions.  An  analysis  of  ground-structure  interaction  may  be  used  to  justify 
+reduced computed values of differential settlements. 
+
+Characteristic  values  of  soil  deformation  design  parameters  for  use  in  analysis  of  footing 
+displacements for the serviceability limit state shall be assessed on the basis of appropriate 
+laboratory  tests  or  field  tests,  or  by  evaluating  the  behaviour  of  neighbouring  similar 
+structures.  A  geotechnical  reduction  factor  need  not  be  applied  to  the  parameters  so 
+assessed. 
+
+NOTES:  
+1 
+
+In  general,  the  characteristic  value  of  a  geotechnical  parameter  should  be  a  conservatively 
+assessed  value  of  that  parameter.  Engineering  judgement  needs  to  be  exercised  in  making 
+such an assessment. 
+
+2  Footing displacements can be estimated from various methods, including— 
+
+(a) 
+
+(b) 
+
+(c) 
+
+(d) 
+
+analysis  using  elastic  theory,  using  appropriate  parameters  for  immediate  and  long-
+term displacements; 
+
+analysis  using  consolidation  theory,  which  is  useful  for  clay  soils  where  there  is  a 
+relatively large time-dependent displacement component due to consolidation; 
+
+analysis using appropriate soil constitutive models, usually via finite element analysis; 
+and 
+
+analysis using results from  in situ tests, which  may include both analytical techniques 
+and empirical methods (applied mainly to sandy soils). 
+
+10.3.5.2   Tilting 
+
+The calculated tilt of the footing shall not be greater than the serviceability limit value for 
+proper functioning of the supported structure. 
+
+In the case of footings subject to loads with large eccentricities, measures shall be adopted 
+to  avoid  ‘doming’  of  the  ground  surface  beneath  the  footing,  which  may  cause  rocking  of 
+the footing. 
+
+NOTE: Situations that may cause significant tilting include— 
+(a)  eccentric loads; 
+(b) 
+inclined loads; 
+(c)  non-uniform soil conditions; and 
+(d)  overturning moments. 
+
+10.3.6   Design for durability 
+
+Durability  requirements  shall  be  considered  as  set  out  in  Clause 9.  Where  materials  other 
+than  concrete  and  steel  are  to  be  used  for  the  construction  of  the  shallow  footing,  the 
+requirements  for  durability  in  the  relevant  Standard  for  that  material  shall  apply,  unless 
+otherwise specified by the relevant authority. 
+
+Where no Standard applies to the materials used in the shallow foundation, the requirements 
+of the relevant authority shall apply. 
+
+10.4   Structural design and detailing 
+
+Structural  design  and  detailing  for  shallow  footings  built  of  concrete  and  steel  shall  be  in 
+accordance with AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure, then the requirements of the relevant Standard for that material shall apply to the 
+structural  design  and  detailing  of  the  structure,  unless  otherwise  specified  by  the  relevant 
+authority. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+22 
+
+Where  no  Standard  applies  to  the  materials  used  for  the  construction  of  the  structure,  the 
+requirements of the relevant authority shall apply. 
+
+10.5   Materials and construction requirements 
+
+Materials and construction requirements for shallow foundations built of concrete and steel 
+shall be in accordance with AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure, then the requirements of the relevant Standard for that material shall apply, unless 
+otherwise specified by the relevant authority. 
+
+Where  no  Standard  applies  to  the  materials  used  for  the  construction  of  the  structure,  the 
+requirements of the relevant authority shall apply. 
+
+11   PILED FOUNDATIONS 
+
+11.1   Scope 
+
+This Clause sets out minimum requirements for the design, construction and testing of piled 
+foundations. The provisions apply to axially and transversely loaded displacement and non-
+displacement  piles  installed  by  driving,  jacking,  screwing  or  boring  with  or  without 
+grouting. 
+
+11.2   Load and load combinations 
+
+Loads  and  load  combinations  for  pile  design  shall  be  in  accordance  with  AS 2159  except 
+where specified otherwise in Clause 8. 
+
+11.3   Design requirements 
+
+11.3.1   General 
+
+Pile design requirements and procedures shall be in accordance with AS 2159 except where 
+specified otherwise in Clause 7. 
+
+The  geotechnical  design  of  piles  and  geotechnical  strength  reduction  factors  shall  be  in 
+accordance  with  AS 2159.  The  range  of  geotechnical  strength  reduction  factors  for  piles 
+shall be as given in Appendix A. 
+
+11.3.2   Design for strength 
+
+Structural  design  for  steel  and  concrete  piles  shall  be  in  accordance  with  AS 2159  except 
+where specified otherwise in AS 5100.5 and AS 5100.6. 
+
+Where  the  use  of  timber  piles  is  permitted  by  the  relevant  authority,  timber  piles  shall  be 
+designed in accordance with AS 2159. 
+
+11.3.3   Design for serviceability 
+
+For the serviceability design of piled foundations, the provisions of Clause 7.5 shall apply. 
+In  estimating  the  settlement  and  horizontal  displacements,  account  shall  be  taken  of  the 
+stiffness of the ground and structural elements, and of the sequence of construction. 
+
+The  permissible  displacements  for  the  piled  foundations  shall  be  established,  taking  into 
+account the tolerance to deformation of the supported structure and services. 
+
+11.3.4   Design for durability 
+
+Design for durability shall be in accordance with AS 2159 except where specified otherwise 
+in AS 5100.5 and AS 5100.6. Where materials other than concrete and steel are to be used, 
+the requirements for durability in the relevant Standard for that material shall apply, unless 
+otherwise specified by the relevant authority. 
+
+Where no Standard applies to the materials used, the requirements of the relevant authority 
+shall apply. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+23 
+
+AS 5100.3—2004 
+
+11.4   Structural design and detailing 
+
+11.4.1   General 
+
+Structural  design  and  detailing  for  steel  and  concrete  piles  shall  be  in  accordance  with 
+AS 2159, except where specified otherwise in AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  construction  of  the  pile, 
+then the requirements of the relevant Standard for that material shall apply to the structural 
+design and detailing of the pile, unless otherwise specified by the relevant authority. 
+
+Where  no  Standard  applies  to  the  materials  used  for  the  construction  of  the  pile,  the 
+requirements of the relevant authority shall apply. 
+
+Piles  shall  be  designed  as  structural  columns  with  the  degree  of  end  fixity  and  lateral 
+support  appropriate  to  the  surrounding  soil  conditions  and  the  behaviour  of  the  structure. 
+The  effects  of  scour  in  removing  lateral  support  shall  be  considered.  Unless  approved 
+otherwise by the relevant authority, piles subjected to lateral loads or bending moment shall 
+be  designed  to  provide  a  design  resistance  greater  than  or  equal  to  the  maximum 
+serviceability and ultimate design action effects for a distance at least 2 m below the point 
+where lateral support commences. 
+
+The use of pile splices shall be limited to situations where their use is unavoidable. 
+
+In  addition  to  considerations  relevant  to  the  design  of  piles  as  structural  members,  the 
+design  of  specific  types  of  piles  shall  take  into  account  the  requirements  set  out  in 
+Clause 11.4.2, as appropriate. 
+
+11.4.2   Design details relevant to specific types of piles 
+
+11.4.2.1   Precast reinforced concrete piles 
+
+For precast reinforced concrete piles, the following shall apply: 
+(a) 
+
+Size  and  shape   The  cross-sectional  area  shall  be  not  less  than  90 000 mm2  except 
+that where the pile is in salt water, it shall be not less than 140 000 mm2. Any square 
+corners  shall  have  a 25 mm  chamfer. The ends  of the pile  shall  be at right angles to 
+the  pile  axis.  Any  taper  shall  be  concentric  with  the  axis  of  the  pile,  with  a  pile 
+diameter  or  average  least  width  measured  600 mm  above  the  toe  of  not  less  than 
+200 mm. 
+
+(b)  Driving straps   The head of a reinforced concrete pile shall be reinforced with a steel 
+strap  a  minimum  of  6 mm  thick  and  75 mm  wide  cast  with  the  pile  to  minimize 
+spalling under hard driving conditions. 
+
+(c)  Reinforcement   Longitudinal  reinforcement,  consisting  of  not  less  than  four  bars 
+spaced  uniformly  around  the  perimeter  of  the  pile,  shall  be  provided  in  all  cases, 
+except that if more than four bars are used, the number may be reduced to four in the 
+bottom 1.2 m of the pile. 
+
+The  area  of  longitudinal  reinforcement  shall  be  not  less  than  1.0%  of  the  cross-
+sectional area of the pile. 
+
+Joints  in  longitudinal  reinforcement  shall  be  avoided  if  possible.  Where  required, 
+such joints shall be made by butt welding in accordance with AS/NZS 1554.3. 
+
+The  full  length  of  the  longitudinal  reinforcement  shall  be  enclosed  with  stirrups  or 
+helical  reinforcement  of  not  less  than  6 mm  diameter.  The  volume  of  the  stirrups  or 
+helical reinforcement shall not be less than 0.2% of the gross volume of the pile, with 
+a  spacing  or  pitch  of  not  more  than  half  the  average  least  width,  or  diameter,  of  the 
+pile. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+24 
+
+For a distance from each end of the pile of not less than two times the average least 
+pile  width,  or  diameter,  the  volume  of  the  stirrups  or  helical  reinforcement  shall  be 
+not  less  than  0.4%  of  the  volume  of  that  part  of  the  pile.  For  the  spacing  of  the 
+stirrups or helical reinforcement, the transition from the close spacing at the ends of 
+the  pile  to  the  larger  spacing  shall  not  be  less  than  two  times  the  average  least  pile 
+width. 
+
+(d)  Mechanical  joints   Mechanical  joints  shall  only  be  used  with  the  approval  of  the 
+relevant authority. Precast pile lengths mechanically joined shall be not less than 3 m 
+and  not  more  than  20 m  long.  The  mechanical  joints  shall  be  designed  so  that  they 
+provide  a  permanent  connection  between  the  pile  lengths.  The  strength  of  the  joint 
+shall be not less than that of the lengths of pile being joined. Durability of mechanical 
+joints shall comply with Clause 9. 
+
+11.4.2.2   Prestressed concrete piles 
+
+For prestressed concrete piles, the following shall apply: 
+(a)  Concrete strength   The concrete shall have a 28 day compressive strength of not less 
+
+than 40 MPa. 
+
+(b) 
+
+Size  and  shape   The  provisions  of  Clause 11.4.2.1(a)  shall  apply.  Piles  with  a 
+diameter or average least width less than 450 mm shall be solid. Larger diameters or 
+average least widths may be hollow. 
+(c)  Prestress  and  reinforcement   Prestressing 
+
+tendons  shall  be  provided,  spaced 
+uniformly around the perimeter of the pile. The minimum residual compressive stress 
+shall be 7 MPa. 
+
+Non-prestressed longitudinal reinforcement shall be provided as required for driving, 
+splicing and anchorage to pile caps. 
+
+Helical  reinforcement  or  stirrups  shall  be  provided  as  set  out  in  Clause 11.4.2.1(c) 
+except  that  for  hollow  piles  the  volume  of  helical  reinforcement  or  stirrups  in  the 
+body  of  the  pile  shall  not  be  less  than  0.3%  of  the  gross  pile  volume  and  for  solid 
+piles, not less than 0.2%. 
+
+(d)  Mechanical joints   The provisions of Clause 11.4.2.1(d) shall apply. 
+
+11.4.2.3   Cast-in-place reinforced concrete piles 
+
+For cast-in-place reinforced concrete piles, the following shall apply: 
+(a)  Reinforcement   Stirrups  or  helical  reinforcement  shall  have  a  spacing  or  pitch  not 
+
+greater than 150 mm. 
+
+Longitudinal reinforcement shall be placed equally spaced around the perimeter of the 
+pile and shall extend the full depth of the pile. The clear spacing between longitudinal 
+bars shall not be less than 75 mm, including bars at lapped splices. 
+
+(b)  Casing   Steel casings provided for ground support or inspection purposes shall have 
+a  minimum  thickness  of  10 mm.  Welding  of  casings  shall  be  in  accordance  with 
+AS/NZS 1554.1. 
+
+11.4.2.4   Steel piles 
+
+Steel  piles  shall  have  a  minimum  thickness  of  10 mm  at  the  end  of  the  design  life  after 
+taking  into  account  corrosion.  Welding  of  steel  piles  shall  be  in  accordance  with 
+AS/NZS 1554.1. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25 
+
+AS 5100.3—2004 
+
+11.5   Materials and construction requirements 
+
+11.5.1   General 
+
+Piles shall be constructed in accordance with AS 2159, except where specified otherwise in 
+AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  construction  of  the  pile, 
+then  the  requirements  of  the  relevant  Standard  for  that  material  shall  apply,  unless 
+otherwise specified by the relevant authority. 
+
+Where  no  Standard  applies  to  the  materials  used  for  the  construction  of  the  pile,  the 
+requirements of the relevant authority shall apply. 
+
+11.5.2   Spacing, edge distance and embedment of piles 
+
+For friction piles, the spacing centre-to-centre shall not be less than 2.5 times the diameter 
+or nominal size of the pile. For piles deriving their resistance mainly from end-bearing, the 
+spacing centre-to-centre shall be not less than twice the size of the pile. For piles with rakes 
+or enlarged bases, increased spacings may be required to suit the geometry and clearances. 
+
+The distance from the outside of any pile in a pile group to the edge of a concrete pile cap 
+shall be a minimum of 100 mm after taking into account construction tolerances. 
+
+The  embedment  of  the  concrete  of  a  concrete  pile  into  a  concrete  pile  cap  shall  be  a 
+minimum of 50 mm. 
+
+11.6   Testing 
+
+Static,  dynamic  and  integrity  testing  of  piles  shall  be  in  accordance  with  AS 2159,  unless 
+required otherwise by the relevant authority. 
+
+12   ANCHORAGES 
+
+12.1   Scope 
+
+The provisions in this Clause apply to any type of anchorage used to restrain a structure by 
+transmitting a tensile force to a load bearing formation of soil or rock. 
+
+NOTES:  
+1  Anchorages may include— 
+
+(a) 
+
+non-prestressed  ties  and  anchors,  e.g.,  deadman  anchors,  soil  nails,  sheet  piles,  raked 
+piles; and 
+
+(b) 
+
+prestressed anchorages, e.g., post-tensioned soil and rock ground anchors. 
+2  Anchorages may be employed as temporary or permanent elements of a structure. 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+12.2   Load and load combinations 
+
+Anchorages shall be designed for the loads and other actions set out in Clause 8.2. 
+
+The  load  combinations  for  strength,  stability  and  serviceability  shall  be  as  specified  in 
+Clauses 8.3 and 8.4. 
+
+12.3   Design requirements 
+
+12.3.1   General 
+
+Anchorage  design  shall  take  into  account  all  foreseeable  circumstances  during  the  design 
+life  of  the  anchorage.  The  corrosion  and  creep  of  the  permanent  anchorages  shall  be 
+considered. 
+
+NOTE: Preferably,  anchorage  systems  for  which  successful  long-term  experience  has  been 
+documented with respect to performance and durability should be used. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+26 
+
+12.3.2   Site investigation 
+
+Site investigations prior to the design and construction of anchorages shall include ground 
+formations outside the construction site if effects of the anchorage forces will occur there. 
+
+12.3.3   Design for strength 
+
+For  the  geotechnical  and  structural  strength  design  of  anchorages,  the  provisions  of 
+Clause 7.3 shall apply. 
+
+For ground anchors, the design geotechnical strength and the design structural strength shall 
+be calculated as the appropriate ultimate strength (Ru) multiplied by an importance category 
+reduction factor (φn) given in Table 12.3.3(A) and the appropriate strength reduction factor 
+(φs)  or (φg). The structural strength reduction factor (φs) shall be obtained from  AS 5100.5 
+or  AS 5100.6,  as  appropriate.  The  geotechnical  strength  reduction  factor  (φg)  shall  be 
+selected in accordance with Clause 7.3.4, and Tables 12.3.3(B) and 12.3.3(C). 
+
+To  check  anchorage  strength  limit  states,  three  failure  mechanisms  shall  be  analysed  as 
+follows: 
+(a)  The failure of the tendon or anchor head in terms of the material strength or failure of 
+
+bonding at internal interfaces. 
+
+(b)  The failure of the anchorage at the tendon-grout or grout-ground interface. 
+(c)  The overall stability failure of the structure, including the anchorages. 
+
+TABLE   12.3.3(A) 
+IMPORTANCE CATEGORY REDUCTION FACTOR (φn) 
+
+Anchor category 
+
+Importance category 
+reduction factor (φn) 
+
+1  Temporary  anchors  where  the  service  life  is  less  than  six  months  and 
+failure  would  have  few  serious  consequences  and  would  not  endanger 
+public safety, for example, short-term pile test loading using anchors as a 
+reaction system 
+
+2  Temporary anchors with a service life of up to two years where, although 
+the  consequences  of  local  failure  are  quite  serious,  there  is  no  danger  to 
+public  safety  without  adequate  warning,  for  example,  retaining  wall  tie 
+backs 
+
+3  Any  permanent  anchors  and  also 
+
+the 
+consequences  of  failure  are  serious,  for  example,  temporary  anchors  for 
+main  cables of  a  suspension bridge,  or  as  a reaction  for lifting  structural 
+members 
+
+temporary  anchors  where 
+
+1.0 
+
+0.93 
+
+0.7 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+27 
+
+AS 5100.3—2004 
+
+TABLE   12.3.3(B) 
+
+RANGE OF VALUES OF GEOTECHNICAL STRENGTH 
+REDUCTION FACTOR (φg) FOR ANCHORAGES 
+
+Method of assessment of ultimate 
+geotechnical strength 
+
+Range of values of φg 
+
+Permanent structures  Temporary structures 
+
+Analysis using the results of site-specific 
+anchorage pull-out tests 
+
+Analysis using the results of anchorage pull-out 
+tests in similar ground conditions 
+
+Analysis using geotechnical parameters based on 
+appropriate advanced in situ tests 
+
+Analysis using geotechnical parameters from 
+appropriate advanced laboratory tests 
+
+Analysis using CPT tests 
+
+Analysis using SPT tests 
+
+0.55 
+
+0.55 
+
+0.60–0.70 
+
+0.55–0.65 
+
+0.5–0.55 
+
+0.50–0.65 
+
+0.45–0.55 
+
+0.40–0.50 
+
+0.35–0.40 
+
+0.45–0.60 
+
+0.40–0.50  
+
+0.35–0.40  
+
+NOTE: Examples of testing regimes are given in AS 5100.3 Supp 1. 
+
+TABLE   12.3.3(C) 
+
+GUIDE FOR ASSESSMENT OF GEOTECHNICAL STRENGTH 
+REDUCTION FACTOR (φg) FOR ANCHORAGES 
+
+Lower end of range 
+
+Upper end of range 
+
+Limited site investigation 
+
+Comprehensive site investigation 
+
+Simple methods of calculation 
+
+More sophisticated design method 
+
+Limited construction control 
+
+Rigorous construction control 
+
+Severe consequences of failure 
+
+Less severe consequences of failure 
+
+Significant cyclic loading  
+
+Mainly static loading 
+
+Use of published correlations for design parameters 
+
+Use of site-specific correlations for design parameters 
+
+12.3.4   Design for other relevant factors 
+
+During the design of anchorages, the following additional factors shall be considered: 
+(a)  Creep movement of soil. 
+(b)  Level of ground water table and possibility of changes in that level. 
+(c)  Provision for drainage. 
+(d)  Depths of anchorages relative to global stability of the structure. 
+(e)  Rigidity of the structure being supported. 
+(f) 
+(g)  Group effects. 
+(h) 
+(i) 
+
+Possibility of movement of the structure. 
+
+In the case of anchorages in soil, the behaviour of the soil due to the anchor loads. 
+
+In  the  case  of  anchorages  in  rock,  anisotropy,  inhomogeniety,  fracturing  and 
+discontinuities of the rock. 
+
+(j)  Method of installation. 
+(k)  Geometry of the anchorage. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+28 
+
+(l)  Uplift resistance of soil or rock mass. 
+(m)  Tendon design. 
+(n)  Rock to grout bond and grout to tendon bond (grouted anchors). 
+(o)  Soil to tendon bond for soil nails or soil reinforcement. 
+(p)  Strength of mechanical anchorage for mechanically secured anchors. 
+(q)  Non-uniform  stress  distribution,  particularly  the  potential  for  ‘unzipping’  failure  for 
+
+anchors with long bond lengths. 
+
+12.3.5   Design for serviceability 
+
+For  the  serviceability  design  of  anchorages,  the  provisions  of  Clause 7.5  shall  apply. 
+Consideration shall be given, as appropriate, to the following: 
+(a)  Loss of anchor force by excessive displacement of the anchor head. 
+(b)  Loss of anchor force as a result of creep and relaxation. 
+(c)  Failure or excessive deformation of the structure due to anchor forces. 
+
+A1 
+
+12.3.6   Design for durability  
+
+Anchorages  and  all  anchorage  components  shall  be  designed  to  meet  the  requirements  of 
+Clause 9. The design life shall be in accordance with AS 5100.1. 
+
+Protection against  corrosion shall be provided for all  permanent anchorages  as required to 
+comply with Clause 9. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+anchorage,  the  requirements  for  durability  in  the  relevant  Standard  for  that  material  shall 
+apply, unless otherwise specified by the relevant authority. 
+
+Where no Standard applies to the materials used for the anchorage, the requirements of the 
+relevant authority shall apply. 
+
+12.4   Materials and construction requirements 
+
+Materials  and  construction  requirements  for  anchorages  shall  be  in  accordance  with 
+AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  anchorage,  the 
+requirements  of  the  relevant  Standard  for  that  material  shall  apply,  unless  otherwise 
+specified by the relevant authority. 
+
+Where  no Standard applies to the  materials used in the anchorage, the requirements  of the 
+relevant authority shall apply. 
+
+12.5   Anchorage installation plan 
+
+An  anchorage  installation  plan  shall  be  prepared  as  part  of  the  technical  construction 
+specification for the anchorage system to be used. 
+
+An anchorage installation plan shall contain the following information, as appropriate: 
+(a)  Anchorage type. 
+(b)  Number of anchorages. 
+(c)  Location and orientation of each anchorage and tolerances in position. 
+(d)  Anchorage length. 
+(e) 
+
+Installation sequence for the anchorages. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+29 
+
+AS 5100.3—2004 
+
+(f) 
+
+For  grouted  anchorages,  the  grout  material  specification,  pressure,  grouted  volume, 
+grouted length and grouting time. 
+
+(g)  Required serviceability load for each anchorage. 
+(h)  Method of corrosion protection. 
+(i) 
+(j)  Any other constraints on anchoring activities. 
+
+Installation technique, such as drilling, placing, bonding and stressing. 
+
+12.6   Anchorage testing 
+
+12.6.1   General 
+
+The  method  used  for  the  installation  of  anchorages  subjected  to  on-site  assessment  tests 
+shall be fully documented and shall meet the requirements of the relevant authority. 
+
+NOTE: A typical generic procedure for the on-site assessment tests of anchorages is described in 
+Appendix B. 
+
+Between  the  time  of  installation  of  an  anchor  and  the  beginning  of  a  load  test,  adequate 
+time  shall  be  allowed  to  ensure  that  the  required  quality  of  the  bond  at  the  tendon-grout 
+interface or, where relevant, grout-encapsulation, and grout-ground interface, is achieved. 
+
+All  measuring  apparatus  used  for  anchor  testing  shall  be  appropriately  sensitive  and 
+accurate, and shall be calibrated prior to the testing. 
+
+The load-carrying capacity of a grouted anchor shall be evaluated from test results. 
+
+The following load tests on anchors shall be carried out on site: 
+(a)  Proof load tests in accordance with Clause 12.6.2. 
+(b)  Acceptance tests in accordance with Clause 12.6.3. 
+
+12.6.2   Proof load tests 
+
+Proof load tests shall be carried out in advance of the construction or on selected working 
+anchors  during  construction,  to  assess  the  capability  of  the  anchor  system  to  achieve  the 
+required resistances under the site ground conditions. 
+
+NOTE: The proof load tests also provide criteria for the acceptance tests. 
+
+Unless  required  otherwise  by  the  relevant  authority,  at  least  one  proof  load  test  shall  be 
+carried out for each distinct ground condition and anchor type. Relevant load testing carried 
+out previously may also be taken into account. 
+
+On  large  anchorage  projects,  unless  required  otherwise  by  the  relevant  authority,  the 
+number  of  proof  load  tests  per  each  distinct  ground  condition  shall  be  at  least  1%  of  the 
+total number to be installed for temporary anchors where failure is likely to have relatively 
+minor  consequences,  and  at  least  2%  of  the  total  number  to  be  installed  in  the  case  of 
+permanent  anchors  or  of  temporary  anchors  where  there  are  likely  to  be  severe 
+consequences of failure. 
+
+The  test  duration  shall  be  sufficient  to  ensure  that  prestress  or  creep  fluctuations  stabilize 
+within tolerable limits. 
+
+When  deriving  the  characteristic  anchorage  resistance  (Rak)  from  the  measured  anchorage 
+capacity  (Ram)  in  one  or  more  proof  load  tests,  an  allowance  shall  be  made  for  the 
+variability  of  the  ground  and  the  variability  of  the  effect  of  anchorage  installation.  The 
+systematic  and  random  components  of  variations  in  the  ground  conditions  shall  be 
+distinguished  in  the  interpretation  of  the  proof  load  tests.  As  a  minimum,  both 
+conditions (a) and (b) given in Table 12.6.2 shall be satisfied using the following equation: 
+
+R
+
+ak
+
+φ=
+
+R
+
+c
+
+am
+
+. . . 12.6.2(1)
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+30 
+
+The measured anchorage capacity (Ram) obtained from the proof load tests shall be equal to 
+the lowest of the calculated loads corresponding to the first two failure mechanisms referred 
+in Clause 12.3.3 and the creep limit load. 
+
+The anchorage resistance (Ra) shall be derived from the following equation: 
+
+R
+
+a
+
+φ=
+
+R
+
+ak
+
+n
+
+where φn shall be as given in Table 12.3.3(A). 
+
+The anchorage resistance (Ra) shall satisfy the following condition: 
+
+R ≥
+a
+
+*
+
+S
+
+where S* is the design action effect for the anchorage. 
+
+. . . 12.6.2(2)
+
+. . . 12.6.2(3)
+
+The proof load test procedure shall be such that conclusions can be drawn about the anchor 
+capacity, the creep limit load and the apparent free tendon length. Attention shall be paid to 
+the number of loading steps, the duration of these steps and application of the load cycles. 
+
+NOTE: Ground  variability  can  be  taken  into  account  by  considering  the  different  zones  of 
+homogeneous conditions or a trend of ground conditions with position on the site. The data about 
+the  installation  of  the  anchorages  should  then  be  checked,  and  any  deviations  from  normal 
+installation  should  be  accounted  for.  Such  variations  should  be  covered  in  part  by  a  correct 
+selection of the anchor for the proof load tests. 
+
+TABLE   12.6.2 
+CONVERSION FACTORS (φc) 
+
+Number of proof load tests 
+
+1 
+
+φc on mean Ram 
+φc on lowest Ram 
+
+0.67 
+
+0.67 
+
+2 
+
+0.74 
+
+0.8 
+
+>2 
+
+0.77 
+
+0.91 
+
+12.6.3   Acceptance tests 
+
+Acceptance  tests  shall  be  carried  out  to  demonstrate  that  each  of  the  anchorages  installed 
+has the capacity to carry the calculated design load. 
+
+All  grouted  anchorages  shall  be  subjected  to  an  acceptance  test  before  they  become 
+operational, and prior to lock-off. 
+
+Acceptance tests shall be performed using procedures and acceptance criteria derived from 
+the results of the proof load tests with the aim of  proving the ability of each anchorage to 
+support the relevant limit state loads as approved by the relevant authority. 
+
+The  test  procedure  shall  provide  confirmation  of  the  apparent  free  tendon  length  and 
+confirmation  that  the  tendon  relaxation  after  lock-off  will  be  acceptable.  As  a  minimum, 
+each  anchorage  shall  be  loaded  to  x times  the  design  serviceability  load  of  the  anchor, 
+where  x  is  equal  to  1.5  for  permanent  anchorages,  and  x  is  equal  to  1.3  for  temporary 
+anchorages, or as required otherwise by the relevant authority. 
+
+NOTE: The  acceptance  test  may  be  used  to  pre-load  the  anchorage  in  order  to  minimize  future 
+tendon relaxation. 
+
+12.7   Monitoring 
+
+Where  verification  of  the  long-term  capacity  of  the  anchorage  is  required,  provision  for 
+monitoring or subsequent load testing of the anchorage, or both, shall be provided as part of 
+the design. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+31 
+
+AS 5100.3—2004 
+
+13   RETAINING WALLS AND ABUTMENTS 
+
+13.1   Scope 
+
+The requirements for the design of retaining walls and abutments shall be as set out herein, 
+unless required otherwise by the relevant authority. 
+
+NOTE: The design of reinforced soil walls and structures is not covered by this Standard. 
+
+13.2   Loads and load combinations 
+
+Retaining  walls  and  abutments  shall  be  designed  for  loads  and  other  actions  set  out  in 
+Clause 8.2. 
+
+The  load  combinations  for  strength,  stability  and  serviceability  shall  be  as  specified  in 
+Clauses 8.3.3 and 8.4. 
+
+13.3   Design requirements 
+
+13.3.1   Design for strength and stability 
+
+For the geotechnical and structural design of retaining walls and abutments, the provisions 
+of  Clause 7.3.3  shall  apply.  In  designing  for  stability,  the  provisions  of  Clause 7.4  shall 
+apply. 
+
+As a minimum, the following limit states shall be considered: 
+(a)  Sliding within or at the base of the structure. 
+(b)  Rotation of the structure. 
+(c)  Rupture of a structural element such as a wall, anchor, wale or strut, or failure of the 
+
+connection between such elements. 
+
+(d)  Global failure. 
+(e)  Bearing failure. 
+
+The  design  geotechnical  strength  and  design  structural  strength  shall  be  calculated  as  the 
+appropriate  ultimate  strength  (Ru)  multiplied  by  the  appropriate  strength  reduction  factor 
+(φ). 
+The  geotechnical  strength  reduction  factor  (φg)  shall  be  selected  in  accordance  with 
+Clause 7.3.5,  and  Tables 13.3.1(A)  and 13.3.1(B),  taking  into  account  the  limit  state 
+considered and shall be subject to the approval of the relevant authority. 
+The  structural  strength  reduction  factor  (φs)  shall  be  obtained  from  AS 5100.5  or 
+AS 5100.6, as appropriate. 
+
+For  retaining  walls  and  abutments  subjected  to  differential  water  pressures,  the  possibility 
+of failure by hydraulic instability (erosion or piping) shall be considered. 
+
+For  soil  profiles  containing  fine-grained  soils,  both  short-term  and  long-term  conditions 
+shall be considered. 
+
+Where the stability of a retaining wall or abutment depends on the passive resistance of the 
+ground  in  front  of  the  structure  or  abutment,  the  ground  level  in  front  of  the  wall  or 
+abutment shall be lowered by an amount Δh. For a cantilever structure, Δh shall be taken as 
+10% of the height above the nominal ground level in front of the structure, with a minimum 
+value  of  0.5 m.  For  a  supported  wall,  Δh  shall  be  taken  as  10%  of  the  height  beneath  the 
+lowest support, with a minimum value of 0.5 m. 
+
+The selection of the design water level shall take into account locally available data on the 
+hydraulic  and  hydrogeological  conditions  at  the  site.  The  possibility  of  adverse  water 
+pressure conditions, such as those due to the presence of perched or artesian water tables or 
+those due to saturation under heavy rainfall, shall be considered. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+32 
+
+TABLE   13.3.1(A) 
+
+RANGE OF VALUES OF GEOTECHNICAL STRENGTH REDUCTION 
+FACTOR (φg) FOR RETAINING WALLS AND ABUTMENTS 
+
+Method of assessment of 
+
+ultimate geotechnical strength  Bearing failure
+
+Range of values of φg 
+
+Overturning, sliding and global stability 
+
+Permanent structures Temporary structures 
+
+Analysis using geotechnical 
+parameters based on appropriate 
+advanced in situ tests 
+
+Analysis using geotechnical 
+parameters from appropriate 
+advanced laboratory tests 
+
+0.45–0.55 
+
+0.55 
+
+0.60–0.70 
+
+0.40–0.50  
+
+0.55  
+
+0.55–0.65 
+
+Analysis using CPT tests 
+
+Analysis using SPT tests 
+
+0.35–0.45 
+
+0.30–0.40 
+
+0.50–0.55 
+
+0.45–0.55 
+
+0.50–0.60 
+
+0.45–0.55 
+
+NOTE: Examples of testing regimes are given in AS 5100.3 Supp 1. 
+
+TABLE   13.3.1(B) 
+
+GUIDE FOR ASSESSMENT OF GEOTECHNICAL REDUCTION 
+FACTOR (φg) FOR RETAINING WALLS AND ABUTMENTS 
+
+Lower end of range 
+
+Upper end of range 
+
+Limited site investigation 
+
+Comprehensive site investigation 
+
+Simple methods of calculation 
+
+More sophisticated design method 
+
+Limited construction control 
+
+Rigorous construction control 
+
+Severe consequences of failure 
+
+Less severe consequences of failure 
+
+Significant cyclic loading  
+
+Mainly static loading 
+
+Use of published correlations for design parameters 
+
+Use of site-specific correlations for design parameters 
+
+13.3.2   Calculation of earth pressures 
+
+Inclination of the wall or structure face to the vertical. 
+
+Calculation of the design action effects arising from earth pressures shall take into account 
+the following factors: 
+(a)  Surcharges on and slope of the ground surface. 
+(b) 
+(c)  Water table levels, variations in these levels and seepage forces in the ground. 
+(d)  Amount and direction of wall movement relative to the ground. 
+(e)  Shear strength and unit weight of the ground. 
+(f)  Rigidity of the wall and the supporting system. 
+(g)  Wall roughness. 
+(h)  Effects of any compaction during construction. 
+(i) 
+(j) 
+
+Influence of surcharge loadings adjacent to the wall or abutment. 
+
+Earthquake loads. 
+
+NOTES:  
+1  Traditional  methods  of  calculating  active  earth  pressures  (e.g.,  Rankine’s  method  or 
+
+Coulomb’s method) may be employed. 
+
+2  For  passive  earth  pressure  calculation,  traditional  methods  such  as  Rankine’s  method  and 
+Coulomb’s method are often unreliable. It is preferable to use a more rigorous method such as 
+that described by Lee and Herington (1972), and Caquot and Kerisel (1948). 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33 
+
+AS 5100.3—2004 
+
+13.3.3   Design for eccentric and inclined loads 
+
+In  assessing  the  ultimate  geotechnical  strength  (Rug),  allowance  shall  be  made  for  the 
+possibility  of  very  high  edge  stresses  and  a  reduced  effective  contact  area  between  the 
+retaining wall or abutment footing and the ground as a result of load eccentricity. 
+
+13.3.4   Design for serviceability 
+
+For the serviceability design of retaining walls and abutments, the provisions of Clause 7.5 
+shall  apply.  In  estimating  the  settlement  and  horizontal  displacements,  account  shall  be 
+taken  of  the  stiffness  of  the  ground  and  the  structural  elements,  and  of  the  sequence  of 
+construction. 
+
+Allowable  displacements for  walls and abutments shall be established, taking  into account 
+the tolerance to deformation of the supported structures and services. 
+
+NOTES:  
+1  When  no  movement  of  the  retaining  structure  relative  to  the  ground  takes  place,  the  earth 
+pressure  may  be  calculated  for  the  at-rest  state  of  stress  in  the  ground. This  stress  state  will 
+depend on the stress history of the ground. At-rest conditions can be expected to exist in the 
+ground  behind  a  retaining  structure  if  the  horizontal  movement  of  the  structure  is  less  than 
+about 0.05% of the unsupported height of the structure. 
+
+2 
+
+If a linear analysis is employed, the stiffnesses for the ground and structural elements should 
+be appropriate for the level of deformation computed. 
+
+13.3.5   Design for durability 
+
+Design  for  durability  shall  be  in  accordance  with  Clause 9.  The  design  life  shall  be  in 
+accordance with AS 5100.1. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure,  the  requirements  for  durability  in  the  relevant  Standard  for  that  material  shall 
+apply, unless otherwise specified by the relevant authority. 
+
+Where  no  Standard  applies  to  the  materials  used  in  the  structure,  the  requirements  of  the 
+relevant authority shall apply. 
+
+13.4   Structural design and detailing 
+
+13.4.1   General 
+
+Structural design and detailing for retaining walls and abutments built of concrete and steel 
+shall be in accordance with AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure, then the requirements of the relevant Standard for that material shall apply to the 
+structural  design  and  detailing  of  the  structure,  unless  otherwise  specified  by  the  relevant 
+authority. 
+
+Where  no  Standard  applies  to  the  materials  used  for  the  construction  of  the  structure,  the 
+requirements of the relevant authority shall apply. 
+
+Tensile stresses shall not be permitted in masonry and unreinforced concrete retaining walls 
+and abutments. 
+
+13.4.2   Joints 
+
+Vertical contraction joints shall be provided in long concrete retaining walls and abutments 
+to  control  indiscriminate  shrinkage  cracking.  Where  the  structure  is  founded  directly  on 
+rock, a reduced joint spacing shall be used. 
+
+NOTE: Contraction  joints  are  recommended  at  a  spacing  of  8 m  to  10 m  along  substructure 
+members on other than rock. Where the structure is founded on rock, a reduced spacing of 5 m is 
+recommended. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+34 
+
+Where  expansion  joints  are  provided,  suitable  compressible  jointing  material  shall  be 
+provided in the expansion joints. 
+
+NOTE: Expansion joints are recommended at a spacing of 30 m along substructure members. 
+
+Contraction  or  expansion  joints  shall  also  be  provided  where  abrupt  changes  in  structure 
+section  occurs.  For  counterfort  walls,  expansion  joints  may  be  provided  either  between 
+double counterforts, or midway between counterforts. 
+
+Where there is the possibility of water seepage through joints, either a water-stop within the 
+joint or a flexible waterproof membrane behind the joint shall be used. 
+
+Provision for shear transfer shall be made for all joints. 
+
+13.4.3   Shrinkage and temperature reinforcement 
+
+All reinforced concrete retaining walls and abutments shall be reinforced for shrinkage and 
+temperature effects to the requirements of AS 5100.5. 
+
+13.5   Materials and construction requirements 
+
+Materials and construction requirements for retaining walls and abutments built of concrete 
+and steel shall be in accordance with AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure, then the requirements of the relevant Standard for that material shall apply, unless 
+otherwise specified by the relevant authority. 
+
+Where  no  Standard  applies  to  the  materials  used  for  the  construction  of  the  structure,  the 
+requirements of the relevant authority shall apply. 
+
+13.6   Drainage 
+
+Unless  hydrostatic  pressure  is  taken  into  account  in  design,  effective  drainage  shall  be 
+provided  behind  retaining  walls  and  abutments  to  permanently  relieve  water  pressures. 
+Where the safety and serviceability of the design depends on the successful performance of 
+the drainage system, the consequences of failure of the drainage system shall be considered, 
+and  measures  shall  be  taken  to  ensure  continuing  performance  of  the  drainage  system. 
+Details of the drainage system shall be subject to the approval of the relevant authority. 
+
+NOTE: The  seepage  quantities,  pressures,  and  chemical  content  of  water  emerging  from  a 
+drainage system should be considered, and appropriate measures taken to dispose of this water. 
+
+14   BURIED STRUCTURES 
+
+0
+1
+0
+2
+
+14.1   Scope 
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+The requirements  for the  design  of structures  where soil and rock loads form  a  significant 
+proportion  of  the  total  loads  on  the  structure  shall  be  as  set  out  herein  unless  approved 
+otherwise by the relevant authority. 
+
+Precast  concrete  box  culverts  shall  be  designed  in  accordance  with  AS 1597,  for  the  sizes 
+specified  in  that  Standard.  For  the  design  of  sizes  larger  than  those  specified  in  AS 1597, 
+the principles of that Standard shall apply. 
+
+NOTE: The  design  of  buried  arch  structures  is  a  specialized  field  and  should  be  carried  out  by 
+experienced design engineers. 
+
+14.2   Loads and load combinations 
+
+Buried structures shall be designed for the loads and other actions set out in Clause 8.2. 
+
+The  load  combinations  for  strength,  stability  and  serviceability  shall  be  as  specified  in 
+Clauses 8.3.3 and 8.4. 
+
+The following additional loads and actions shall be considered when determining the design 
+loads for buried structures: 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+35 
+
+AS 5100.3—2004 
+
+(a)  Variations  in  soil  density,  stiffness,  or  strength  across  the  structure,  or  through  the 
+
+depth of the soil over and around the structure. 
+
+(b)  The  effects  of  structure  stiffness  on  the  interaction  between  the  ground  and  the 
+
+structure. 
+
+(c)  Transverse  or  longitudinal  loads  due  to  fill  slopes  or  retaining  walls  above  the 
+
+structure, or construction on a slope. 
+
+(d)  Loads in precast elements occurring during handling and erection. 
+(e)  Varying load and restraint conditions during backfilling operations. 
+(f)  Locked-in  stresses  due  to  compaction  loads  and  deflection  of  the  structure  during 
+
+backfill. 
+
+(g)  Loads  due  to  ground  water,  taking  into  account  variations  in  the  level  of  ground 
+
+water. 
+
+(h)  Effects due to distortion of the structure. 
+
+The design shall take into account non-linear and non-elastic behaviour of the soil and the 
+structure where these effects may be significant. Axial loads shall be considered. 
+
+14.3   Design requirements 
+
+14.3.1   Design for strength and stability 
+
+For  the  geotechnical  and  structural  design  of  buried  structures,  the  provisions  of 
+Clause 7.3.3  shall  apply.  In  designing  for  stability  of  buried  structures,  the  provisions  of 
+Clause 7.4 shall apply. 
+
+The  design  geotechnical  strength  and  design  structural  strength  shall  be  calculated  as  the 
+appropriate  ultimate  strength  (Ru)  multiplied  by  the  appropriate  strength  reduction  factor 
+(φ).  The  structural  strength  reduction  factor  (φs)  shall  be  obtained  from  AS 5100.5  or 
+AS 5100.6, as appropriate. The geotechnical strength reduction factor (φg) shall be selected 
+in accordance with Clause 7.3.5, and Tables 14.3.1(A) and 14.3.1(B). 
+
+Consideration shall be given to the possibility of failure due to loss of overall stability. The 
+stability  of  the  structure  in  all  directions,  for  all  possible  modes  of  failure,  shall  be 
+considered. 
+
+NOTE: The  longitudinal  stability  of  segmental  structures  such  as  culverts  passing  under 
+embankment  slopes,  or  constructed  on  a  steep  longitudinal  gradient,  should  be  given  particular 
+attention. 
+
+Foundations  of  buried  structures  shall  be  designed  in  accordance  with  Clauses 10  and 11, 
+where appropriate. 
+
+TABLE   14.3.1(A) 
+
+RANGE OF VALUES OF GEOTECHNICAL STRENGTH 
+REDUCTION FACTOR (φg) FOR BURIED STRUCTURES 
+
+Method of assessment of ultimate geotechnical strength 
+
+Range of values of φg 
+
+Analysis using geotechnical parameters based on appropriate 
+advanced in situ tests 
+
+Analysis using geotechnical parameters from appropriate 
+advanced laboratory tests 
+
+Analysis using CPT tests 
+
+Analysis using SPT tests 
+
+NOTE: Examples of testing regimes are given in AS 5100.3 Supp 1. 
+
+0.50–0.65 
+
+0.45–0.60 
+
+0.40–0.50 
+
+0.35–0.40 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+36 
+
+TABLE   14.3.1(B) 
+
+GUIDE FOR ASSESSMENT OF GEOTECHNICAL STRENGTH 
+REDUCTION FACTOR (φg) FOR BURIED STRUCTURES 
+
+Lower end of range 
+
+Upper end of range 
+
+Limited site investigation 
+
+Comprehensive site investigation 
+
+Simple methods of calculation 
+
+More sophisticated design method 
+
+Limited construction control 
+
+Rigorous construction control 
+
+Severe consequences of failure 
+
+Less severe consequences of failure 
+
+Significant cyclic loading  
+
+Mainly static loading 
+
+Use of published correlations for design parameters 
+
+Use of site-specific correlations for design parameters
+
+14.3.2   Design for serviceability 
+
+For the serviceability design of buried structures, the provisions of Clause 7.5 shall apply. 
+
+14.3.3   Design for durability 
+
+Design  for  durability  shall  be  in  accordance  with  Clause 9.  The  design  life  shall  be  in 
+accordance with AS 5100.1. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure,  the  requirements  for  durability  in  the  relevant  Standard  for  that  material  shall 
+apply, unless otherwise specified by the relevant authority. 
+
+Where no Standard applies to the  materials  used in the structure, then the  requirements of 
+the relevant authority shall apply. 
+
+14.4   Structural design and detailing 
+
+Structural  design  and  detailing  for  buried  structures  built  of  concrete  and  steel  shall  be  in 
+accordance with AS 5100.5 or AS 5100.6, as appropriate. 
+
+Buried  structures  may  be  subject  to  high  axial  loads.  Compression  reinforcement  for  the 
+design  axial  loads  for  concrete  structures  shall  be  designed  in  accordance  with  the 
+requirements  of  AS 5100.5,  where  necessary,  and  shall  meet  the  requirements  of  the 
+relevant authority. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure, then the requirements of the relevant Standard for that material shall apply to the 
+structural  design  and  detailing  of  the  structure,  unless  otherwise  specified  by  the  relevant 
+authority. 
+
+Where no Standard applies to the materials used for the construction of the structure, then 
+the requirements of the relevant authority shall apply. 
+
+14.5   Materials and construction requirements 
+
+Materials  and  construction  requirements  for  buried  structures  built  of  concrete  and  steel 
+shall be in accordance with AS 5100.5 or AS 5100.6, as appropriate. 
+
+Where  materials  other  than  concrete  and  steel  are  to  be  used  for  the  construction  of  the 
+structure, then the requirements of the relevant Standard for that material shall apply, unless 
+otherwise specified by the relevant authority. 
+
+Where no Standard applies to the materials used for the construction of the structure, then 
+the requirements of the relevant authority shall apply. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+37 
+
+AS 5100.3—2004 
+
+APPENDIX   A 
+ASSESSMENT OF GEOTECHNICAL STRENGTH REDUCTION FACTORS (φg) 
+FOR PILES 
+
+(Normative) 
+The  geotechnical  strength  reduction  factor  (φg)  shall  be  chosen,  taking  into  account  the 
+factors  that  may  influence  the  reliability  of  the  ultimate  geotechnical  strength.  A  range  of 
+values is given in Table A1. Values of φg in excess of the given ranges shall only be used in 
+exceptional circumstances backed by detailed quantitative justification. 
+
+In assessing the value to be chosen within the ranges specified, consideration shall be given 
+to the factors given in Table A2, and appropriate judgement shall be exercised. 
+
+TABLE   A1 
+
+RANGE OF VALUES FOR GEOTECHNICAL 
+STRENGTH REDUCTION FACTOR (φg) 
+
+Method of assessment of ultimate geotechnical strength 
+
+Range of values of φg 
+
+Static load testing to failure 
+
+Static proof (not to failure) load testing (see Note 1) 
+
+Dynamic load testing to failure supported by signal matching 
+(see Note 2) 
+
+Dynamic load testing to failure not supported by signal matching 
+
+Dynamic proof (not to failure) load testing supported by signal 
+matching (see Notes 1 and 2) 
+
+Dynamic proof (not to failure) load testing not supported by signal 
+matching (see Note 1) 
+
+Static analysis using CPT data 
+
+Static analysis using SPT data in cohesionless soils 
+
+Static analysis using laboratory data for cohesive soils 
+
+Dynamic analysis using wave equation method 
+
+Dynamic analysis using driving equation for piles in rock 
+
+Dynamic analysis using driving equation for piles in sand 
+
+0.70–0.90 
+
+0.70–0.90 
+
+0.65–0.85 
+
+0.50–0.70 
+
+0.65–0.85 
+
+0.50–0.70 
+
+0.45–0.65 
+
+0.40–0.55 
+
+0.45–0.55 
+
+0.45–0.55 
+
+0.50–0.65 
+
+0.45–0.55 
+
+Dynamic analysis using driving equation for piles in clay 
+
+(see Note 3) 
+
+Measurement during installation of proprietary displacement piles, 
+using well-established in-house equation 
+
+0.50–0.65 
+
+NOTES:  
+1 
+2  Signal  matching  of  the  recorded  data  obtained  from  dynamic  load  testing  should  be 
+
+φg should be applied to the maximum load applied. 
+
+undertaken on representative test piles using a full wave signal matching process. 
+
+3  Caution  should  be  exercised  in  the  sole  use  of  dynamic  equation  (e.g.,  Hiley)  for  the 
+determination  of  the  ultimate  geotechnical  strength  of  piles  in  clays.  In  particular,  the 
+dynamic measurements will not measure the set-up that occurs after completion of driving. 
+It is preferable that assessment be first made by other methods, with correlation then made 
+with dynamic methods on a site-specific basis if these latter are to be used for site driving 
+control. 
+
+4  For cases not covered by Table A1, values of φg should be chosen using the stated values as 
+
+a guide. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+38 
+
+TABLE   A2 
+
+ASSESSMENT OF GEOTECHNICAL 
+STRENGTH REDUCTION FACTOR (φg) 
+
+Circumstances in which lower end of range 
+may be appropriate 
+
+Circumstances in which upper end of range 
+may be appropriate 
+
+Limited site investigation 
+
+Comprehensive site investigation 
+
+Simple method of calculation 
+
+More sophisticated design method 
+
+Average geotechnical properties used 
+
+Geotechnical properties chosen conservatively 
+
+Use of published correlations for design 
+parameters 
+
+Use of site-specific correlations for design 
+parameters 
+
+Limited construction control 
+
+Careful construction control 
+
+Less than 3% piles dynamically tested 
+
+15% or more piles dynamically tested 
+
+Less than 1% piles statically tested 
+
+3% or more piles statically tested 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+© Standards Australia 
+
+www.standards.org.au 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+39 
+
+AS 5100.3—2004 
+
+APPENDIX   B 
+
+ON-SITE ASSESSMENT TESTS OF ANCHORAGES 
+
+(Informative) 
+
+B1   GENERAL 
+
+On-site  testing  of anchorages is required by  Clause 12.6. Typical  generic requirements for 
+such testing are outlined herein. 
+
+B2   DEFINITIONS AND NOMENCLATURE 
+
+For the purpose of this Appendix, the definitions below apply. 
+B2.1   Free length (Lfr) 
+
+That length, in metres, of a tendon between the anchorage assembly and the bond length, or 
+transition length, which does not transfer any tendon load to the surrounding rock, concrete 
+or other material through which the anchor passes. 
+B2.2   Effective free length (Lef) 
+
+The  apparent  length,  in  metres,  over  which  the  tendon  is  assumed  to  extend  elastically  as 
+determined  by  stressing  tests.  It  is  calculated  from  the  load/elastic  displacement  data 
+following  testing,  to  indicate  the  length  of  tendon  that  is  apparently  fully  decoupled  from 
+the surrounding grout. 
+B2.3   Bond length (Lv) 
+
+That length, in  metres, at  the end  of  a tendon  within  which provision is  made for the load 
+transfer to the surrounding rock. 
+B2.4   Design working load (TD) 
+
+The long-term load, in kilonewtons, that is required in the tendon. 
+B2.5   Lock-off load (To) 
+
+The  load,  in  kilonewtons,  equal  to  the  design  working  load  plus  an  allowance  for  loss  of 
+prestress. 
+B2.6   Test load (Tp) 
+
+The  maximum  load,  in  kilonewtons,  to  which  a  tendon  is  subjected  in  the  short  term  for 
+proof load and acceptance tests. 
+B2.7   Minimum breaking load (Tu) 
+
+The  minimum  breaking  load,  in  kilonewtons,  of  the  tendon.  This  is  calculated  from  the 
+minimum strength of the component material as nominated by the supplier and verified by 
+test. 
+B2.8   Initial load (TA) 
+
+The initial load, in kilonewtons, selected for proof load and acceptance tests. 
+B2.9   Residual load (TR) 
+
+The  load,  in  kilonewtons,  remaining  in  the  tendon  at  any  time  after  lock-off,  usually 
+measured by a lift-off test. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+40 
+
+B2.10   Lift-off test 
+
+The test to determine the residual load in the tendon. Lift-off occurs when an applied load 
+in excess of the residual load causes a very small but perceptible movement of the stressing 
+head, nut or other locking device away from the anchor baseplate (usual range of movement 
+0.2–1.0 mm). 
+
+B2.11   Notation 
+
+The following symbols are used in this Appendix: 
+
+At  =  the cross-sectional area of tendon, in millimetres square, as determined by testing 
+
+Et  =  the modulus of elasticity of steel tendon, in megapascals, as determined by testing 
+
+Lef  =  the effective free length 
+
+Lfr  =  the free length 
+
+Lv  =  the bond strength 
+
+T  =  the anchor load, in kilonewtons 
+
+TA  =  the initial load 
+
+TD  =  the design working load 
+
+To  =  the lock-off load 
+
+Tp  =  the test load 
+
+TR  =  the residual load 
+
+TRC  =  the calculated residual load immediately after lock-off 
+
+Tu  =  the minimum breaking load 
+δL  =  the total extension of tendon relative to a datum, in millimetres 
+δLe  =  the elastic extension of tendon at each load stage, in millimetres 
+δLr  =  the calculated elastic extension of tendon under test load (Tp), in millimetres 
+δLpl =  the plastic or non recoverable extension of tendon at each load stage, in millimetres
+
+B3   STRESSING PROCEDURES AND ASSESSMENT OF PROOF LOAD TESTS 
+
+B3.1   General 
+
+The procedure and assessment described in Paragraphs B3.2 and B3.3 should be adopted for 
+all anchors that are specified or directed to be subject to proof load tests. 
+
+B3.2   Stressing procedure 
+
+The procedure for stressing is as follows: 
+(a)  Select  an  initial  load  (TA)  so  that  0.lTp ≤ TA ≤ 0.2 Tp.  Use  Tp = 0.8Tu.  Divide  the 
+range between TA and Tp into 6 to 10 approximately equal steps of magnitude δT. 
+(b)  Establish  a  datum  to  measure  δL = δLe + δLpl.  The  movement  of  this  datum  under 
+the  influence  of  anchor  stressing  should  not  exceed  0.5%  of  the  calculated  anchor 
+extension (δLr). 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+41 
+
+AS 5100.3—2004 
+
+(c)  Carry  out  a  program  of  cyclic  loading  and  unloading  with  the  load  being  increased 
+from TA in successive cycles by δT, 2δT, 3δT, etc. until the specified maximum load 
+Tp is reached. After the peak load in each cycle is reached, take measurements of the 
+load  decrease  with the deformation held constant for a time interval Error! Objects 
+cannot  be  created  from  editing  field  codes.,  where  Error!  Objects  cannot  be 
+created  from  editing  field  codes.  should  be  5 min  and  n  should  initially  be  1,  but 
+may  subsequently  be  increased  to  3  and  then  to  10,  if  the  limiting  values  given  in 
+Table B1  are  exceeded.  Alternatively,  the  measurements  of  the  deformation  that 
+increase  with  the  load  held  constant  can  be  taken  for  the  same  time  intervals.  After 
+the  above  measurements  have  been  taken  for  each  cycle,  reduce  the  load  to  TA  and 
+record the extension (δL). 
+
+(d)  After the cycle for the test load (Tp) has been carried out, undertake a further cycle in 
+
+the following manner: 
+(i) 
+
+Firstly,  take  the  tendon  load  to  Tp  and  then  reduce  to  0.3Tp  in  four  equal 
+increments. 
+
+(ii)  Secondly, increase the load in three equal increments to the lock-off load (To). 
+
+For each of these load points, record the extension measurements. 
+
+(iii)  Finally, carry out lock-off. During lock-off, measure the draw-in of the wedges 
+or cones (if any are used in the anchor head), and determine the residual load by 
+lift-off  test.  In  addition,  determine  the  zero  friction  line  and  the  calculated 
+residual 
+in  accordance  with 
+Paragraph B3.3. 
+
+immediately  after 
+
+lock-off 
+
+(TRC) 
+
+load 
+
+(e)  After 48 h, determine the residual load again by lift-off test. 
+(f) 
+
+If  the  loss  of  residual  load  exceeds  the  limit  given  in  Paragraph B3.3(d),  determine 
+the  residual  load  again  after  a  further  period  of  48 h.  If  the  limit  given  in 
+Paragraph B3.3(d) for the second 48 h period is exceeded, determine the residual load 
+again after a final 48 h period. The three 48 h periods should be continuous. 
+
+TABLE   B1 
+
+LIMITING VALUES OF EXTENSION INCREASE AND LOAD LOSS 
+
+Condition 
+
+Observation period 
+
+(A) 
+
+(B) 
+
+(C) 
+
+0 to δt 
+
+δt to 3δt 
+
+3δt to 8δt 
+
+Limiting value within observation period 
+
+Extension increase
+(a) 
+
+Max. 2% of δLr 
+
+Max. 1% of δLr 
+
+Max. 1% of δLr 
+
+Load loss 
+(b) 
+
+Max. 2% of Tp 
+
+Max. 1% of Tp 
+
+Max. 1% of Tp 
+
+NOTES:  
+1 
+2 
+
+(a) refers to test procedure where the load is kept constant during the observation period. 
+
+3 
+
+(b) refers to test procedure where the deformation is kept constant during the observation 
+period. 
+If  condition  (A)  is  not  satisfied,  increase  the  observation  period  to  3δt  and  test  for 
+compliance  with  condition (B).  If  condition (B)  is not satisfied, increase the observation 
+period to 10δt and test for compliance with condition (C). 
+
+B3.3   Assessment 
+
+The following conditions should be satisfied: 
+(a)  Change of load or deformation   The change of load or deformation should not exceed 
+
+the values given in Table B1. 
+
+www.standards.org.au 
+
+© Standards Australia 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+42 
+
+(b)  Effective free length   The effective free length (Lef) should be between the following 
+
+limits up to the maximum test load (Tp): 
+(
+L
+
+0.5
+
+0.9
+
+L
+
+L
+
+L
+
++
+
+≤
+
+≤
+
+fr
+
+ef
+
+fr
+
+)v
+
+where 
+
+L
+ef
+
+=
+
+δ
+
+)(
+EAxL
+e
+( )
+xT
+−
+
+t
+T
+A
+
+t
+
+×
+
+10
+
+−
+
+6
+
+. . . B3.3(1)
+
+. . . B3.3(2)
+
+(x) refers to any point on the loading curve 
+
+(c)  Residual load   The residual load measured in the immediate lift-off test should not be 
+
+less than l.lTD nor greater than 1.15TD. 
+
+(d)  Loss  of  residual  load   The  loss  of  residual  load  in  the  48 h  period  immediately 
+following  lock-off  (see  Paragraph B3.2(e))  should  not  exceed  4%  of  the  initial 
+residual load. 
+
+If  the  loss  exceeds  4%,  the  test  may  be  repeated  for  two  further  48 h  period  (as 
+described  in  Paragraph B3.2(f)),  and  the  anchor  should  be  acceptable  provided  the 
+total loss does not exceed 6% after the second 48 h period, or 7% after the third 48 h 
+period. 
+
+(e)  Draw-in of wedges   The draw-in of the locking cones/wedges (if any are used in the 
+anchor  head)  should  be  within  the  limits  given  by  the  manufacturer  of  the  anchor 
+system. 
+
+Use the last six points of the final cycle (see Paragraph B3.2(d)) to determine a zero friction 
+line  by  the  least  squares  method  and  determine  also  the  calculated  residual  load 
+immediately after lock-off (TRC). 
+Determine the plastic extensions  (
+
+ from the load versus extension plots. 
+
+)plLδ
+
+B4   STRESSING PROCEDURES AND ASSESSMENT OF ACCEPTANCE TESTS 
+
+B4.1   General 
+
+The procedure and assessment described in Paragraphs B4.2 and B4.3 should be adopted for 
+all anchors for which an acceptance test is specified or directed. 
+
+B4.2   Stressing procedure 
+
+The procedure for stressing is as follows: 
+(a)  Select an initial load (TA) so that 0.lTp ≤ TA ≤ 0.2Tp. Use Tp = 1.5TD. Tp ≤ 0.8Tu. 
+(b)  Establish a datum to measure δL = δLe + δLpl. The movement of this datum under the 
+influence  of  anchor  stressing  should  not  exceed  0.5%  of  the  calculated  anchor 
+extension (δLr). 
+
+(c)  Load the anchor up to the test load (Tp) and take measurements of the load decrease 
+tδ  should be 5 min 
+with the deformation held constant for a time interval 
+and n should be 1 initially, but may be increased subsequently to 3 and then to 10 if 
+the limiting values given in Table B1 are exceeded. Alternatively, take measurements 
+of the deformation increase, with the load held constant over the same time intervals. 
+Reduce the load to TA and record the extension (δL). 
+
+tnδ , where 
+
+(d)  After the required measurements have been taken for the final test cycle, increase the 
+load to To. Carry out lock-off and measure the residual load immediately by a lift-off 
+test. Unload the anchor completely prior to stressing to To if desired. 
+
+(e)  After 48 h, determine the residual load again by lift-off test. 
+
+© Standards Australia 
+
+www.standards.org.au 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+43 
+
+AS 5100.3—2004 
+
+(f) 
+
+If  the  loss  of  residual  load  exceeds  the  limit  given  in  Paragraph B4.3(d),  determine 
+the  residual  load  again  after  a  further  period  of  48 h.  If  the  limit  given  in 
+Paragraph B4.3(d) for the second 48 h period is exceeded, determine the residual load 
+again after a final 48 h period. The three 48 h periods should be continuous. 
+
+B4.3   Assessment 
+
+An anchor may be accepted for use at a different (usually lower) working load, provided it 
+is re-tested and satisfies the following criteria: 
+(a)  Change of load or deformation   The change of load or deformation does not exceed 
+
+the values given in Table B1. 
+
+(b)  Effective free length   The effective free length (Lef) should be between the following 
+
+limits up to the maximum test load (Tp): 
+(
+L
+
+0.5
+
+0.9
+
+L
+
++
+
+≤
+
+≤
+
+L
+ef
+
+L
+ef
+
+)v
+
+ef
+
+where 
+
+δ
+
+L
+
+ef
+
+=
+
+( )
+EAxL
+e
+( )
+xT
+−
+
+t
+T
+
+A
+
+t
+
+×
+
+10 −
+
+6
+
+. . .B4.3(1)
+
+. . . B4.3(2)
+
+(x) refers to any point on the loading curve 
+
+(c)  Residual load   The residual load measured in the immediate lift-off test should not be 
+
+less than l.lTD nor greater than 1.15TD. 
+
+(d)  Loss of residual load   The anchor should be acceptable provided the loss of residual 
+load in the 48 h period immediately  following lock-off (see Paragraph B4.2(e)) does 
+not exceed 4% of the initial residual load. 
+
+If  the  loss  exceeds  4%  repeat  the  test  for  two  further  48 h  periods  (as  described  in 
+Paragraph B4.2(f).  The  anchor  should  be  acceptable  provided  the  total  loss  does  not 
+exceed 6% after the second 48 h period or 7% after the third 48 h period. 
+
+If an anchor does not satisfy Items (a), (b), (c) and (d), it should not be accepted. 
+Determine the plastic extensions (δLpl) from the load versus extension plot and conform to 
+that obtained in an appropriate proof load test. 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+www.standards.org.au 
+
+© Standards Australia 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AS 5100.3—2004 
+
+44 
+
+AMENDMENT CONTROL SHEET 
+
+AS 5100.3—2004 
+
+Amendment No. 1 (2010) 
+
+SUMMARY: This Amendment applies to Clause 12.3.5(c) (new).  
+
+Published on 19 April 2010. 
+
+CORRECTION 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Standards Australia 
+Standards Australia develops Australian Standards® and other documents of public benefit and national interest. 
+These Standards are developed through an open process of consultation and consensus, in which all interested 
+parties are invited to participate. Through a Memorandum of Understanding with the Commonwealth Government, 
+Standards Australia is recognized as Australia’s peak non-government national standards body. Standards Australia 
+also supports excellence in design and innovation through the Australian Design Awards. 
+
+For further information visit www.standards.org.au 
+
+Australian Standards® 
+Committees of experts from industry, governments, consumers and other relevant sectors prepare Australian 
+Standards. The requirements or recommendations contained in published Standards are a consensus of the views 
+of representative interests and also take account of comments received from other sources. They reflect the latest 
+scientific and industry experience. Australian Standards are kept under continuous review after publication and are 
+updated regularly to take account of changing technology. 
+
+International Involvement 
+Standards Australia is responsible for ensuring the Australian viewpoint is considered in the formulation of 
+International Standards and that the latest international experience is incorporated in national Standards. This role is 
+vital in assisting local industry to compete in international markets. Standards Australia represents Australia at both 
+the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC). 
+
+Sales and Distribution 
+Australian Standards®, Handbooks and other documents developed by Standards Australia are printed and 
+distributed under license by SAI Global Limited. 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+For information regarding the development of Standards contact: 
+Standards Australia Limited 
+GPO Box 476 
+Sydney NSW 2001 
+Phone: 02 9237 6000 
+Fax: 02 9237 6010 
+Email: mail@standards.org.au 
+Internet: www.standards.org.au 
+
+For information regarding the sale and distribution of Standards contact: 
+SAI Global Limited 
+Phone: 13 12 42 
+Fax: 1300 65 49 49 
+Email: sales@saiglobal.com 
+
+ISBN 0 7337 5478 3 
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+This page has been left intentionally blank.
+
+0
+1
+0
+2
+
+g
+u
+A
+5
+0
+n
+o
+D
+N
+A
+L
+S
+N
+E
+E
+U
+Q
+F
+O
+Y
+T
+S
+R
+E
+V
+N
+U
+y
+b
+d
+e
+s
+s
+e
+c
+c
+A
+
+I
+
+I
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
