@@ -13,7 +13,9 @@ standard practice, **to confirm**.
   (§6.5: overall stability §6.5.1, bearing resistance §6.5.2 — analytical/Annex D, semi-empirical/Annex E,
   prescriptive/Annex G ✓; sliding §6.5.3 ✓), SLS/settlement (§6.6, Annex F ✓), foundations on rock
   (§6.7, Annex G ✓). Safety format = **Design Approaches DA1/DA2/DA3** (§2.4.7.3.4 ✓, partial-factor
-  Tables A.3–A.5 ✓).
+  Tables A.3–A.5 ✓). **Companion:** the JRC/CEN worked-examples report (JRC 2013 EUR 26227, Ch 3 +
+  Annex A.3 ✓) transcribes Annex D/F cleanly and works the DA1/2/3 calibration — seeded into the
+  Method Library (see the §5.x pointer below).
 - **Australian:** AS 5100.3 **§10 Shallow footings** — design requirements (§10.3.1 ✓), footing
   depth/size (§10.3.2 ✓), design for geotechnical strength (§10.3.3: overall stability §10.3.3.2,
   ultimate bearing failure §10.3.3.3, sliding §10.3.3.4 ✓), SLS (§10.3.5 ✓). Safety format =
@@ -96,6 +98,16 @@ check, driven by the quality of the specific evidence behind that check. A Code-
 that only swapped factor tables would miss this — it has to also let the **AU pack inject a new
 gated decision inside Stage 5** that the **EC pack does not have**.
 
+**Sub-divergence *inside* the EC pack — DA2 vs DA2\* (from JRC 2013 §3.3):** even within one Design
+Approach the *place* the factor enters can change the geometry, not just the margin. **DA2** applies
+partial factors to the **actions at source** → a *design* eccentricity `e_d` → smaller effective
+`B′`; **DA2\*** runs the whole calc on characteristic values and factors **only the effect at the
+end** → a *characteristic* eccentricity `e_k` → larger `B′`. Since `e_d ≫ e_k`, DA2\* is the more
+economic route for eccentric loads. Consequence for the Code Pack: the EC pack's safety format is
+not a single scalar swap either — it needs a **factor-application-point** attribute (at-source vs
+at-effect), because that toggles how eccentricity feeds `A′ = B′·L′`. Detail + worked numbers in the
+Method Library §5.x.
+
 ## Task breakdown (operational steps)
 🔒 = **step gate**. **Exception gates** also fire mid-task on any trigger (see
 `../03-workflow-and-human-ai-model.md` → Gate model). **←CP** = supplied by the selected Code Pack.
@@ -167,6 +179,19 @@ gated decision inside Stage 5** that the **EC pack does not have**.
 - 5.7.4 Hand off to structural footing design (out of geotechnical scope — flagged interface only) and
   to the report (Stage 7).
 
+> **Method Library — Stage 5 methods → [`../method-library.md` §5](../method-library.md#stage-5--shallow-foundation-design).**
+> First design-library seeding, from **JRC 2013 *(EC7 guidance)*** (the EN 1997-1 §6 direct method,
+> transcribed clean because the raw Annex-D `.txt` is garbled): **5.2** bearing equation + full
+> factor set (drained/undrained shape/inclination/base) + eccentricity rules (`B′=B−2e`, the
+> `e>B/3` §6.5.4 precaution vs the middle-third rule, 0,10 m tolerance); **5.3** sliding (`δ_d`,
+> 0,4·V_d cap, passive-neglect caveat); **5.4** Terzaghi–Peck indirect chart (ULS→SLS governing
+> shift with `B`); **5.5** Annex-H limiting-deformation table + elasticity settlement (`μ₀·μ₁`
+> charts) + oedometric consolidation; **5.x** the DA1/2/3(+DA2\*) sets with a worked size-`B`
+> calibration (DA2 → 1,21 m, DA1 → 1,50 m, DA3 → 1,74 m) as a bearing-engine **test case**. Four
+> chart figures rendered to `../../Sources/Handbooks/figures/JRC2013_*.png`. *(These are the EC-pack
+> **code default**, not non-code alternatives — see the source's selection-rule note.)* Look 2007 Ch
+> 21/23 *(non-code)* fallbacks join in the same steps at step C.
+
 ## Open items (◇ — to confirm with founder)
 - **(a)** Look 2007 Ch 21/23 bearing/settlement tables are proposed as the **SPT-N-only fallback**
   and the **named settlement method set** for both packs (neither code prescribes a formula) —
@@ -182,14 +207,19 @@ gated decision inside Stage 5** that the **EC pack does not have**.
 EN 1997-1 references verified in the `.txt` conversion (TOC pp. 61–70; §6.5/§6.6 body pp. 62–67;
 Annex A partial-factor tables pp. 129–132; Annexes D/E/F/G pp. 157–162). AS 5100.3 references
 verified in the `.txt` conversion (§7.3.5 general φg principle; §10.3.2–10.3.5 body; Tables
-10.3.3(A)/(B) — pp. 18–20 printed numbering).
+10.3.3(A)/(B) — pp. 18–20 printed numbering). JRC 2013 (EUR 26227) content verified in the extracted
+`.txt` (Ch 3 pp. 15–32; worked strip foundation Annex A.3 pp. 104–117 printed numbering); four chart
+figures rendered from the PDF to `../../Sources/Handbooks/figures/JRC2013_*.png`.
 
 ## Next
+- **C (partly done)** — Method Library **§5 seeded from JRC 2013** *(EC7 guidance)* — the EC-pack
+  direct method (bearing/sliding/SLS/DA format + worked calibration + figures). Still to add:
+  **Look 2007 Ch 21/23** *(non-code)* SPT-N fallbacks/cross-checks and the **AU pack** (AS 5100.3 §10
+  mechanics + φg) in the same §5 steps.
 - Then: **B — task-level procedures** for 5.0–5.7 (In/Does/Out/Gates), mirroring
   `02-interpretation-procedures.md`, with 5.2 (bearing + safety format) and 5.5 (settlement) getting
   the deeper treatment.
-- Then: **C — Method Library seeding** for Stage 5 from Look 2007 Ch 21/23 (already drafted above;
-  to be written into `../method-library.md` in the same per-step structure as §2.7).
 - After shallow foundation is complete: apply the same three-part treatment to **axial pile**
   (Stage 6) — EN 1997-1 §7 + AS 2159 + AS 5100.3, where the AU risk-based φg (AS 2159 §1.3.7) will
-  be revisited against the pile ξ/model-factor judgment gate already flagged in `../03`.
+  be revisited against the pile ξ/model-factor judgment gate already flagged in `../03`. *(JRC 2013
+  Ch 8 + Annex A.8 also has worked pile examples — reuse this same source there.)*

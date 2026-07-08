@@ -19,6 +19,17 @@ this file at each step; the per-pack code references live in
   - **Figures/garbled tables:** tables that don't extract cleanly from the txt are rendered from
     the PDF (PyMuPDF) and saved to `../Sources/Handbooks/figures/` as named PNGs (authoritative); the
     library links them and transcribes the decision-relevant content.
+- **JRC 2013 (EC7 Worked Examples)** — A.J. Bond, B. Schuppener, G. Scarpelli & T.L.L. Orr,
+  *Eurocode 7: Geotechnical Design — Worked examples* (workshop, Dublin 13–14 June 2013), JRC
+  Report **EUR 26227 EN**, Publications Office of the EU, 2013. **Code-companion / official
+  guidance** — this is the JRC/CEN implementation-support document for EN 1997-1, *not* a
+  standalone non-code correlation set. **Tag: *(EC7 guidance)*.** Distinction that matters for the
+  selection rule: unlike Look *(non-code)*, its methods **are** the Eurocode's own — it transcribes
+  Annex D/F cleanly and works the DA1/DA2/DA3 safety format, so entries seeded from it carry the EC
+  pack's safety basis directly (they are the code default, not a comparison alternative). File:
+  `../Sources/Handbooks/2013_06_WS_GEO.pdf` (+ `.txt`). Chapter 3 = shallow foundations; Annex A.3 =
+  worked strip-foundation calibration. Chart figures rendered to `../Sources/Handbooks/figures/` as
+  `JRC2013_*.png`.
 
 ## How the procedure uses this library — the selection rule
 Per the founder's rule (extends D8 run-several-and-compare + D26 out-of-code):
@@ -560,3 +571,151 @@ chapters.** ←CP safety format still governs how these are factored downstream;
 All interpretation steps now carry their handbook methods/ranges/recommendations. 2.8 is packaging
 (no method content). Next sources (other handbooks, codes, AS pack) extend the same per-step
 structure; design-module chapters (Ch 12–22 design side) feed the design-stage libraries later.
+
+---
+
+# Stage 5 — Shallow foundation design
+
+Seeded here as the design library grows (`stages/05-shallow-foundation.md` = the stage spec; this
+is the method registry it queries). Organized **by procedure step → method**. First seeding from
+**JRC 2013 *(EC7 guidance)*** — the EN 1997-1 §6 direct method, transcribed clean and DA-worked.
+Look 2007 Ch 21/23 entries (the SPT-N-only fallbacks + non-code cross-checks, already summarized in
+§2.7 above) drop into the same steps when step C proper runs.
+
+> **Selection-rule reminder for this stage:** JRC 2013 entries are ***the EC-pack code default***
+> (not a comparison alternative) — its methods *are* EN 1997-1's own. Look 2007 entries stay
+> *(non-code)* alternatives/fallbacks per the header rule. The AU pack (AS 5100.3 §10, φg) reuses
+> the **same mechanics** (bearing equation, corrections, settlement) but swaps the safety format —
+> see the per-pack split in the stage doc.
+
+## 5.2 — ULS bearing resistance (EC7 direct method, Annex D)
+*Stage task 5.2.* Clean transcription of the EN 1997-1 Annex D sample analytical method (the raw
+code `.txt` is garbled here) + the eccentricity rules. **Governing inequality:** `V_d ≤ R_d`, where
+`V_d` includes foundation self-weight + backfill + water actions. *(JRC 2013 §3.3.1, Ch 3 pp. 22–25.)*
+
+### 5.2(a) Bearing resistance equation
+- **Drained:** `R/A′ = c′·N_c·b_c·s_c·i_c + q′·N_q·b_q·s_q·i_q + ½·γ′·B′·N_γ·b_γ·s_γ·i_γ`
+- **Undrained:** `R/A′ = (2+π)·c_u·b_c·s_c·i_c + q`
+- `A′ = B′·L′` = **effective area** with the load acting at its centre (see eccentricity below).
+
+### 5.2(b) Bearing-capacity factors
+- `N_q = e^(π·tanφ′)·tan²(45°+φ′/2)` · `N_c = (N_q − 1)·cotφ′` · `N_γ = 2·(N_q − 1)·tanφ′`
+  (Annex D form, δ ≥ φ′/2 rough base). *(Cross-check the tabulated Vesic/Hansen values in §2.7(a),
+  Look Tbl 21.5 — same factors, handy for spot-checks.)*
+
+### 5.2(c) Correction factors — drained (rectangular unless noted)
+| Effect | Factor |
+|---|---|
+| Shape | `s_q = 1 + (B′/L′)·sinφ′` (square/circ: `1 + sinφ′`) · `s_c = (s_q·N_q − 1)/(N_q − 1)` · `s_γ = 1 − 0,3·(B′/L′)` (square/circ: 0,70) |
+| Load inclination (H) | `i_q = [1 − 0,7H/(V + A′·c′·cotφ′)]^m` · `i_c = (i_q·N_q − 1)/(N_q − 1)` · `i_γ = [1 − H/(V + A′·c′·cotφ′)]³` |
+| — exponent m | `m_B = [2+(B′/L′)]/[1+(B′/L′)]` · `m_L = [2+(L′/B′)]/[1+(L′/B′)]` · `m_θ = m_L·cos²θ + m_B·sin²θ` (θ = angle of H to L′) |
+| Base inclination (α to horizontal) | `b_q = b_γ = (1 − α·tanφ′)²` · `b_c = b_q − (1 − b_q)/(N_c·tanφ′)` |
+
+### 5.2(d) Correction factors — undrained
+`s_c = 1 + 0,2·(B′/L′)` (square/circ 1,2) · `i_c = ½·(1 + √(1 − H/(A′·c_u)))` · `b_c = 1 − 2α/(π+2)`.
+Requires `H ≤ A′·c_u`.
+
+### 5.2(e) Eccentricity → effective dimensions
+- **Effective width/length:** `B′ = B − 2e_B`, `L′ = L − 2e_L` (load re-centred on `A′ = B′·L′`).
+- **§6.5.4 large-eccentricity precaution:** special care when `e_B > B/3` or `e_L > L/3` — **note:
+  this is *not* the middle-third rule** (`e > B/6`, which only avoids a base–soil gap in elastic
+  soil). Include construction **tolerance up to 0,10 m** in foundation dimensions.
+- **Load-case permutation** (eccentricity couples action factoring to `A′`): re-analyse with the
+  permanent vertical load taken **both favourable and unfavourable**, and with the **leading
+  variable action switched** (V vs H). Worked γ-sets in JRC 2013 Fig.3.3.4.
+
+## 5.3 — ULS sliding resistance
+*Stage task 5.3.* Check `H_d ≤ R_d + R_{p,d}` (`R_{p,d}` = passive thrust in front — see caveat).
+*(JRC 2013 §3.3.2.)*
+- **Drained:** `R_d = V′_d·tanδ_d` (factor parameters) **or** `R_d = V′_d·tanδ_k/γ_Rh` (factor
+  resistance). Interface remoulded → `δ_d = φ′_cv,d` (cast-in-situ concrete) or `⅔·φ′_cv,d` (smooth
+  precast). **Neglect effective cohesion c′.**
+- **Undrained:** `R_d = A_c·c_{u,d}` or `A_c·c_{u,k}/γ_Rh`; where the vertical load can't ensure full
+  base contact, **cap R_d at 0,4·V_d**.
+- **Passive-resistance caveat:** peak sliding and peak passive mobilise at *different* displacements
+  (passive needs large movement), and excavation/erosion/shrinkage can remove the front soil —
+  **usually neglect R_{p,d}**.
+
+## 5.4 — Indirect (SLS-controlled) method — Terzaghi & Peck
+*Stage task 5.2/5.5 boundary.* An **indirect method** (Table 3.2.1): allowable bearing pressure for
+**granular soil** as f(corrected SPT `N`, breadth `B`, embedment ratio `D/B`), calibrated to keep
+settlement **< 25 mm**. *(JRC 2013 §3.4.3; Terzaghi & Peck 1967.)*
+- Charts: [Terzaghi–Peck allowable bearing (imperial Fig.3.3.8 + SI Fig.3.3.9)](../Sources/Handbooks/figures/JRC2013_Fig3.3.8-9_Terzaghi-Peck_allowable-bearing_granular-SPT.png)
+  — SI chart reads `q_all` (kPa) vs `B` (m) for `N` = 5…60.
+- **Key design insight (governing-limit-state shift):** the curves rise linearly with `B` (bearing/**ULS**
+  governs) then flatten (settlement/**SLS** governs) — so for pads the governing check *changes with
+  footing size*; large `B` is settlement-controlled. Confirms why both checks are always required.
+  *(This is the design-side analogue of the Look Tbl 21.7 "halve if water within B" N-chart in §2.7(a).)*
+
+## 5.5 — SLS settlement & tolerable movements
+*Stage task 5.5.* EC7 §6.6 mandates the *requirement*, not a formula; JRC 2013 gives the worked
+method set + a code-anchored (Annex H) limits table. Components: `s_0` immediate + `s_1`
+consolidation + `s_2` creep; SLS partial factors = 1; combination ψ = ψ₂ (quasi-permanent).
+
+### 5.5(a) Limiting deformations — Annex H aligned (Table 3.4.1)
+| Structure | Concern | Criterion | Limiting value |
+|---|---|---|---|
+| Framed / reinf. load-bearing walls | structural damage | angular distortion | 1/150–1/250 |
+| | cracking in walls/partitions | angular distortion | 1/500 (1/1000–1/1400 end bays) |
+| | visual appearance | tilt | 1/300 |
+| | connection to services | total settlement | 50–75 mm (sands) · 75–135 mm (clays) |
+| Tall buildings | lift/elevator operation | tilt after installation | 1/1200–1/2000 |
+| Unreinforced load-bearing walls | cracking (sagging) | deflection ratio | 1/2500 (L/H=1) → 1/1250 (L/H=5) |
+| | cracking (hogging) | deflection ratio | 1/5000 (L/H=1) → 1/2500 (L/H=5) |
+| Bridges — general | ride / distress / function | total settl. / horiz. | 100 mm / 63 mm / 38 mm |
+| Bridges — multi-span / single-span | structural damage | angular distortion | 1/250 / 1/200 |
+
+Rules of thumb (JRC §3.4.1): relative rotation **1/500 acceptable** for many structures; **1/150 ≈
+ULS onset**; isolated-footing total settlement up to **50 mm** often acceptable. *(Complements the
+non-code Look Tbl 23.6–23.8 limits in §2.7(f) — use this as the EC-pack default, Look as cross-check.)*
+
+### 5.5(b) Immediate settlement — elasticity method (Annex F.2 adjusted elasticity)
+- Compact form: `w = p·b·f/E_m` (`p` = mean base pressure, `b` = breadth, `f` = influence coeff.,
+  `E_m` = operative/design modulus).
+- Layer-sum worked form: `s = q·B·Σ_j[(1 − ν_j²)/E_j · (I·H_i)]` with influence factor
+  **`I = μ₀·μ₁`** from Christian-Carrier-type charts:
+  [μ₀ chart (embedment D/B)](../Sources/Handbooks/figures/JRC2013_FigA.3.14_mu0_elastic-settlement-influence-factor.png)
+  · [μ₁ chart (layer H/B, shape L/B)](../Sources/Handbooks/figures/JRC2013_FigA.3.15_mu1_elastic-settlement-influence-factor.png).
+- **Worked calibration:** for the strip (B=1,5 m) `δ ≈ 14 mm`; the equivalent whole-building raft
+  (B=15,5 m) `δ ≈ 21 mm` — bigger footprint stresses deeper, larger settlement (§2.5c volume-effect
+  in action).
+
+### 5.5(c) Consolidation settlement (oedometric)
+`S_ed = ΣΔH_i`, `ΔH_i = H_i/(1+e₀)·[C_s·log(σ′_c/σ′_v0) + C_c·log((σ′_v0+Δσ)/σ′_c)]`; stress
+increments via Boussinesq/Newmark influence factors. **Depth-of-influence choice is decisive:**
+limiting integration to Δσ < 10% σ′_v0 gave 3,3 cm vs 24,3 cm when extended to ~building width —
+flag the assumption (small OC/cementation) explicitly. *(JRC 2013 §A.3.5.)*
+
+## 5.x — Safety format: DA1/DA2/DA3 (+ DA2*) — EC pack
+*Feeds the stage-doc "per-pack safety format" split.* Recommended EN 1997-1 partial-factor sets,
+design-ready. National Annex may override. *(JRC 2013 §3.3, Tables 3.3.1–3.3.3.)*
+
+| Combination | Actions | Params | Resist. |
+|---|---|---|---|
+| DA1-1 | A1 | M1 | R1 |
+| DA1-2 | A2 | M2 | R1 |
+| DA2 | A1 | M1 | R2 |
+| DA3 | (A1 struct / A2 geo) | M2 | R3 |
+
+- **Actions γ_F (A1/A2):** perm. unfav 1,35/1,0 · perm. fav 1,0/1,0 · var. unfav 1,5/1,3 · var. fav 0/0.
+- **Resistances γ_R spread ftg (R1/R2/R3):** bearing γ_Rv 1,0/1,4/1,0 · sliding γ_Rh 1,0/1,1/1,0.
+  (Overall stability earth resistance γ_Re: 1,0/1,1/1,0, Table A.14.)
+- **Params γ_M (M1/M2):** tanφ′ 1,0/1,25 · c′ 1,0/1,25 · c_u 1,0/1,4 · q_u 1,0/1,4 · γ 1,0/1,0.
+- **DA2 vs DA2\* (matters for eccentric loads):** DA2 factors the **actions at source** → design
+  eccentricity `e_d` (large) → smaller `B′`; **DA2\*** runs the whole calc on characteristic values
+  and factors **only the effect at the end** → characteristic eccentricity `e_k` (small) → larger
+  `B′`. `e_d ≫ e_k`, so **DA2\* is the more economic** (less conservative) route. This nuance is a
+  genuine refinement of the "different factors" story — the *place* the factor enters changes the
+  geometry, not just the margin.
+- **Worked calibration (φ′_k = 38°, strip, size B to give R_d = V_d):** DA2 → **B = 1,21 m**
+  (smallest) · DA1 (C2 governs) → **B = 1,50 m** · DA3 → **B = 1,74 m** (largest). Ranking holds for
+  all φ′ not-too-small: [R_d/V_d vs φ′_k for DA1/DA2/DA3](../Sources/Handbooks/figures/JRC2013_FigA.3.12_utilization-ratio-Rd-Vd_vs_phi_DA1-DA2-DA3.png).
+  Use this worked set as a **validation/test case** for the bearing engine.
+
+## Status — Stage 5 shallow foundation
+**First seeding (JRC 2013 *(EC7 guidance)*) done** — EC7 direct method: bearing (factors +
+corrections + eccentricity), sliding, Terzaghi–Peck indirect, SLS (Annex-H limits + elasticity +
+consolidation), and the DA1/2/3(+DA2\*) safety format with a worked calibration + 4 chart figures.
+**Still to add (step C):** Look 2007 Ch 21/23 as the *(non-code)* SPT-N-only fallbacks and
+cross-checks in the same steps (much already transcribed in §2.7 a/b), and the **AU pack** (AS
+5100.3 §10 mechanics + φg format).
