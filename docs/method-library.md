@@ -15,9 +15,9 @@ this file at each step; the per-pack code references live in
 - **Look 2007** — Burt G. Look, *Handbook of Geotechnical Investigation and Design Tables*,
   Taylor & Francis/Balkema, 2007. **Non-code reference** (a data-table/correlation handbook). Look
   cites original authors per table (e.g. Kulhawy, Vaughan, Rowe, Robertson) — recorded in the
-  *Source* column. File: `Sources/Handbooks/Handbook+of+Geotechnical+Investigation&DesignTables 1`.
+  *Source* column. File: `../Sources/Handbooks/Handbook+of+Geotechnical+Investigation&DesignTables 1`.
   - **Figures/garbled tables:** tables that don't extract cleanly from the txt are rendered from
-    the PDF (PyMuPDF) and saved to `Sources/Handbooks/figures/` as named PNGs (authoritative); the
+    the PDF (PyMuPDF) and saved to `../Sources/Handbooks/figures/` as named PNGs (authoritative); the
     library links them and transcribes the decision-relevant content.
 
 ## How the procedure uses this library — the selection rule
