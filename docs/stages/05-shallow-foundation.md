@@ -5,7 +5,7 @@ universal step skeleton with every code-specific reference held in the Code Pack
 P7, D21). Consumes the **ground model** (Stage 3) and the **design basis & actions** (Stage 4) —
 per the spine in `../03-workflow-and-human-ai-model.md`.
 
-**Reference legend:** ✓ = verified in the source text in `../../Handbooks/` · ◇ = proposed /
+**Reference legend:** ✓ = verified in the source text in `../../Sources/` · ◇ = proposed /
 standard practice, **to confirm**.
 
 ## Backbone (per pack)
