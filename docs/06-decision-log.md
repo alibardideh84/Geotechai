@@ -43,7 +43,15 @@ Chronological record of decisions. Status: **Accepted** (agreed) · **Proposed**
 |---|---|---|
 | D30 | **Open item (c) closed.** Founder **confirmed** the 2.4/2.6 statistical methodology — classify-before-reconcile + reconciliation ladder + robust median/MAD + **lognormal** distribution + the **COV backbone** — and its references (Kulhawy 1992; Poon & Kulhawy 1999; Look & Griffiths 2004; Duncan & Wright 2005) as the **accepted default** (was Proposed under D28/D29). | Accepted |
 
+## 2026-07-08 — design module: shallow foundation, step A
+
+| # | Decision | Status |
+|---|---|---|
+| D31 | **Module order confirmed: shallow foundation first**, then axial pile (Stage 5 before Stage 6) — simpler, natural spine order; axial pile's richer code material (EC7 §7 + AS 2159 + AS 5100.3) and risk-based φg piling factor deferred to stress-test the Code-Pack abstraction second. | Accepted |
+| D32 | **Step A drafted** for Stage 5 (shallow foundation) in `stages/05-shallow-foundation.md`: code-first backbone (EN 1997-1 §6 ✓ + AS 5100.3 §10 ✓), v1 method set (Terzaghi/Meyerhof/Hansen/Vesić + Annex D, basic SLS settlement, per `05-mvp-scope.md`), and a deep per-pack safety-format treatment. **Key finding:** EC7's DA1/2/3 choice is upstream/project-wide (Stage 0/4, invariant); AS's φg is downstream/per-check (chosen inside Stage 5 itself, driven by test method + investigation quality, Tables 10.3.3(A)/(B)) — the decision point *moves*, not just the factor values, which is a stronger validation of the Code-Pack split than divergence #2 in interpretation. | Accepted (draft) |
+
 ## Open / next
 - Remaining ◇ items in `stages/02-interpretation.md`: (a) AS test-method standards for 2.1, (b) AS 2159/AS 5100.3 as the AU derivation→design anchor, and Schneider 1997 / Kulhawy & Mayne 1990 (confirm or swap). ~~(c) reconciliation references~~ — **closed (D30).**
 - ~~Detail the procedure for the interpretation breakdown (2.0–2.8)~~ — **done (D28).** ~~Seed interpretation Method Library from Look 2007~~ — **done (D29).**
-- **NEXT (in progress):** apply the same referenced, In/Does/Out/Gates treatment to a **design module**, seeding its library from Look's design chapters (Ch 19–23). *(Skipping the AS-pack/second-source seeding for now per founder.)*
+- Open ◇ items in `stages/05-shallow-foundation.md`: (a) Look 2007 Ch 21/23 as the SPT-N-only bearing/settlement fallback for both packs, (b) home of the EC Design Approach confirmation gate (Stage 4 vs Stage 5), (c) Look Tbl 22.1 (RQD) as the AU-pack rock-bearing default (AS 5100.3 has no dedicated rock annex).
+- **NEXT (in progress):** Stage 5 step A done (D32, this session). **Step B** — task-level In/Does/Out/Gates procedures for 5.0–5.7 (mirroring `02-interpretation-procedures.md`). **Step C** — seed `method-library.md` for Stage 5 from Look 2007 Ch 21/23 (drill-down already drafted in step A). Then repeat the three-step treatment for **axial pile** (Stage 6).
