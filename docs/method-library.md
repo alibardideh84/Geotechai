@@ -762,10 +762,14 @@ design-ready. National Annex may override. *(JRC 2013 §3.3, Tables 3.3.1–3.3.
 - **Resistances γ_R spread ftg (R1/R2/R3):** bearing γ_Rv 1,0/1,4/1,0 · sliding γ_Rh 1,0/1,1/1,0.
   (Overall stability earth resistance γ_Re: 1,0/1,1/1,0, Table A.14.)
 - **Params γ_M (M1/M2):** tanφ′ 1,0/1,25 · c′ 1,0/1,25 · c_u 1,0/1,4 · q_u 1,0/1,4 · γ 1,0/1,0.
-- **Actions side (from EN 1990/1991, not the geotech code):** the engineer supplies **characteristic**
-  `G_k`/`Q_k`; γ_G/γ_Q above give **ULS** design actions; combination factors ψ (ψ₀ leading/accompanying)
-  from EN 1990. **SLS** uses partial factors = 1 with quasi-permanent **ψ₂** combinations. Full actions
-  model in the stage doc "Actions & load combinations" section.
+- **Actions side (from EN 1990/1991, not the geotech code):** two input modes (D38). **Default —**
+  the engineer enters the structural engineer's **already-combined design actions** directly (ULS
+  `V_d`/`H_d`/`M_d` + SLS), consumed as-is. **Fallback —** enter **characteristic** `G_k`/`Q_k` and let
+  the tool apply the factors here (γ_G/γ_Q above; ψ₀ from EN 1990; SLS partial factors = 1 with
+  quasi-permanent ψ₂). **DA1 caveat:** because DA1 factors actions **two ways** (A1 for Comb 1, A2 for
+  Comb 2), direct entry needs *both* factored sets — otherwise use the characteristic fallback. When
+  design actions are entered directly, record which combination/A-set they carry so the correct M/R
+  sets pair and no double-factoring occurs. Full model in the stage doc "Actions & load combinations".
 - **DA2 vs DA2\* (matters for eccentric loads):** DA2 factors the **actions at source** → design
   eccentricity `e_d` (large) → smaller `B′`; **DA2\*** runs the whole calc on characteristic values
   and factors **only the effect at the end** → characteristic eccentricity `e_k` (small) → larger

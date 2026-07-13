@@ -69,31 +69,41 @@ footing. Watch how the same task branches by pack at 5.2.3 — that asymmetry is
 - **Gates/triggers:** *Design-critical threshold* (D) for high-consequence structures (tightens φg /
   raises scrutiny).
 
-### 5.0.4 — Assemble / verify action combinations (ULS + SLS) ←CP
-*(The actions side of `E_d ≤ R_d`; see the stage doc "Actions & load combinations" section. Formally
-a Stage 4 job — here it is **verified** when supplied, or **assembled** on a jump-in start.)*
-- **In:** the **characteristic (un-factored) actions** — per footing/column, each with: permanent
-  `G_k` vs variable `Q_k` (variable tagged by **category** for ψ), **direction/type** (`V`/`H`/`M`),
-  and **favourable/unfavourable nature**; plus the pack's loading model (EN 1990/1991 for EC, AS 5100.2
-  for AU) and the resolved safety-format basis (5.0.2).
+### 5.0.4 — Take action effects (ULS + SLS) — two input modes ←CP
+*(The actions side of `E_d ≤ R_d`; see the stage doc "Actions & load combinations" section. Action
+**combinations belong to the structural/loading code, not the geotech tool** — there is no loading
+pack; the tool either consumes pre-combined design actions or, as a fallback, combines characteristic
+ones. D38.)*
+- **In:** one of —
+  - **Mode A (default) — direct design actions:** the structural engineer's already-combined **design
+    action effects** at the foundation, per governing load case: **ULS** (`V_d`, `H_d`, `M_d`) and
+    **SLS** (serviceability `V`, `H`, `M`). Handles any loading code / special structure (AS 1170 /
+    AS 5100.2 / **AS 4997** / EN 1991) transparently.
+  - **Mode B (fallback) — characteristic actions:** `G_k`, `Q_k` (by category for ψ), direction
+    `V`/`H`/`M`, favourable/unfavourable nature — for the tool to combine. Used for simple cases and
+    **EC DA1** (needs A1 & A2 action sets).
+  - plus the resolved safety-format basis (5.0.2).
 - **Does:**
-  1. **Never ask for pre-factored loads** — take characteristic actions and do all factoring here.
-  2. Add the actions the system derives itself (not asked): **foundation self-weight + backfill**
-     (geometry × density), **water pressure / uplift** (Stage 2.5 groundwater model), **earth
-     pressures** on the footing (EN 1997-1 §6.3 / §2.4.2(4) / AU loading code).
-  3. **Build both families** — *ULS combinations* (factored: γ_G·G_k + γ_Q·Q_k + ψ·accompanying, per
-     the DA sets / AS 5100.2) for bearing & sliding, and *SLS combinations* (partial factors = 1,
-     quasi-permanent ψ₂) for settlement. **Both are required** — either limit state can govern
-     (Terzaghi–Peck size effect).
-  4. Enumerate the **permutations** eccentricity forces: permanent load favourable **and**
-     unfavourable, and the **leading variable action switched** (V-led vs H-led) — each yields a
-     different `V_d`, `H_d`, `e` → effective area `A′` in 5.2.
-- **Out:** the ULS and SLS **load-combination set** per footing (design action effects `V_d`, `H_d`,
-  `M_d` for ULS; serviceability `V_ser` etc. for SLS), each combination traceable to its factors.
-- **Gates/triggers:** *Missing/insufficient data* (B) if characteristic actions are absent or lack the
-  direction/nature metadata. *Assumption required* (D) if Stage 4 was skipped and combinations are
-  assembled here (surface the ψ/factor choices), or if an action's favourable/unfavourable role must
-  be assumed. *Multiple routes* (D) where it is not obvious which combination governs (carry all).
+  1. **Mode A:** consume the design actions **as-is** — do **not** re-derive or re-combine them.
+     Record, per set, **which combination / A-set it carries** (EC) or that it is a factored `S*` (AU),
+     so 5.2.3 pairs the correct M/R sets and never double-factors. **Mode B:** build the ULS
+     combinations (γ_G·G_k + γ_Q·Q_k + ψ·accompanying, per the DA sets / loading code) and the SLS
+     combinations (partial factors = 1, quasi-permanent ψ₂); enumerate the eccentricity permutations
+     (permanent load fav/unfav; leading variable switched).
+  2. **Either mode:** add the tool-computed **foundation-induced** actions (structural actions are the
+     superstructure loads only) — **footing self-weight + backfill** (geometry × density), **water
+     pressure / uplift** (Stage 2.5 groundwater model), **earth pressures** — with the pack's factors
+     (EN 1997-1 §6.5.2.1(3)P / AS 5100.3 §10.3.3.3).
+  3. Ensure **both ULS and SLS** sets are present — either can govern (Terzaghi–Peck size effect); if
+     only one was supplied in Mode A, request the other.
+- **Out:** the per-footing **action-effect set** — ULS (`V_d`, `H_d`, `M_d` per combination, + the
+  foundation-induced actions) and SLS — each traceable to its source (structural-supplied vs
+  tool-combined) and, for EC, its combination/A-set.
+- **Gates/triggers:** *Missing/insufficient data* (B) if a required set (esp. **SLS**, often forgotten
+  in Mode A) or the direction metadata is absent. *Assumption required* (D) in Mode B when the tool
+  applies ψ/factors, or when a favourable/unfavourable role is assumed. *Inconsistency/conflict* (D)
+  if EC design actions are supplied but their A-set doesn't match the resolved DA (double-factor risk).
+  *Multiple routes* (D) where the governing combination isn't obvious (carry all).
 
 **🔒 Gate 5.0 — confirm inputs, Code Pack, safety-format basis, and action combinations.** The engineer
 reviews the input manifest, the bound pack, (EC) the Design Approach / (AU) the φg selection rubric, and

@@ -41,44 +41,61 @@ runs the geometry-specific check:
 
 ## Actions & load combinations (input side)
 Actions are the **other half of every check** (`E_d ≤ R_d`): Stage 5 verifies resistance against a
-*design action effect*, so it must be handed the right actions. Formally these are assembled at
-**Stage 4** (design basis & actions, `../03`) and consumed here via the 5.0 input contract; on a
-jump-in start the engineer supplies them directly. Capturing the model explicitly:
+*design action effect*, so it must be handed the right actions. **The action combinations belong to
+the structural/loading code, not the geotechnical one** — so the tool does **not** try to catalogue
+or combine special-structure actions itself. There is deliberately **no "loading pack"** (berthing,
+mooring, wave, traffic… stay the structural engineer's domain). Instead the engineer picks one of two
+input modes (D38).
 
-**What the engineer provides — characteristic (un-factored) actions.** The tool never asks for
-pre-factored / "ULS" loads; it asks for the representative loads a structural model outputs and does
-all factoring itself. Per action:
+### Mode A — **direct design actions** *(primary/default)*
+The engineer enters the **already-combined design action effects** the **structural engineer**
+produces at the foundation — for each governing load case/combination:
+- **ULS:** the design action effect set — `V_d`, `H_d`, `M_d` (→ eccentricity `e = M_d/V_d`, and load
+  inclination from `H_d/V_d`);
+- **SLS:** the serviceability action effect set (for settlement).
 
-| Provide | Why |
-|---|---|
-| **Permanent `G_k`** | superstructure dead load delivered to the footing |
-| **Variable `Q_k`**, tagged by **category** (imposed/roof/wind/snow/traffic…) | selects the right combination factor ψ |
-| **Direction/type** — vertical `V`, horizontal `H`, moment `M` | drives eccentricity `e = M/V` (→ effective area `A′`) and the load-**inclination** corrections |
-| **Nature** — can it act **favourably / unfavourably** | lets the system permute the governing case (permanent load fav vs unfav; leading variable switched) |
+The tool consumes these **as-is** — it does not re-derive or re-combine them. This works for **any
+loading code / special structure transparently** (buildings AS 1170, bridges AS 5100.2, **maritime
+AS 4997**, EN 1991 family…): whatever produced the numbers is the structural engineer's problem, and
+the geotech engineer never has to know the special action types. It also matches the real division of
+labour and the flexible-entry principle (D15 — supply the upstream deliverable directly).
 
-**What the system computes (not asked):** foundation self-weight + backfill (geometry × density),
-water pressures / uplift (from the Stage 2.5 groundwater model), earth pressures on the footing —
-all per EN 1997-1 §6.3/§2.4.2(4) / the AU loading code.
+### Mode B — **characteristic actions + auto-combine** *(optional fallback)*
+The engineer instead enters **characteristic (un-factored)** actions — `G_k`, `Q_k` (by category for
+ψ), direction `V`/`H`/`M`, favourable/unfavourable nature — and the tool builds the ULS + SLS
+combinations per the pack's loading code. A convenience for simple/standard cases, and the **clean
+route for EC DA1** (see the caveat below).
 
-**Both ULS *and* SLS combinations are produced — not ULS only.** The checks split across limit
-states and **either can govern** (the Terzaghi–Peck result: bearing/ULS governs small footings,
-settlement/SLS governs large ones — §5.4 in the library):
-- **ULS combinations** (factored actions) → **bearing (5.2)** and **sliding (5.3)**.
-- **SLS combinations** (partial factors = 1, quasi-permanent ψ₂) → **settlement (5.5)**.
+### What the tool always adds itself (either mode)
+The structural design actions are the **superstructure** loads at the foundation. The tool augments
+them with the **foundation-induced** actions, applying the pack's factors: **footing self-weight +
+backfill** (geometry × density), **water pressure / uplift** (Stage 2.5 groundwater model), and
+**earth pressures** on the footing — per EN 1997-1 §6.5.2.1(3)P / AS 5100.3 §10.3.3.3.
 
-**Pack split — actions follow the *loading* code, not the geotechnical one** (the resistance-side
-safety format is the part that forks inside Stage 5):
+### Both ULS *and* SLS are required — not ULS only
+The checks split across limit states and **either can govern** (Terzaghi–Peck: bearing/ULS governs
+small footings, settlement/SLS governs large ones — library §5.4): **ULS** → bearing (5.2) + sliding
+(5.3); **SLS** → settlement (5.5). So both action sets must be supplied (Mode A) or built (Mode B).
 
-| | EC pack | AU pack |
+### Safety-format interaction — why Mode B is kept for EC DA1
+Direct design-action entry is self-contained only when the action-factoring is **decoupled** from the
+resistance-factoring:
+
+| Pack / approach | Direct entry (Mode A) | Note |
 |---|---|---|
-| Action model / ψ | **EN 1990 + EN 1991** | **AS 5100.2** (bridge loading) |
-| ULS action factors | γ_G, γ_Q per the Design Approach (A1/A2 sets — Method Library §5.x(EC)) | load factors per AS 5100.2 |
-| SLS actions | characteristic × 1,0, ψ₂ combinations | serviceability loads (AS 5100.3 §10.3.5) |
+| **AU** (`S* ≤ φg·R_ug`) | **natural** — `S*` from AS 5100.2/1170/4997, φg on resistance; fully decoupled | the AU format is *built* for direct `S*` |
+| **EC DA2 / DA2\*** | **clean** — a single A1 action set | one combination |
+| **EC DA1** | needs actions factored **two ways** (A1 for Comb 1, A2 for Comb 2) → supply **both** design sets, **or** use **Mode B** (characteristic → tool applies A1/A2) | EC couples action & material/resistance factoring per combination |
 
-> **Pile forward-note (Stage 6):** piles carry action types shallow footings don't — **downdrag /
-> negative skin friction, heave, transverse loading** (EN 1997-1 §7.3.2). EC7 even factors negative
-> skin friction with an M-set while the resistance uses a different set — so "which actions, factored
-> how" gets richer. This characteristic-actions model is carried forward and extended there.
+When design actions are entered directly under EC, the tool **records which combination / A-set each
+set carries**, so it pairs the correct M/R sets and never double-factors.
+
+> **Pile forward-note (Stage 6):** the same two-mode model carries forward, but piles add
+> **ground-driven actions the structural engineer can't supply** — **downdrag / negative skin
+> friction** and **heave** depend on soil movement, so the geotech side **computes** them (EN 1997-1
+> §7.3.2; EC7 factors negative skin friction with an M-set while pile resistance uses a different
+> set). Transverse/lateral actions still arrive as design actions (Mode A). So Stage 6 = direct design
+> actions **+ geotech-computed downdrag/heave**.
 
 ## Steps and references (side-by-side)
 
@@ -162,11 +179,12 @@ The **operational "how"** for each task below (In/Does/Out/Gates) is in
   for AU, note that φg is *not yet* fixed — it resolves per-check in 5.2–5.4.
 - 5.0.3 Confirm the geotechnical category / consequence class (drives φg range in AU; drives which
   DA combination governs in EC).
-- 5.0.4 Assemble/verify the **action combinations** — take **characteristic** (un-factored) actions
-  (G_k, Q_k by category, direction V/H/M, favourable/unfavourable nature), add system-derived actions
-  (self-weight, backfill, water/uplift, earth pressure), and build **both ULS and SLS** combinations
-  (either can govern). See the *Actions & load combinations* section above. ←CP loading code
-- 🔒 Gate 5.0 — confirm inputs, Code Pack, (EC) Design Approach, and ULS+SLS load combinations.
+- 5.0.4 Take the **action effects** — **Mode A (default):** the structural engineer's already-combined
+  **design actions** (ULS `V_d`/`H_d`/`M_d` + SLS sets) entered directly; **Mode B (fallback):**
+  characteristic actions the tool combines (needed for EC DA1). Either way, add the tool-computed
+  foundation-induced actions (self-weight, backfill, water/uplift, earth pressure); ensure **both ULS
+  and SLS** are present (either can govern). See the *Actions & load combinations* section above.
+- 🔒 Gate 5.0 — confirm inputs, Code Pack, (EC) Design Approach, and ULS+SLS action effects.
 
 ### Per-footing loop (every proposed pad / strip / raft)
 **5.1 — Trial geometry & representative parameters**
