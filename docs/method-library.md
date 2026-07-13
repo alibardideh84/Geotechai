@@ -577,16 +577,43 @@ structure; design-module chapters (Ch 12–22 design side) feed the design-stage
 # Stage 5 — Shallow foundation design
 
 Seeded here as the design library grows (`stages/05-shallow-foundation.md` = the stage spec; this
-is the method registry it queries). Organized **by procedure step → method**. First seeding from
-**JRC 2013 *(EC7 guidance)*** — the EN 1997-1 §6 direct method, transcribed clean and DA-worked.
-Look 2007 Ch 21/23 entries (the SPT-N-only fallbacks + non-code cross-checks, already summarized in
-§2.7 above) drop into the same steps when step C proper runs.
+is the method registry it queries). Organized **by procedure step → method**. It now **carries both
+packs and both source classes from the start**, mirroring interpretation §2.7:
+- **EC pack code default** — **JRC 2013 *(EC7 guidance)*** (EN 1997-1 §6 direct method, transcribed
+  clean and DA-worked);
+- **AU pack** — **AS 5100.3 §10** (same bearing/settlement *mechanics*, swapped safety format:
+  risk-based φg) *(code)*;
+- **Non-code alternatives/fallbacks** — **Look 2007 Ch 21/23** (SPT-N-only routes, presumed-bearing
+  tables, Meyerhof N-charts, FoS/tolerable-movement tables) — much already transcribed in §2.7(a)/(b)
+  and cross-linked here rather than duplicated.
 
-> **Selection-rule reminder for this stage:** JRC 2013 entries are ***the EC-pack code default***
-> (not a comparison alternative) — its methods *are* EN 1997-1's own. Look 2007 entries stay
-> *(non-code)* alternatives/fallbacks per the header rule. The AU pack (AS 5100.3 §10, φg) reuses
-> the **same mechanics** (bearing equation, corrections, settlement) but swaps the safety format —
-> see the per-pack split in the stage doc.
+> **Selection-rule reminder for this stage:** JRC 2013 entries are ***the EC-pack code default*** and
+> AS 5100.3 entries the ***AU-pack code default*** (not comparison alternatives) — their methods *are*
+> the respective codes' own. Look 2007 entries stay *(non-code)* alternatives/fallbacks per the header
+> rule (offer + compare; SPT-N routes are fallbacks with reliability flags). **Key structural point
+> (see stage doc):** the two packs share the *same mechanics* (bearing equation, corrections,
+> settlement methods) but differ entirely in **safety format** — EC applies partial factors
+> (DA1/2/3), AU applies one risk-based φg to the ultimate resistance. So most method entries below are
+> **pack-shared**; only the safety-format subsections (§5.x) fork.
+
+## 5.1 — Preliminary / presumed bearing (prescriptive method)
+*Stage task 5.1 (trial sizing) — a quick, geometry-light check before the full direct method.* All
+three packs recognize a **prescriptive** route (EC7 §6.5.2.4 presumed bearing; AS 5100.3 permits
+Rug from comparable experience; Look tabulates presumed values).
+
+### 5.1(a) Presumed bearing value by soil description — *(non-code, Look Tbl 21.3)*
+Quick sizing / sanity band before computing; **not** for final design.
+
+| Material | Description (strength) | Presumed bearing (kPa) |
+|---|---|---|
+| Clay | V.soft <12 · soft 12–25 · firm 25–50 · stiff 50–100 · v.stiff 100–200 · hard >200 kPa | <25 · 25–50 · 50–100 · 100–200 · 200–400 · >400 |
+| Sand | v.loose (D_r<15%, φ<30°) · loose (15–35%, 30–35°) · med.dense (35–65%, 35–40°) · dense (65–85%, 40–45°) · v.dense (>85%, φ>45°) | <50 · 50–100 · 100–300 · 300–500 · >500 |
+
+- **EC pack:** the prescriptive method (§6.5.2.4); on **rock**, use EN 1997-1 **Annex G** presumed
+  bearing (weak/broken rock groups) — see §5.4 in the stage doc.
+- **AU pack:** §10.3.3.3 allows Rug from field/lab testing or empirical correlations; the table above
+  serves as a first-pass presumed value, then confirmed by the direct method + φg.
+- Reliability **Low** (preliminary only); always followed by the §5.2 direct check.
 
 ## 5.2 — ULS bearing resistance (EC7 direct method, Annex D)
 *Stage task 5.2.* Clean transcription of the EN 1997-1 Annex D sample analytical method (the raw
@@ -624,6 +651,22 @@ Requires `H ≤ A′·c_u`.
   permanent vertical load taken **both favourable and unfavourable**, and with the **leading
   variable action switched** (V vs H). Worked γ-sets in JRC 2013 Fig.3.3.4.
 
+### 5.2(f) Pack & non-code notes
+- **AU pack — *(code, AS 5100.3 §10.3.3.3)*.** Same mechanics: AS 5100.3 prescribes **no** bearing
+  equation — it requires `R_ug` (ultimate geotechnical strength) to be "established by field or
+  laboratory testing", analytically or via empirical/quasi-analytical relationships from SPT, CPT,
+  plate-load, vane, or pressuremeter tests (§10.3.3.3 NOTE). **So the engine reuses the equation +
+  factor set in 5.2(a)–(e) above to produce `R_ug`;** only the *safety format* differs — see §5.x(AU)
+  φg below (governing `S* ≤ φg·R_ug`, `R_ug` from **characteristic/unfactored** strength). Allowances
+  required by §10.3.3.3: GWT variation & rapid drawdown, weak/soft zones, unfavourable rock
+  bedding/jointing, time/cyclic effects, load eccentricity & inclination, sloping ground/excavations.
+- **Non-code fallbacks/cross-checks — *(Look 2007)*, already transcribed in §2.7(a):** the tabulated
+  **Vesic/Hansen N_c/N_q/N_γ** (Tbl 21.5) as a factor spot-check; **Meyerhof allowable-bearing-from-N**
+  chart (Tbl 21.7, "**halve if water within B**") as the **SPT-N-only fallback** when no lab strength
+  exists (reliability **Low–Med**); **FoS table** (Vesic 1975, Tbl 21.9) for the non-code
+  global-FoS route (industry default **FS = 3**; shear governs narrow footings, settlement governs
+  B ≳ 2 m).
+
 ## 5.3 — ULS sliding resistance
 *Stage task 5.3.* Check `H_d ≤ R_d + R_{p,d}` (`R_{p,d}` = passive thrust in front — see caveat).
 *(JRC 2013 §3.3.2.)*
@@ -635,6 +678,10 @@ Requires `H ≤ A′·c_u`.
 - **Passive-resistance caveat:** peak sliding and peak passive mobilise at *different* displacements
   (passive needs large movement), and excavation/erosion/shrinkage can remove the front soil —
   **usually neglect R_{p,d}**.
+- **AU pack — *(code, AS 5100.3 §10.3.3.4)*.** Same physics, φg format: `H_ug·φg + E_pr·φg ≥ S*`
+  (`H_ug` = ultimate base shear, `E_pr` = ultimate passive resistance in front). Same caveat baked
+  into the code NOTE — relate both `H_ug·φg` and `E_pr·φg` to the anticipated movement scale,
+  consider post-peak softening, and account for the front soil being removed by erosion/excavation.
 
 ## 5.4 — Indirect (SLS-controlled) method — Terzaghi & Peck
 *Stage task 5.2/5.5 boundary.* An **indirect method** (Table 3.2.1): allowable bearing pressure for
@@ -686,7 +733,21 @@ increments via Boussinesq/Newmark influence factors. **Depth-of-influence choice
 limiting integration to Δσ < 10% σ′_v0 gave 3,3 cm vs 24,3 cm when extended to ~building width —
 flag the assumption (small OC/cementation) explicitly. *(JRC 2013 §A.3.5.)*
 
-## 5.x — Safety format: DA1/DA2/DA3 (+ DA2*) — EC pack
+### 5.5(d) Pack & non-code notes
+- **AU pack — *(code, AS 5100.3 §10.3.5)*.** Same as EC in structure: the code mandates the
+  **requirement** (single-footing displacement, group/raft differential displacement, and vibration
+  from cyclic/dynamic loads — §10.3.5.1), computed at **serviceability loads**, checked against
+  serviceability limit values chosen so as not to damage the supported structure — but prescribes
+  **no method**. So the elasticity/consolidation methods in 5.5(b)/(c) are **pack-shared**; the
+  engineer selects, exactly as under EC7 §6.6. Limit values: use the Table 3.4.1 set in 5.5(a) as the
+  default, refined by the structure-specific SLS values the bridge/structural code sets.
+- **Non-code — *(Look 2007)*, already in §2.7(b)/(f):** the **Meyerhof settlement-from-N** charts
+  (Tbl 21.8, `ρ = f(q, N, B)`) as the **SPT-N-only settlement fallback** for granular soils (both
+  packs, since neither code names a formula); **Burland immediate/total ratios** + **Skempton–Bjerrum
+  μ** consolidation correction; and the **tolerable-movement limits** (Wahls Tbl 23.7 δ/L;
+  Skempton–Macdonald Tbl 23.6; Boscardin–Cording Tbl 23.8) as a cross-check on 5.5(a).
+
+## 5.x(EC) — Safety format: DA1/DA2/DA3 (+ DA2*) — EC pack
 *Feeds the stage-doc "per-pack safety format" split.* Recommended EN 1997-1 partial-factor sets,
 design-ready. National Annex may override. *(JRC 2013 §3.3, Tables 3.3.1–3.3.3.)*
 
@@ -712,10 +773,45 @@ design-ready. National Annex may override. *(JRC 2013 §3.3, Tables 3.3.1–3.3.
   all φ′ not-too-small: [R_d/V_d vs φ′_k for DA1/DA2/DA3](../Sources/Handbooks/figures/JRC2013_FigA.3.12_utilization-ratio-Rd-Vd_vs_phi_DA1-DA2-DA3.png).
   Use this worked set as a **validation/test case** for the bearing engine.
 
-## Status — Stage 5 shallow foundation
-**First seeding (JRC 2013 *(EC7 guidance)*) done** — EC7 direct method: bearing (factors +
-corrections + eccentricity), sliding, Terzaghi–Peck indirect, SLS (Annex-H limits + elasticity +
-consolidation), and the DA1/2/3(+DA2\*) safety format with a worked calibration + 4 chart figures.
-**Still to add (step C):** Look 2007 Ch 21/23 as the *(non-code)* SPT-N-only fallbacks and
-cross-checks in the same steps (much already transcribed in §2.7 a/b), and the **AU pack** (AS
-5100.3 §10 mechanics + φg format).
+## 5.x(AU) — Safety format: risk-based φg — AU pack
+*The AU fork of the same split.* One **geotechnical strength reduction factor φg** multiplies the
+**ultimate** geotechnical strength; actions come factored per AS 5100.2 (not re-tabulated here).
+Governing: bearing `S* ≤ φg·R_ug` (§10.3.3.3); sliding `H_ug·φg + E_pr·φg ≥ S*` (§10.3.3.4).
+*(AS 5100.3 §7.3.5 general principle; §10.3.3 values, Tables 10.3.3(A)/(B).)*
+
+### φg range by method of assessing R_ug — Table 10.3.3(A)
+| Method of assessing ultimate geotechnical strength | φg range |
+|---|---|
+| Analysis using parameters from appropriate **advanced in-situ** tests | 0,50–0,65 |
+| Analysis using parameters from appropriate **advanced laboratory** tests | 0,45–0,60 |
+| Analysis using **CPT** | 0,40–0,50 |
+| Analysis using **SPT** | 0,35–0,40 |
+
+### Where in the range — Table 10.3.3(B) guide (lower end ← → upper end)
+Limited SI ↔ comprehensive SI · simple calc ↔ sophisticated method · limited construction control ↔
+rigorous control · severe consequence of failure ↔ less severe · significant cyclic loading ↔ mainly
+static · permanent structure ↔ temporary · published correlations ↔ site-specific correlations.
+
+- **The structural contrast with EC (why this stress-tests the abstraction):** φg is **not fixed
+  upstream** — it is chosen **per bearing/sliding check, inside Stage 5**, from *how* `R_ug` was
+  assessed and *how good* the evidence is. Same ultimate `R_ug` (from the pack-shared 5.2 mechanics),
+  but a single, explicit, **gated** reduction at the end — versus EC's front-loaded, project-wide
+  DA factor sets. This is the design-side of divergence #2 (interpretation value basis). See the
+  stage doc's "per-pack safety format" section.
+- **AU worked/validation set:** *(none in the sources yet — AS 5100.3 gives no worked example; the EC
+  worked calibration above is the test case. A parallel AU calibration is a candidate to author.)*
+
+## Status — Stage 5 shallow foundation — step C complete ✓
+Now carries **both packs and both source classes**:
+- **EC pack default** *(JRC 2013)* — direct method: presumed bearing (5.1), bearing (factors +
+  corrections + eccentricity, 5.2), sliding (5.3), Terzaghi–Peck indirect (5.4), SLS (Annex-H limits +
+  elasticity + consolidation, 5.5), DA1/2/3(+DA2\*) format with a worked calibration + 4 chart figures.
+- **AU pack** *(AS 5100.3 §10)* — pack-shared mechanics reused for `R_ug`; forked safety format §5.x(AU)
+  (φg Tables 10.3.3(A)/(B)); sliding §10.3.3.4; SLS §10.3.5. Per-step pack notes in 5.2(f)/5.3/5.5(d).
+- **Non-code** *(Look 2007 Ch 21/23)* — presumed-bearing Tbl 21.3 (5.1a), Meyerhof N-fallbacks for
+  bearing (Tbl 21.7) and settlement (Tbl 21.8), Vesic/Hansen factor cross-check (Tbl 21.5), FoS
+  (Tbl 21.9), tolerable-movement limits (Tbl 23.6–23.8) — cross-linked to §2.7(a)/(b)/(f).
+
+**Remaining for Stage 5:** step **B** — the task-level In/Does/Out/Gates procedures (5.0–5.7). One
+candidate follow-up flagged in §5.x(AU): author a parallel **AU φg worked calibration** as a test
+case (AS 5100.3 ships none).

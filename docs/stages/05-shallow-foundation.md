@@ -189,8 +189,10 @@ Method Library §5.x.
 > charts) + oedometric consolidation; **5.x** the DA1/2/3(+DA2\*) sets with a worked size-`B`
 > calibration (DA2 → 1,21 m, DA1 → 1,50 m, DA3 → 1,74 m) as a bearing-engine **test case**. Four
 > chart figures rendered to `../../Sources/Handbooks/figures/JRC2013_*.png`. *(These are the EC-pack
-> **code default**, not non-code alternatives — see the source's selection-rule note.)* Look 2007 Ch
-> 21/23 *(non-code)* fallbacks join in the same steps at step C.
+> **code default**, not non-code alternatives — see the source's selection-rule note.)* The library
+> §5 now also carries the **AU pack** (AS 5100.3 §10 — pack-shared mechanics + the forked φg safety
+> format, Tables 10.3.3(A)/(B)) and the **Look 2007 Ch 21/23 *(non-code)*** fallbacks (presumed
+> bearing Tbl 21.3, Meyerhof N-charts for bearing/settlement, FoS, tolerable-movement limits).
 
 ## Open items (◇ — to confirm with founder)
 - **(a)** Look 2007 Ch 21/23 bearing/settlement tables are proposed as the **SPT-N-only fallback**
@@ -212,13 +214,16 @@ verified in the `.txt` conversion (§7.3.5 general φg principle; §10.3.2–10.
 figures rendered from the PDF to `../../Sources/Handbooks/figures/JRC2013_*.png`.
 
 ## Next
-- **C (partly done)** — Method Library **§5 seeded from JRC 2013** *(EC7 guidance)* — the EC-pack
-  direct method (bearing/sliding/SLS/DA format + worked calibration + figures). Still to add:
-  **Look 2007 Ch 21/23** *(non-code)* SPT-N fallbacks/cross-checks and the **AU pack** (AS 5100.3 §10
-  mechanics + φg) in the same §5 steps.
-- Then: **B — task-level procedures** for 5.0–5.7 (In/Does/Out/Gates), mirroring
+- ✓ **C (done)** — Method Library **§5** now carries **all three sources**: JRC 2013 *(EC7 guidance,
+  code default)* direct method; **AU pack** *(AS 5100.3 §10)* — pack-shared mechanics + forked φg
+  safety format (Tables 10.3.3(A)/(B)); **Look 2007 Ch 21/23** *(non-code)* fallbacks (presumed
+  bearing, Meyerhof N-charts, FoS, tolerable movements). See
+  [`../method-library.md` §5](../method-library.md#stage-5--shallow-foundation-design).
+- **B (next)** — task-level procedures for 5.0–5.7 (In/Does/Out/Gates), mirroring
   `02-interpretation-procedures.md`, with 5.2 (bearing + safety format) and 5.5 (settlement) getting
   the deeper treatment.
+- Optional follow-up flagged in the library §5.x(AU): author a parallel **AU φg worked calibration**
+  as a bearing-engine test case (AS 5100.3 ships none; the JRC DA1/2/3 calibration is the EC one).
 - After shallow foundation is complete: apply the same three-part treatment to **axial pile**
   (Stage 6) — EN 1997-1 §7 + AS 2159 + AS 5100.3, where the AU risk-based φg (AS 2159 §1.3.7) will
   be revisited against the pile ξ/model-factor judgment gate already flagged in `../03`. *(JRC 2013
