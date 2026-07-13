@@ -762,6 +762,10 @@ design-ready. National Annex may override. *(JRC 2013 §3.3, Tables 3.3.1–3.3.
 - **Resistances γ_R spread ftg (R1/R2/R3):** bearing γ_Rv 1,0/1,4/1,0 · sliding γ_Rh 1,0/1,1/1,0.
   (Overall stability earth resistance γ_Re: 1,0/1,1/1,0, Table A.14.)
 - **Params γ_M (M1/M2):** tanφ′ 1,0/1,25 · c′ 1,0/1,25 · c_u 1,0/1,4 · q_u 1,0/1,4 · γ 1,0/1,0.
+- **Actions side (from EN 1990/1991, not the geotech code):** the engineer supplies **characteristic**
+  `G_k`/`Q_k`; γ_G/γ_Q above give **ULS** design actions; combination factors ψ (ψ₀ leading/accompanying)
+  from EN 1990. **SLS** uses partial factors = 1 with quasi-permanent **ψ₂** combinations. Full actions
+  model in the stage doc "Actions & load combinations" section.
 - **DA2 vs DA2\* (matters for eccentric loads):** DA2 factors the **actions at source** → design
   eccentricity `e_d` (large) → smaller `B′`; **DA2\*** runs the whole calc on characteristic values
   and factors **only the effect at the end** → characteristic eccentricity `e_k` (small) → larger
@@ -775,7 +779,8 @@ design-ready. National Annex may override. *(JRC 2013 §3.3, Tables 3.3.1–3.3.
 
 ## 5.x(AU) — Safety format: risk-based φg — AU pack
 *The AU fork of the same split.* One **geotechnical strength reduction factor φg** multiplies the
-**ultimate** geotechnical strength; actions come factored per AS 5100.2 (not re-tabulated here).
+**ultimate** geotechnical strength; actions (`S*`) come factored per **AS 5100.2** for ULS (not
+re-tabulated here), and **serviceability loads** are used for the SLS displacement check (§10.3.5).
 Governing: bearing `S* ≤ φg·R_ug` (§10.3.3.3); sliding `H_ug·φg + E_pr·φg ≥ S*` (§10.3.3.4).
 *(AS 5100.3 §7.3.5 general principle; §10.3.3 values, Tables 10.3.3(A)/(B).)*
 

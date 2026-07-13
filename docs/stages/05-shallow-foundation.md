@@ -39,6 +39,47 @@ runs the geometry-specific check:
   assessed (test method, investigation quality) for *this* footing, not on a single project-wide
   factor set. This asymmetry is exactly the divergence flagged below.
 
+## Actions & load combinations (input side)
+Actions are the **other half of every check** (`E_d ≤ R_d`): Stage 5 verifies resistance against a
+*design action effect*, so it must be handed the right actions. Formally these are assembled at
+**Stage 4** (design basis & actions, `../03`) and consumed here via the 5.0 input contract; on a
+jump-in start the engineer supplies them directly. Capturing the model explicitly:
+
+**What the engineer provides — characteristic (un-factored) actions.** The tool never asks for
+pre-factored / "ULS" loads; it asks for the representative loads a structural model outputs and does
+all factoring itself. Per action:
+
+| Provide | Why |
+|---|---|
+| **Permanent `G_k`** | superstructure dead load delivered to the footing |
+| **Variable `Q_k`**, tagged by **category** (imposed/roof/wind/snow/traffic…) | selects the right combination factor ψ |
+| **Direction/type** — vertical `V`, horizontal `H`, moment `M` | drives eccentricity `e = M/V` (→ effective area `A′`) and the load-**inclination** corrections |
+| **Nature** — can it act **favourably / unfavourably** | lets the system permute the governing case (permanent load fav vs unfav; leading variable switched) |
+
+**What the system computes (not asked):** foundation self-weight + backfill (geometry × density),
+water pressures / uplift (from the Stage 2.5 groundwater model), earth pressures on the footing —
+all per EN 1997-1 §6.3/§2.4.2(4) / the AU loading code.
+
+**Both ULS *and* SLS combinations are produced — not ULS only.** The checks split across limit
+states and **either can govern** (the Terzaghi–Peck result: bearing/ULS governs small footings,
+settlement/SLS governs large ones — §5.4 in the library):
+- **ULS combinations** (factored actions) → **bearing (5.2)** and **sliding (5.3)**.
+- **SLS combinations** (partial factors = 1, quasi-permanent ψ₂) → **settlement (5.5)**.
+
+**Pack split — actions follow the *loading* code, not the geotechnical one** (the resistance-side
+safety format is the part that forks inside Stage 5):
+
+| | EC pack | AU pack |
+|---|---|---|
+| Action model / ψ | **EN 1990 + EN 1991** | **AS 5100.2** (bridge loading) |
+| ULS action factors | γ_G, γ_Q per the Design Approach (A1/A2 sets — Method Library §5.x(EC)) | load factors per AS 5100.2 |
+| SLS actions | characteristic × 1,0, ψ₂ combinations | serviceability loads (AS 5100.3 §10.3.5) |
+
+> **Pile forward-note (Stage 6):** piles carry action types shallow footings don't — **downdrag /
+> negative skin friction, heave, transverse loading** (EN 1997-1 §7.3.2). EC7 even factors negative
+> skin friction with an M-set while the resistance uses a different set — so "which actions, factored
+> how" gets richer. This characteristic-actions model is carried forward and extended there.
+
 ## Steps and references (side-by-side)
 
 | Step | Eurocode 7 pack | Australian pack |
@@ -121,7 +162,11 @@ The **operational "how"** for each task below (In/Does/Out/Gates) is in
   for AU, note that φg is *not yet* fixed — it resolves per-check in 5.2–5.4.
 - 5.0.3 Confirm the geotechnical category / consequence class (drives φg range in AU; drives which
   DA combination governs in EC).
-- 🔒 Gate 5.0 — confirm inputs, Code Pack, and (EC) Design Approach.
+- 5.0.4 Assemble/verify the **action combinations** — take **characteristic** (un-factored) actions
+  (G_k, Q_k by category, direction V/H/M, favourable/unfavourable nature), add system-derived actions
+  (self-weight, backfill, water/uplift, earth pressure), and build **both ULS and SLS** combinations
+  (either can govern). See the *Actions & load combinations* section above. ←CP loading code
+- 🔒 Gate 5.0 — confirm inputs, Code Pack, (EC) Design Approach, and ULS+SLS load combinations.
 
 ### Per-footing loop (every proposed pad / strip / raft)
 **5.1 — Trial geometry & representative parameters**

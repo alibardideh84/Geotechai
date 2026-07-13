@@ -69,9 +69,35 @@ footing. Watch how the same task branches by pack at 5.2.3 — that asymmetry is
 - **Gates/triggers:** *Design-critical threshold* (D) for high-consequence structures (tightens φg /
   raises scrutiny).
 
-**🔒 Gate 5.0 — confirm inputs, Code Pack, and safety-format basis.** The engineer reviews the input
-manifest, the bound pack, and (EC) the Design Approach / (AU) the φg selection rubric, then approves
-before the per-footing loop runs.
+### 5.0.4 — Assemble / verify action combinations (ULS + SLS) ←CP
+*(The actions side of `E_d ≤ R_d`; see the stage doc "Actions & load combinations" section. Formally
+a Stage 4 job — here it is **verified** when supplied, or **assembled** on a jump-in start.)*
+- **In:** the **characteristic (un-factored) actions** — per footing/column, each with: permanent
+  `G_k` vs variable `Q_k` (variable tagged by **category** for ψ), **direction/type** (`V`/`H`/`M`),
+  and **favourable/unfavourable nature**; plus the pack's loading model (EN 1990/1991 for EC, AS 5100.2
+  for AU) and the resolved safety-format basis (5.0.2).
+- **Does:**
+  1. **Never ask for pre-factored loads** — take characteristic actions and do all factoring here.
+  2. Add the actions the system derives itself (not asked): **foundation self-weight + backfill**
+     (geometry × density), **water pressure / uplift** (Stage 2.5 groundwater model), **earth
+     pressures** on the footing (EN 1997-1 §6.3 / §2.4.2(4) / AU loading code).
+  3. **Build both families** — *ULS combinations* (factored: γ_G·G_k + γ_Q·Q_k + ψ·accompanying, per
+     the DA sets / AS 5100.2) for bearing & sliding, and *SLS combinations* (partial factors = 1,
+     quasi-permanent ψ₂) for settlement. **Both are required** — either limit state can govern
+     (Terzaghi–Peck size effect).
+  4. Enumerate the **permutations** eccentricity forces: permanent load favourable **and**
+     unfavourable, and the **leading variable action switched** (V-led vs H-led) — each yields a
+     different `V_d`, `H_d`, `e` → effective area `A′` in 5.2.
+- **Out:** the ULS and SLS **load-combination set** per footing (design action effects `V_d`, `H_d`,
+  `M_d` for ULS; serviceability `V_ser` etc. for SLS), each combination traceable to its factors.
+- **Gates/triggers:** *Missing/insufficient data* (B) if characteristic actions are absent or lack the
+  direction/nature metadata. *Assumption required* (D) if Stage 4 was skipped and combinations are
+  assembled here (surface the ψ/factor choices), or if an action's favourable/unfavourable role must
+  be assumed. *Multiple routes* (D) where it is not obvious which combination governs (carry all).
+
+**🔒 Gate 5.0 — confirm inputs, Code Pack, safety-format basis, and action combinations.** The engineer
+reviews the input manifest, the bound pack, (EC) the Design Approach / (AU) the φg selection rubric, and
+the assembled **ULS + SLS load combinations**, then approves before the per-footing loop runs.
 
 ---
 
