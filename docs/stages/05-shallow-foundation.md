@@ -111,6 +111,8 @@ Method Library §5.x.
 ## Task breakdown (operational steps)
 🔒 = **step gate**. **Exception gates** also fire mid-task on any trigger (see
 `../03-workflow-and-human-ai-model.md` → Gate model). **←CP** = supplied by the selected Code Pack.
+The **operational "how"** for each task below (In/Does/Out/Gates) is in
+[`05-shallow-foundation-procedures.md`](05-shallow-foundation-procedures.md).
 
 **5.0 — Stage entry & input contract** *(once)*
 - 5.0.1 Detect entry point (fresh from Stage 3/4 hand-off vs jump-in — input contract: characteristic
@@ -219,9 +221,9 @@ figures rendered from the PDF to `../../Sources/Handbooks/figures/JRC2013_*.png`
   safety format (Tables 10.3.3(A)/(B)); **Look 2007 Ch 21/23** *(non-code)* fallbacks (presumed
   bearing, Meyerhof N-charts, FoS, tolerable movements). See
   [`../method-library.md` §5](../method-library.md#stage-5--shallow-foundation-design).
-- **B (next)** — task-level procedures for 5.0–5.7 (In/Does/Out/Gates), mirroring
-  `02-interpretation-procedures.md`, with 5.2 (bearing + safety format) and 5.5 (settlement) getting
-  the deeper treatment.
+- ✓ **B (done)** — task-level procedures for 5.0–5.7 (In/Does/Out/Gates) in
+  [`05-shallow-foundation-procedures.md`](05-shallow-foundation-procedures.md), with 5.2 (bearing +
+  safety-format fork) and 5.5 (settlement) given the deeper treatment.
 - Optional follow-up flagged in the library §5.x(AU): author a parallel **AU φg worked calibration**
   as a bearing-engine test case (AS 5100.3 ships none; the JRC DA1/2/3 calibration is the EC one).
 - After shallow foundation is complete: apply the same three-part treatment to **axial pile**
