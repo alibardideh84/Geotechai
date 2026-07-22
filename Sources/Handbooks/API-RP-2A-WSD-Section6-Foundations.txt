@@ -1,0 +1,893 @@
+
+===== PAGE 1 =====
+RECOMMENDED PRACTICE FOR PLANNING, DESIGNING AND CONSTRUCTING FIXED OFFSHORE PLATFORMS—WORKING STRESS DESIGN
+55
+smooth to a radius greater than or equal to half the branch
+thickness. Final grinding marks should be transverse to the
+weld axis and the entire ﬁnished proﬁle should pass magnetic
+particle inspection.
+5.5
+STRESS CONCENTRATION FACTORS
+The X and X´ curves should be used with hot spot stress
+ranges based on suitable stress concentration factors. Stress
+concentration factors may be derived from ﬁnite element
+analyses, model tests or empirical equations based on such
+methods.
+For joints not meeting the requirements of Section 4.3.1,
+e.g., connections in which load transfer is accomplished by
+overlap (Section 4.3.2), or by gusset plates, ring stiffeners,
+etc. (Section 4.3.5), a minimum stress concentration factor
+of 6.0 should be used in the brace member, in lieu of addi-
+tional analysis. Where the chord and/or other joint rein-
+forcement are not designed to develop the full static
+capacity of the members joined, these elements should also
+be checked separately.
+6
+Foundation Design
+The recommended criteria of Section 6.1 through Section
+6.11 are devoted to pile foundations, and more speciﬁcally to
+steel cylindrical (pipe) pile foundations. The recommended
+criteria of Section 6.12 through Section 6.17 are devoted to
+shallow foundations.
+6.1
+GENERAL
+The foundation should be designed to carry static, cyclic
+and transient loads without excessive deformations or vibra-
+tions in the platform. Special attention should be given to the
+effects of cyclic and transient loading on the strength of the
+supporting soils as well as on the structural response of piles.
+Guidance provided in Sections 6.3, 6.4, and 6.5 is based upon
+static, monotonic loadings. Furthermore, this guidance does
+not necessarily apply to so called problem soils such as car-
+bonate material or volcanic sands or highly sensitive clays.
+The possibility of movement of the seaﬂoor against the foun-
+dation members should be investigated and the forces caused
+by such movements, if anticipated, should be considered in
+the design.
+6.2
+PILE FOUNDATIONS
+Types of pile foundations used to support offshore struc-
+tures are as follows:
+6.2.1
+Driven Piles
+Open ended piles are commonly used in foundations for
+offshore platforms. These piles are usually driven into the
+sea-ﬂoor with impact hammers which use steam, diesel fuel,
+or hydraulic power as the source of energy. The pile wall
+thickness should be adequate to resist axial and lateral loads
+as well as the stresses during pile driving. It is possible to pre-
+dict approximately the stresses during pile driving using the
+principles of one-dimensional elastic stress wave transmis-
+sion by carefully selecting the parameters that govern the
+behavior of soil, pile, cushions, capblock and hammer. For a
+more detailed study of these principles, refer to E.A.L.
+Smith’s paper, “Pile Driving Analysis by the Wave Equation,”
+Transactions ASCE, Vol. 127, 1962, Part 1, Paper No. 3306,
+pp, 1145–1193. The above approach may also be used to
+optimize the pile hammer cushion and capblock with the aid
+of computer analyses (commonly known as the Wave Equa-
+tion Analyses). The design penetration of driven piles should
+be determined in accordance with the principles outlined in
+Sections 6.3 through 6.7 and 6.9 rather than upon any correla-
+tion of pile capacity with the number of blows required to
+drive the pile a certain distance into the seaﬂoor.
+When a pile refuses before it reaches design penetration,
+one or more of the following actions can be taken:
+a. Review of hammer performance. A review of all aspects of
+hammer performance, possibly with the aid of hammer and
+pile head instrumentation, may identify problems which can
+be solved by improved hammer operation and maintenance,
+or by the use of a more powerful hammer.
+b. Reevaluation of design penetration. Reconsideration of
+loads, deformations and required capacities, of both individ-
+ual piles and other foundation elements, and the foundation as
+a whole, may identify reserve capacity available. An interpre-
+tation of driving records in conjunction with instrumentation
+mentioned above may allow design soil parameters or stratiﬁ-
+cation to be revised and pile capacity to be increased.
+c. Modiﬁcations to piling procedures, usually the last course
+of action, may include one of the following:
+•
+Plug Removal. The soil plug inside the pile is removed
+by jetting and air lifting or by drilling to reduce pile
+driving resistance. If plug removal results in inadequate
+pile capacities, the removed soil plug should be replaced
+by a gravel grout or concrete plug having sufﬁcient load-
+carrying capacity to replace that of the removed soil
+plug. Attention should be paid to plug/pile load transfer
+characteristics. Plug removal may not be effective in
+some circumstances particularly in cohesive soils.
+•
+Soil Removal Below Pile Tip. Soil below the pile tip is
+removed either by drilling an undersized hole or jetting
+equipment is lowered through the pile which acts as the
+casing pipe for the operation. The effect on pile capac-
+ity of drilling an undersized hole is unpredictable unless
+there has been previous experience under similar condi-
+tions. Jetting below the pile tip should in general be
+avoided because of the unpredictability of the results.
+
+===== PAGE 2 =====
+56
+API  RECOMMENDED PRACTICE 2A-WSD
+•
+Two-State Driven Piles. A ﬁrst stage or outer pile is
+driven to a predetermined depth, the soil plug is
+removed, and a second stage or inner pile is driven
+inside the ﬁrst stage pile. The annulus between the two
+piles is grouted to permit load transfer and develop
+composite action.
+•
+Drilled and grouted insert piles as described in 6.2.2(b)
+below.
+6.2.2
+Drilled and Grouted Piles
+Drilled and grouted piles can be used in soils which will
+hold an open hole with or without drilling mud. Load transfer
+between grout and pile should be designed in accordance
+with Sections 7.4.2, 7.4.3, and 7.4.4. There are two types of
+drilled and grouted piles, as follows:
+a. Single-Stage. For the single-staged, drilled and grouted
+pile, an oversized hole is drilled to the required penetration, a
+pile is lowered into the hole and the annulus between the pile
+and the soil is grouted. This type pile can be installed only in
+soils which will hold an open hole to the surface. As an alter-
+native method, the pile with expendable cutting tools attached
+to the tip can be used as part of the drill stem to avoid the time
+required to remove the drill bit and insert a pile.
+b. Two-Stage. The two-staged, drilled and grouted pile con-
+sists of two concentrically placed piles grouted to become a
+composite section. A pile is driven to a penetration which has
+been determined to be achievable with the available equip-
+ment and below which an open hole can be maintained. This
+outer pile becomes the casing for the next operation which is
+to drill through it to the required penetration for the inner or
+“insert” pile. The insert pile is then lowered into the drilled
+hole and the annuli between the insert pile and the soil an
+between the two piles are grouted. Under certain oil condi-
+tions, the drilled hole is stopped above required penetration,
+and the insert pile is driven to required penetration. The diam-
+eter of the drilled hole should be at least 6 inches (150 mm)
+larger than the pile diameter.
+6.2.3
+Belled Piles
+Bells may be constructed at the tip of piles to give increased
+bearing and uplift capacity through direct bearing on the soil.
+Drilling of the bell is carried out through the pile by under-
+reaming with an expander tool. A pilot hole may be drilled
+below the bell to act as a sump for unrecoverable cuttings. The
+bell and pile are ﬁlled with concrete to a height sufﬁcient to
+develop necessary load transfer between the bell and the pile.
+Bells are connected to the pile to transfer full uplift and bear-
+ing loads using steel reinforcing such as structural members
+with adequate shear lugs, deformed reinforcement bars or pre-
+stressed tendons. Load transfer into the concrete should be
+designed in accordance with ACI 318. The steel reinforcing
+should be enclosed for their full length below the pile with
+spiral reinforcement meeting the requirements of ACI 318.
+Load transfer between the concrete and the pile should be
+designed in accordance with Sections 7.4.2, 7.4.3, and 7.4.4.
+6.3
+PILE DESIGN
+6.3.1
+Foundation Size
+When sizing a pile foundation, the following items should
+be considered: diameter, penetration, wall thickness, type of
+tip, spacing, number of piles, geometry, location, mudline
+restraint, material strength, installation method, and other
+parameters as may be considered appropriate.
+6.3.2
+Foundation Response
+A number of different analysis procedures may be utilized
+to determine the requirements of a foundation. At a mini-
+mum, the procedure used should properly stimulate the non-
+linear response behavior of the soil and assure load-deﬂection
+compatibility between the structure and the pile-soil system.
+6.3.3
+Deﬂections and Rotations
+Deﬂections and rotations of individual piles and the total
+foundation system should be checked at all critical locations
+which may include pile tops, points of contraﬂecture, mud-
+line, etc. Deﬂections and rotations should not exceed service-
+ability limits which would render the structure inadequate for
+its intended function.
+6.3.4
+Pile Penetration
+The design pile penetration should be sufﬁcient to develop
+adequate capacity to resist the maximum computed axial
+bearing and pullout loads with an appropriate factor of safety.
+The ultimate pile capacities can be computed in accordance
+with Sections 6.4 and 6.5 or by other methods which are sup-
+ported by reliable comprehensive data. The allowable pile
+capacities are determined by dividing the ultimate pile capac-
+ities by appropriate factors of safety which should not be less
+than the following values:
+Factors of
+Load Condition
+Safety
+1. Design environmental conditions with
+appropriate drilling loads
+1.5
+2. Operating environmental conditions during
+drilling operations
+2.0
+3. Design environmental conditions with 
+appropriate producing loads
+1.5
+4. Operating environmental conditions during
+producing operations
+2.0
+5. Design environmental conditions with 
+minimum loads (for pullout)
+1.5
+
+===== PAGE 3 =====
+RECOMMENDED PRACTICE FOR PLANNING, DESIGNING AND CONSTRUCTING FIXED OFFSHORE PLATFORMS—WORKING STRESS DESIGN
+57
+6.3.5
+Alternative Design Methods
+The provisions of this recommended practice for sizing the
+foundation pile are based on an allowable stress (working
+stress) method except for pile penetration per Section 6.3.4.
+In this method, the foundation piles should conform to the
+requirements of Sections 3.2 and 6.10 in addition to the provi-
+sions of Section 6.3. Any alternative method supported by
+sound engineering methods and empirical evidence may also
+be utilized. Such alternative methods include the limit state
+design approach or ultimate strength design of the total foun-
+dation system.
+6.3.6
+Scour
+Seabed scour affects both lateral and axial pile perfor-
+mance and capacity. Scour prediction remains an uncertain
+art. Sediment transport studies may assist in deﬁning scour
+design criteria but local experience is the best guide. The
+uncertainty on design criteria should be handled by robust
+design, or by an operating strategy of monitoring and remedi-
+ation as needed. Typical remediation experience is docu-
+mented in “Erosion Protection of Production Structures,” by
+Posey, C.J., and Sybert, J.H., Proc. 9th Conv. I.A.H.R.,
+Dobrovnik, 1961, pp. 1157-1162, and “Scour Repair Meth-
+ods in the Southern North Sea,” by Angus, N.M., and Moore,
+R.L., OTC 4410, May 1982. Scour design criteria will usually
+be a combination of local and global scour.
+6.4
+PILE CAPACITY FOR AXIAL BEARING LOADS
+6.4.1
+Ultimate Bearing Capacity
+The ultimate bearing capacity of piles, including belled
+piles, Qd should be determined by the equation:
+Qd = Qf + Qp = fAs + qAp
+(6.4.1-1)
+where
+Qf = skin friction resistance, lb (kN),
+Qp = total end bearing, lb (kN),
+f = unit skin friction capacity, lb/ft2 (kPa),
+As = side surface area of pile, ft2 (m2),
+q = unit end bearing capacity, lb/ft2 (kPa),
+Ap = gross end area of pile, ft2 (m2).
+Total end bearing, Qp, should not exceed the capacity of
+the internal plug. In computing pile loading and capacity the
+weight of the pile-soil plug system and hydrostatic uplift
+should be considered.
+In determining the load capacity of a pile, consideration
+should be given to the relative deformations between the soil
+and the pile as well as the compressibility of the soil pile sys-
+tem. Eq. 6.4.1-1 assumes that the maximum skin friction
+along the pile and the maximum and bearing are mobilized
+simultaneously. However, the ultimate skin friction incre-
+ments along the pile are not necessarily directly additive, nor
+is the ultimate end bearing necessarily additive to the ultimate
+skin friction. In some circumstances this effect may result in
+the capacity being less than that given by Eq. 6.4.1-1. In such
+cases a more explicit consideration of axial pile performance
+effects on pile capacity may be warranted. For additional dis-
+cussion of these effects refer to Section 6.6 and ASCE Jour-
+nal of the Soil Mechanics and Foundations Division for Load
+Transfer for Axially Loaded Piles in Clay, by H.M. Coyle and
+L.C. Reese, Vol. 92, No. 1052, March 1966, Murff, J.D., “Pile
+Capacity in a Softening Soil,” International Journal for
+Numerical and Analytical Methods in Geomechanics (1980),
+Vol. 4, No. 2, pp. 185–189, and Randolph, H.F., “Design
+Considerations for Offshore Piles,” Geotechnical Practice in
+Offshore Engineering, ASCE, Austin 1983, pp. 422–439.
+The foundation conﬁgurations should be based on those
+that experience has shown can be installed consistently, prac-
+tically and economically under similar conditions with the
+pile size and installation equipment being used. Alternatives
+for possible remedial action in the event design objectives
+cannot be obtained during installation should also be investi-
+gated and deﬁned prior to construction.
+For the pile-bell system, the factors of safety should be
+those given in Section 6.3.4. The allowable skin friction val-
+ues on the pile section should be those given in this section
+and in Section 6.5. Skin friction on the upper bell surface and
+possibly above the bell on the pile should be discounted in
+computing skin friction resistance, Qf. The end bearing area
+of a pilot hole, if drilled, should be discounted in computing
+total bearing area of the bell.
+6.4.2
+Skin Friction and End Bearing in Cohesive 
+Soils
+For pipe piles in cohesive soils, the shaft friction, f, in lb/ft2
+(kPa) at any point along the pile may be calculated by the
+equation.
+f = α c
+(6.4.2-1)
+where
+α = a dimensionless factor,
+c = undrained shear strength of the soil at the point 
+in question.
+The factor, α, can be computed by the equations:
+α = 0.5 ψ–0.5 ψ ≤ 1.0
+(6.4.2-2)
+α = 0.5 ψ–0.25 ψ > 1.0
+
+===== PAGE 4 =====
+58
+API  RECOMMENDED PRACTICE 2A-WSD
+with the constraint that, α ≤ 1.0,
+where
+ψ = c/p´o for the point in question,
+p´o = effective overburden pressure at the point in 
+question lb/ft2 (kPa).
+A discussion of appropriate methods for determining the
+undrained shear strength, c, and effective overburden pres-
+sure, p´o, including the effects of various sampling and testing
+procedures is included in the commentary. For underconsoli-
+dated clays (clays with excess pore pressures undergoing
+active consolidation), α, can usually be taken as 1.0. Due to
+the lack of pile load tests in soils having c/p´o ratios greater
+than three, equation 6.4.2-2 should be applied with some
+engineering judgment for high c/p´o values. Similar judgment
+should be applied for deep penetrating piles in soils with high
+undrained shear strength, c, where the computed shaft fric-
+tions, f, using equation 6.4.2-1 above, are generally higher
+than previously speciﬁed in RP 2A.
+For very long piles some reduction in capacity may be war-
+ranted, particularly where the shaft friction may degrade to
+some lesser residual value on continued displacement. This
+effect is discussed in more detail in the commentary.
+Alternative means of determining pile capacity that are
+based on sound engineering principles and are consistent with
+industry experience are permissible. A more detailed discus-
+sion of alternate prediction methods is included in the com-
+mentary.
+For piles end bearing in cohesive soils, the unit end bearing
+q, in lbs/ft2 (kPa), may be computed by the equation
+q = 9c
+(6.4.2-3)
+The shaft friction, f, acts on both the inside and outside of
+the pile. The total resistance is the sum of: the external shaft
+friction; the end bearing on the pile wall annulus; the total
+internal shaft friction or the end bearing of the plug, which-
+ever is less. For piles considered to be plugged, the bearing
+pressure may be assumed to act over the entire cross section
+of the pile. For unplugged piles, the bearing pressure acts on
+the pile wall annulus only. Whether a pile is considered
+plugged or unplugged may be based on static calculations.
+For example, a pile could be driven in an unplugged condition
+but act plugged under static loading.
+For piles driven in undersized drilled holes, piles jetted in
+place, or piles drilled and grouted in place the selection of
+shaft friction values should take into account the soil distur-
+bance resulting from installation. In general f should not
+exceed values for driven piles; however, in some cases for
+drilled and grouted piles in overconsolidated clay, f may
+exceed these values. In determining f for drilled and grouted
+piles, the strength of the soil-grout interface, including poten-
+tial effects of drilling mud, should be considered. A further
+check should be made of the allowable bond stress between
+the pile steel and the grout as recommended in Section 7.4.3.
+For further discussion refer to “State of the Art: Ultimate
+Axial Capacity of Grouted Piles” by Kraft and Lyons, OTC
+2081, May, 1974.
+In layered soils, shaft friction values, f, in the cohesive lay-
+ers should be as given in Eq. (6.4.2-1). End bearing values for
+piles tipped in cohesive layers with adjacent weaker layers
+may be as given in Eq. (6.4.2-3), assuming that the pile
+achieves penetration of two to three diameters or more into
+the layer in question and the tip is approximately three diame-
+ters above the bottom of the layer to preclude punch through.
+Where these distances are not achieved, some modiﬁcation in
+the end bearing resistance may be necessary. Where adjacent
+layers are of comparable strength to the layer of interest, the
+proximity of the pile tip to the interface is not a concern.
+6.4.3
+Shaft Friction and End Bearing in 
+Cohesionless Soils
+For pipe piles in cohesionless soils, the shaft friction, f, in
+lb/ft2 (kPa) may be calculated by the equation:
+f = Kpo tan δ
+(6.4.3-1)
+where
+K = coefﬁcient of lateral earth pressure (ratio of hori-
+zontal to vertical normal effective stress),
+po = effective overburden pressure lb/ft2 (kPa) at the 
+point in question,
+δ = friction angle between the soil and pile wall.
+For open-ended pipe piles driven unplugged, it is usually
+appropriate to assume K as 0.8 for both tension and compres-
+sion loadings. Values of K for full displacement piles
+(plugged or closed end) may be assumed to be 1.0. Table
+6.4.3-1 may be used for selection of δ if other data are not
+available. For long piles f may not indeﬁnitely increase lin-
+early with the overburden pressure as implied by Eq. 6.4.3-1.
+In such cases it may be appropriate to limit f to the values
+given in Table 6.4.3-1.
+For piles end bearing in cohesionless soils the unit end
+bearing q in lb/ft2 (kPa) may be computed by the equation
+q = poNq
+(6.4.3-2)
+where
+po = effective overburden pressure lb/ft2 (kPa) at the 
+pile tip,
+Nq = dimensionless bearing capacity factor.
+
+===== PAGE 5 =====
+RECOMMENDED PRACTICE FOR PLANNING, DESIGNING AND CONSTRUCTING FIXED OFFSHORE PLATFORMS—WORKING STRESS DESIGN
+59
+Recommended values of Nq are presented in Table 6.4.3-1.
+The shaft friction, f, acts on both the inside and outside of the
+piles. However, the total resistance in excess of the external
+shaft friction plus annular end bearing is the total internal
+shaft friction or the end bearing of the plug, whichever is less.
+For piles considered to be plugged the bearing pressure may
+be assumed to act over the entire cross section of the pile. For
+unplugged piles the bearing pressure acts on the pile annulus
+only. Whether a pile is considered to be plugged or unplugged
+may be based on static calculations. For example, a pile could
+be driven in an unplugged condition but act plugged under
+static loading.
+Load test data for piles in sand (see “Comparison of Mea-
+sured and Axial Load Capacities of Steel Pipe Piles in Sand
+with Capacities Calculated Using the 1986 API RP2A Stan-
+dard,” Final Report to API, Dec. 1987, by R. E. Olson) indi-
+cate that variability in capacity predictions may exceed those
+for piles in clay. Other data (see Toolan and Ims (1988)) (1)
+suggest that for piles in loose sands and long piles (> 50 m) in
+tension the method may be less conservative than for com-
+pression piles in medium dense to dense sands. Therefore, in
+unfamiliar situations, the designer may want to account for
+this uncertainty through a selection of conservative design
+parameters and/or safety factors. This may be especially
+important where load shedding subsequent to peak load
+development leading to an abrupt (brittle) failure may occur
+such as the case for short piles under tension loading.
+For soils that do not fall within the ranges of soil density
+and description given in Table 6.4.3-1, or for materials with
+unusually weak grains or compressible structures, Table
+6.4.3-1 may not be appropriate for selection of design param-
+eters. For example, very loose silts or soils containing large
+amounts of mica or volcanic grains may require special labo-
+ratory or ﬁeld tests for selection of design parameters. Of par-
+ticular importance are sands containing calcium carbonate
+which are found extensively in many areas of the oceans.
+Available data suggest that driven piles in these soils may
+have substantially lower design strength parameters than
+given in Table 6.4.3-1. Drilled and grouted piles in carbonate
+sands, however, may have signiﬁcantly higher capacities than
+driven piles and have been used successfully in many carbon-
+ate areas. The characteristics of carbonate sands are highly
+variable and local experience should dictate the design
+parameters selected. For example, available qualitative data
+Table 6.4.3-1—Design Parameters for Cohesionless Siliceous Soil*
+Density
+Soil Description
+Soil-Pile 
+Friction Angle, 
+δ Degrees
+Limiting Skin 
+Friction Values 
+kips/ft2 (kPa)
+Nq
+Limiting Unit End 
+Bearing Values 
+kips/ft2 (MPa)
+Very Loose
+Sand
+15
+1.0 (47.8)
+8
+40 (1.9)
+Loose
+Sand-Silt**
+Medium
+Silt
+Loose
+Sand
+20
+1.4 (67.0)
+12
+60 (2.9)
+Medium
+Sand-Silt**
+Dense
+Silt
+Medium
+Sand
+25
+1.7 (81.3)
+20
+100 (4.8)
+Dense
+Sand-Silt**
+Dense
+Sand
+30
+2.0 (95.7)
+40
+200 (9.6)
+Very Dense
+Sand-Silt**
+Dense
+Gravel
+35
+2.4 (114.8)
+50
+250 (12.0)
+Very Dense
+Sand
+*The parameters listed in this table are intended as guidelines only. Where detailed information such as in situ cone tests, strength tests on high 
+quality samples, model tests, or pile driving performance is available, other values may be justiﬁed.
+**Sand-Silt includes those soils with signiﬁcant fractions of both sand and silt. Strength values generally increase with increasing sand fractions 
+and decrease with increasing silt fractions.
+
+===== PAGE 6 =====
+60
+API  RECOMMENDED PRACTICE 2A-WSD
+suggest that capacity is improved in carbonate soils of high
+densities and higher quartz contents. Cementation may
+increase end bearing capacity, but result in a loss of lateral
+pressure and a corresponding decrease in frictional capacity.
+These materials are discussed further in the Commentary.
+For piles driven in undersized drilled or jetted holes in
+cohesionless soils the values of f and q should be determined
+by some reliable method that accounts for the amount of soil
+disturbance due to installation but they should not exceed val-
+ues for driven piles. Except in unusual soil types such as
+described above, the values of f and q in Table 6.4.3-1 may be
+used for drilled and grouted piles, with consideration given to
+the strength of the soil grout interface.
+In layered soils shaft friction values, f, in the cohesionless
+layers should be as outlined in Table 6.4.3-1. End bearing val-
+ues for piles tipped in cohesionless layers with adjacent soft
+layers may also be taken from Table 6.4.3-1, assuming that
+the pile achieves penetration of two to three diameters or
+more into the cohesionless layer, and the tip is approximately
+three diameters above the bottom of the layer to preclude
+punch through. Where these distances are not achieved, some
+modiﬁcation in the tabulated values may be necessary. Where
+adjacent layers are of comparable strength to the layer of
+interest, the proximity of the pile tip to the interface is not a
+concern.
+6.4.4
+Skin Friction and End Bearing of Grouted 
+Piles in Rock
+The unit skin friction of grouted piles in jetted or drilled
+holes in rock should not exceed the triaxial shear strength of
+the rock or grout, but in general should be much less than this
+value based on the amount of reduced shear strength from
+installation. For example the strength of dry compacted shale
+may be greatly reduced when exposed to water from jetting
+or drilling. The sidewall of the hole may develop a layer of
+slaked mud or clay which will never regain the strength of the
+rock. The limiting value for this type pile may be the allow-
+able bond stress between the pile steel and the grout as rec-
+ommended in 7.4.3.
+The end bearing capacity of the rock should be determined
+from the triaxial shear strength of the rock and an appropriate
+bearing capacity factor based on sound engineering practice
+for the rock materials but should not exceed 100 tons per
+square foot (9.58 MPa).
+6.5
+PILE CAPACITY FOR AXIAL PULLOUT LOADS
+The ultimate pile pullout capacity may be equal to or less
+than but should not exceed Qf, the total skin friction resis-
+tance. The effective weight of the pile including hydrostatic
+uplift and the soil plug shall be considered in the analysis to
+determine the ultimate pullout capacity. For clay, f should be
+the same as stated in 6.4.2. For sand and silt, f should be com-
+puted according to 6.4.3.
+For rock, f should be the same as stated in Section 6.4.4.
+The allowable pullout capacity should be determined by
+applying the factors of safety in 6.3.4 to the ultimate pullout
+capacity.
+6.6
+AXIAL PILE PERFORMANCE
+6.6.1
+Static Load-Deﬂection Behavior
+Piling axial deﬂections should be within acceptable ser-
+viceability limits and these deﬂections should be compatible
+with the structural forces and movements. An analytical
+method for determining axial pile performance is provided in
+Computer Predictions of Axially Loaded Piles with Non-lin-
+ear Supports, by P. T. Meyer, et al., OTC 2186, May 1975.
+This method makes use of axial pile shear transition vs. local
+pile deﬂection (t-z) curves to model the axial support pro-
+vided by the soil along the size of the pile. An additional (Q-
+z) curve is used to model the tip and bearing vs. the deﬂection
+response. Methods for constructing t-z and Q-z curves are
+given in Section 6.7. Pile response is affected by load direc-
+tions, load types, load rates, loading sequence installation
+technique, soil type, axial pile stiffness and other parameters.
+Some of these effects for cohesive soils have been
+observed in both laboratory and ﬁeld tests.
+In some circumstances, i.e., for soils that exhibit strain-
+softening behavior and/or where the piles are axially ﬂexible,
+the actual capacity of the pile may be less than that given by
+Eq. 6.4.1-1. In these cases an explicit consideration of these
+effects on ultimate axial capacity may be warranted. Note that
+other factors such as increased axial capacity under loading
+rates associated with storm waves may counteract the above
+effects. For more information see Section 6.2.2, its commen-
+tary, as well as “Effects of Cyclic Loading and Pile Flexibility
+on Axial Pile Capacities in Clay” by T. W. Dunnavant, E. C.
+Clukey and J. D. Murff, OTC 6374, May 1990.
+6.6.2
+Cyclic Response
+Unusual pile loading conditions or limitations on design
+pile penetrations may warrant detailed consideration of cyclic
+loading effects.
+Cyclic loadings (including inertial loadings) developed by
+environmental conditions such as storm waves and earth-
+quakes can have two potentially counteractive effects on the
+static axial capacity. Repetitive loadings can cause a tempo-
+rary or permanent decrease in load-carrying resistance, and/or
+an accumulation of deformation. Rapidly applied loadings
+can cause an increase in load-carrying resistance and/or stiff-
+ness of the pile. Very slowly applied loadings can cause a
+decrease in load-carrying resistance and/or stiffness of the
+pile. The resultant inﬂuence of cyclic loadings will be a func-
+tion of the combined effects of the magnitudes, cycles, and
+rates of applied pile loads, the structural characteristics of the
+
+===== PAGE 7 =====
+RECOMMENDED PRACTICE FOR PLANNING, DESIGNING AND CONSTRUCTING FIXED OFFSHORE PLATFORMS—WORKING STRESS DESIGN
+61
+pile, the types of soils, and the factors of safety used in design
+of the piles.
+The design pile penetration should be sufﬁcient to develop
+an effective pile capacity to resist the design static and cyclic
+loadings as discussed in 6.3.4.
+The design pile penetration can be conﬁrmed by perform-
+ing pile response analyses of the pile-soil system subjected to
+static and cyclic loadings. Analytical methods to perform
+such analyses are described in the commentary to this Sec-
+tion. The pile-soil resistance-displacement t-z, Q-z character-
+izations are discussed in Section 6.7.
+6.6.3
+Overall Pile Response Analyses
+When any of the above effects are explicitly considered in
+pile response analysis, the design static and cyclic loadings
+should be imposed on the pile top and the resistance-displace-
+ments of the pile determined. At the completion of the design
+loadings, the maximum pile resistance and displacement
+should be determined. Pile deformations should meet struc-
+ture serviceability requirements. The total pile resistance after
+the design loadings should meet the requirements of 6.3.4.
+6.7
+SOIL REACTION FOR AXIALLY LOADED 
+PILES
+6.7.1
+General
+The pile foundation should be designed to resist the static
+and cyclic axial loads. The axial resistance of the soil is pro-
+vided by a combination of axial soil-pile adhesion or load
+transfer along the sides of the pile and end bearing resistance
+at the pile tip. The plotted relationship between mobilized
+soil-pile shear transfer and local pile deﬂection at any depth is
+described using a t-z curve. Similarly, the relationship
+between mobilized end bearing resistance and axial tip
+deﬂection is described using a Q-z curve.
+6.7.2
+Axial Load Transfer (t-z) Curves
+Various empirical and theoretical methods are available
+for developing curves for axial load transfer and pile dis-
+placement, (t-z) curves. Theoretical curves described by
+Kraft, et al. (1981) may be constructed. Empirical t-z curves
+based on the results of model and full-scale pile load tests
+may follow the procedures in clay soils described by Cole
+and Reese (1966) or granular soils by Coyle, H.M. and
+Suliaman, I.H. Skin Friction for Steel Piles in Sand, Journal
+of the Soil Mechanics and Foundation Division, Proceedings
+of the American Society of Civil Engineers, Vol. 93, No.
+SM6, November, 1967, p. 261–278. Additional curves for
+clays and sands are provided by Vijayvergiya, V.N., Load
+Movement Characteristics of Piles, Proceedings of the Ports
+‘77 Conference, American Society of Civil Engineers, Vol.
+II, p. 269–284.
+Load deﬂection relationships for grouted piles are dis-
+cussed in Criteria for Design of Axially Loaded Drilled
+Shafts, by L. C. Reese and M. O’Neill, Center for Highway
+Research Report, University of Texas, August 1971. Curves
+developed from pile load tests in representative soil proﬁles
+or based on laboratory soil tests that model pile installation
+may also be justiﬁed. Other information may be used, pro-
+vided such information can be shown to result in adequate
+safeguards against excessive deﬂection and rotation.
+In the absence of more deﬁnitive criteria, the following t-z
+curves are recommended for non-carbonate soils. The recom-
+mended curves are shown in Figure 6.7.2-1.
+where
+t = local pile deﬂection, in. (mm),
+D = pile diameter, in. (mm),
+t = mobilized soil pile adhesion, lb/ft2 (kPa),
+tmax = maximum soil pile adhesion or unit skin friction 
+capacity computed according to Section 6.4, lb/ft2 
+(kPa).
+The shape of the t-z curve at displacements greater than
+zmax as shown in Figure 6.7.2-1 should be carefully consid-
+ered. Values of the residual adhesion ratio tres/tmax at the axial
+pile displacement at which it occurs (zres) are a function of
+soil stress-strain behavior, stress history, pipe installation
+method, pile load sequence and other factors.
+The value of tres/tmax can range from 0.70 to 0.90. Labora-
+tory, in situ or model pile tests can provide valuable informa-
+tion for determining values of tres/tmax and zres for various
+soils. For additional information see the listed references at
+the beginning of 6.7.2.
+Clays
+t/D
+t/tmax
+0.0016
+0.30
+0.0031
+0.50
+0.0057
+0.75
+0.0080
+0.90
+0.0100
+1.00
+0.0200
+0.70 to 0.90
+∞
+0.70 to 0.90
+Sands
+t (in.)
+t/tmax
+0.000
+0.00
+0.100
+1.00
+∞
+1.00
+
+===== PAGE 8 =====
+62
+API  RECOMMENDED PRACTICE 2A-WSD
+Figure 6.7.2-1—Typical Axial Pile Load Transfer-Displacement (t-z) Curves
+1.0
+0
+0.01
+0.02
+0.03
+0.04
+0.05
+∞
+0.8
+0.6
+Z/D
+0
+0.01
+0.02
+0.03
+0.04
+0.05
+∞
+Z, inches
+0.4
+t/tmax
+0.2
+0
+tRES = 0.9 tmax 
+tmax = f
+tRES = 0.7 tmax 
+Range of tRES 
+for clays
+Clay:
+Sand:
+Clay
+Sand
+Z/D
+t/tmax
+Z, inch
+t/tmax
+0.00
+0.0016
+0.0031
+0.0057
+0.0080
+0.0100
+0.0200
+   ∞
+0.00
+0.30
+0.50
+0.75
+0.90
+1.00
+0.70 to 0.90
+0.70 to 0.90
+0.00
+0.10
+∞
+0.00
+1.00
+1.00
+
+===== PAGE 9 =====
+RECOMMENDED PRACTICE FOR PLANNING, DESIGNING AND CONSTRUCTING FIXED OFFSHORE PLATFORMS—WORKING STRESS DESIGN
+63
+6.7.3
+Tip Load—Displacement Curve
+The end bearing or tip load capacity should be determined
+as described in 6.4.2 and 6.4.3. However, relatively large pile
+tip movements are required to mobilize the full end bearing
+resistance. A pile tip displacement up to 10 percent of the pile
+diameter may be required for full mobilization in both sand
+and clay soils. In the absence of more deﬁnitive criteria the
+following curve is recommended for both sands and clays.
+where
+z = axial tip deﬂection, in. (mm),
+D = pile diameter, in. (mm),
+Q = mobilized end bearing capacity, lb (KN).
+Qp = total end bearing, lb (KN), computed according 
+to Section 6.4.
+The recommended curve is shown in Figure 6.7.3-1.
+6.8
+SOIL REACTION FOR LATERALLY-LOADED 
+PILES
+6.8.1
+General
+The pile foundation should be designed to sustain lateral
+loads, whether static or cyclic. Additionally, the designer
+should consider overload cases in which the design lateral
+loads on the platform foundation are increased by an appro-
+priate safety factor. The designer should satisfy himself that
+the overall structural foundation system will not fail under the
+overloads. The lateral resistance of the soil near the surface is
+signiﬁcant to pile design, and the effects on this resistance of
+scour and soil disturbance during pile installation should be
+considered. Generally, under lateral loading, clay soils behave
+as a plastic material which makes it necessary to relate pile-
+soil deformation to soil resistance. To facilitate this proce-
+dure, lateral soil resistance deﬂection (p-y) curves should be
+constructed using stress-strain data from laboratory soil sam-
+ples. The ordinate for these curves is soil resistance, p, and
+the abscissa is soil deﬂection, y. By iterative procedures, a
+compatible set of load-deﬂection values for the pile-soil sys-
+tem can be developed.
+For a more detailed study of the construction of p-y curves
+refer to the following publications.
+Soft Clay: OTC 1204, Correlations for Design of Laterally
+Loaded Piles in Soft Clay, by H. Matlock, April 1970.
+z/D
+Q/Qp
+0.002
+0.25
+0.013
+0.50
+0.042
+0.75
+0.073
+0.90
+0.100
+1.00
+z/D
+t/tmax
+0.002
+0.013
+0.042
+0.073
+0.100
+0.25
+0.50
+0.75
+0.90
+1.00
+Q/Qp = 1.0
+z/D
+zu = 0.10 x Pile Diameter (D)
+Figure 6.7.3-1—Pile Tip-Load-Displacement (Q-z) curve

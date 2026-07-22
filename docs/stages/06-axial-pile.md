@@ -86,8 +86,8 @@ judgment (ξ vs risk-φg) applied to it.
 
 | Data available | v1 method | Reference |
 |---|---|---|
-| c_u (clay, undrained) | **α method** `f_s = α·c_u`; base `q_b = N_c·c_u` (N_c=9) | EN 1997-1 §7.6 via ground params ✓; Look Tbl 21.14/21.16 (Poulos α; non-code) ◇; Tomlinson α |
-| c′/φ′ or σ′_v (drained) | **β method** `f_s = β·σ′_v = K_s·tanδ·σ′_v`; base `q_b = N_q·σ′_v` (cap 10 MPa) | EN 1997-1 §7.6 ✓; Look Tbl 21.14/21.16 (k_s·tanδ, N_q; non-code) ◇ |
+| c_u (clay, undrained) | **α method** `f_s = α·c_u`; base `q_b = N_c·c_u` (N_c=9) | EN 1997-1 §7.6 via ground params ✓; **API RP 2A-WSD §6.4.2 — α = f(ψ=c/p′₀) ✓** (offshore standard, in library §6.2a); Look Tbl 21.14/21.16 (Poulos α; non-code) ◇; Tomlinson α |
+| c′/φ′ or σ′_v (drained) | **β method** `f_s = β·σ′_v = K_s·tanδ·σ′_v`; base `q_b = N_q·σ′_v` (cap 10 MPa) | EN 1997-1 §7.6 ✓; **API RP 2A-WSD §6.4.3 — K·p₀·tanδ + N_q, Table 6.4.3-1 ✓** (in library §6.2b); Look Tbl 21.14/21.16 (k_s·tanδ, N_q; non-code) ◇ |
 | **CPT (q_c, f_s)** | **LCPC/Bustamante**, **Eslami–Fellenius**, **ICP** — direct q_c → f_s, q_b | EN 1997-2 §4.3.4 direct CPT design ✓; method refs ◇ (to add as sources) |
 | **SPT N (no CPT/lab)** | Meyerhof N-method — shaft 2N/N/0.67N, base 40N·L/D | Look Tbl 21.17/21.18 (Meyerhof 1976; non-code fallback) ◇ |
 | rock socket | shaft `τ = ψ·√(q_u·P_a)`; base bearing-from-RQD | Look Tbl 22.14/22.17 (non-code) ◇ — already in `../method-library.md` §2.7d |
@@ -121,6 +121,23 @@ architecture that modelled the safety format as "a set of numeric factors" canno
 it must model **"a gated procedure that converts computed resistance + evidence quality into a
 design resistance,"** whose *form* is pack-specific (a ξ lookup vs a risk-assessment workflow). This
 is the abstraction requirement the pile module exists to surface.
+
+**A third paradigm — API RP 2A-WSD (Working Stress Design).** The offshore/marine pile standard
+(added to the library §6) sizes the pile by **allowable capacity = R_ult/FoS ≥ working load**, with a
+**global factor of safety** (1,5–2,0 by load condition, §6.3.4) applied to unfactored actions — not
+partial factors (EC LRFD) and not φg (AS LSD). This sharpens the abstraction requirement: the safety
+format is not even guaranteed to be *factor-on-resistance* — it can be *global-FoS-on-unfactored-
+actions*. Crucially, the API **capacity methods** (α, β/N_q) are **pack-agnostic** (they compute
+`R_cal` and can feed EC ξ or AS φg), but the API **FoS format** is only used when **API is the
+governing standard**; you never mix a global FoS with partial factors. *(This is the design-side of
+the special-structures / marine discussion in D38 — API 2A is exactly that offshore case.)* Detail in
+Method Library §6.x(API).
+
+> **Method Library — Stage 6 methods → [`../method-library.md` §6](../method-library.md#stage-6--axial-pile-design).**
+> First seeding = **API RP 2A-WSD** *(offshore, WSD)*: α method (clay, §6.2a), K·p₀·tanδ + N_q (sand,
+> §6.2b + Table 6.4.3-1), rock sockets (§6.2c), pullout (§6.2d), t-z/Q-z curves (§6.5), and the WSD
+> FoS format (§6.x). Full step-C seeding (JRC 2013 Ch 8/Annex A.8, AS 2159 risk-φg, Look Ch 21, CPT
+> methods) joins the same steps.
 
 ## Task breakdown (operational steps)
 🔒 = **step gate**. **Exception gates** also fire mid-task on any trigger (see
@@ -219,7 +236,8 @@ AS 2159 verified in the `.txt` (pp. 22 printed). Risk-factor Table 4.3.2(A) (gar
 ## Next
 - **B** — task-level procedures for 6.0–6.8 (In/Does/Out/Gates), with **6.2 (axial resistance +
   two-sided safety-format fork)** and **6.4 (downdrag)** the deeper treatments.
-- **C** — Method Library **§6** seeding: JRC 2013 Ch 8 / Annex A.8 *(EC guidance)* + AS 2159 *(code)*
-  risk-φg machinery + Look Ch 21 *(non-code)* α/β/N-method fallbacks (much already in §2.7c) + the
-  CPT methods once their sources are added.
+- **C (started)** — Method Library **§6** seeded first with **API RP 2A-WSD** *(offshore, WSD)* —
+  α/β capacity, rock, pullout, t-z/Q-z, WSD FoS (on founder request). Still to add: JRC 2013 Ch 8 /
+  Annex A.8 *(EC guidance)* + AS 2159 *(code)* risk-φg machinery + Look Ch 21 *(non-code)* α/β/N-method
+  fallbacks (much already in §2.7c) + the CPT methods once their sources are added.
 - After axial pile: the MVP design modules are complete → **Stage 7 report / GDR** packaging.

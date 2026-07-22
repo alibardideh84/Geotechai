@@ -30,6 +30,19 @@ this file at each step; the per-pack code references live in
   `../Sources/Handbooks/2013_06_WS_GEO.pdf` (+ `.txt`). Chapter 3 = shallow foundations; Annex A.3 =
   worked strip-foundation calibration. Chart figures rendered to `../Sources/Handbooks/figures/` as
   `JRC2013_*.png`.
+- **API RP 2A-WSD** — American Petroleum Institute, *Recommended Practice for Planning, Designing and
+  Constructing Fixed Offshore Platforms — Working Stress Design*, **Section 6 (Foundation Design)**.
+  **Industry recommended practice** — *the* offshore/marine pile standard. **Tag: *(API RP —
+  offshore, WSD)*.** Two-part role for the selection rule: its **capacity methods** (α method for
+  clay, `K·p₀·tanδ` + N_q for sand, t-z/Q-z curves) are **pack-agnostic** — they compute an ultimate
+  shaft/base resistance that can feed **any** safety format (EC ξ→R_c;k, AS R_d,ug, or API's own),
+  so they enter the library as **alternative methods** (High reliability — extensive offshore
+  load-test calibration). But API's **safety format is Working Stress Design** (global factors of
+  safety 1.5–2.0 by load condition) — a **third paradigm** distinct from EC7 partial factors (LRFD)
+  and AS 2159 φg (LSD); it applies when **API is the governing standard** (offshore/marine — see the
+  D38 special-structures discussion). File: `../Sources/Handbooks/API-RP-2A-WSD-Section6-Foundations.pdf`
+  (+ `.txt`, an excerpt: §5.5, §6). Table 6.4.3-1 + the t-z figure rendered to
+  `../Sources/Handbooks/figures/API-RP-2A_*.png`.
 
 ## How the procedure uses this library — the selection rule
 Per the founder's rule (extends D8 run-several-and-compare + D26 out-of-code):
@@ -821,6 +834,103 @@ Now carries **both packs and both source classes**:
   bearing (Tbl 21.7) and settlement (Tbl 21.8), Vesic/Hansen factor cross-check (Tbl 21.5), FoS
   (Tbl 21.9), tolerable-movement limits (Tbl 23.6–23.8) — cross-linked to §2.7(a)/(b)/(f).
 
-**Remaining for Stage 5:** step **B** — the task-level In/Does/Out/Gates procedures (5.0–5.7). One
+**Stage 5 complete (A+B+C).** Procedures in `stages/05-shallow-foundation-procedures.md`. One
 candidate follow-up flagged in §5.x(AU): author a parallel **AU φg worked calibration** as a test
 case (AS 5100.3 ships none).
+
+---
+
+# Stage 6 — Axial pile design
+
+Method registry for the axial-pile module (`stages/06-axial-pile.md` = the stage spec). Organized
+**by procedure step → method**. **First seeding is the API method** (added on founder request); the
+full step-C seeding (JRC 2013 Ch 8 / Annex A.8 *(EC guidance)*, AS 2159 *(code)* risk-φg, Look Ch 21
+*(non-code)* α/β/N-fallbacks — much already in §2.7c, and the CPT methods once sourced) slots into the
+same steps.
+
+> **Selection-rule reminder (piles):** capacity **methods** (α, β, CPT, N-method, API) are largely
+> **pack-agnostic** — they each compute an ultimate shaft/base resistance `R_cal`/`R_ug`. The
+> **safety format** is what forks (and here it is *three*-way): EC7 partial factors + ξ (LRFD),
+> AS 2159 risk-φg (LSD), and **API global FoS (WSD)**. So a method entry says *how to compute
+> resistance*; the pack says *how to make it safe*. Offer + compare per the header rule; the engineer
+> selects the method and owns the reliability judgment (ξ / risk assessment / FoS).
+
+## 6.2 — Axial capacity: shaft f_s & base q_b — API RP 2A-WSD method
+*Stage task 6.2.* The offshore-standard α/β formulation. **Ultimate capacity** `Q_d = Q_f + Q_p =
+f·A_s + q·A_p` (§6.4.1); shaft f acts inside + outside; base capped by the internal-plug capacity
+(plugged → full section, unplugged → annulus only). *(API RP 2A-WSD §6.4; High reliability — extensive
+offshore load-test calibration; **pack-agnostic capacity**, WSD safety format is API's own — see §6.x.)*
+
+### 6.2(a) Cohesive soil (clay) — α method  §6.4.2
+- **Shaft:** `f = α·c` (c = undrained shear strength at the point).
+- **α from ψ = c/p′₀** (p′₀ = effective overburden at the point):
+  `α = 0,5·ψ^(−0,5)` for ψ ≤ 1,0 · `α = 0,5·ψ^(−0,25)` for ψ > 1,0 · **α ≤ 1,0**.
+  (Underconsolidated clay → α ≈ 1,0; apply judgment for ψ > 3, sparse load-test data.)
+- **Base:** `q = 9·c` (N_c = 9).
+
+### 6.2(b) Cohesionless soil (sand/silt) — β / K method  §6.4.3
+- **Shaft:** `f = K·p₀·tanδ` — K = **0,8** (open-ended, driven unplugged, tension & compression),
+  **1,0** (full-displacement, plugged/closed-end). δ from Table 6.4.3-1.
+- **Base:** `q = p₀·N_q` (N_q from Table 6.4.3-1); both f and q **capped** at the table limits.
+- **Table 6.4.3-1 — design parameters, cohesionless siliceous soil** *(guideline; CPT/lab may justify
+  other values; **not for carbonate / micaceous / volcanic sands** — those need site-specific tests):*
+
+  | Density / description | δ (°) | limiting f, kPa | N_q | limiting q, MPa |
+  |---|---|---|---|---|
+  | Very loose sand · loose sand-silt · medium silt | 15 | 47,8 | 8 | 1,9 |
+  | Loose sand · medium sand-silt · dense silt | 20 | 67,0 | 12 | 2,9 |
+  | Medium sand · dense sand-silt | 25 | 81,3 | 20 | 4,8 |
+  | Dense sand · very dense sand-silt | 30 | 95,7 | 40 | 9,6 |
+  | Dense gravel · very dense sand | 35 | 114,8 | 50 | 12,0 |
+
+  [Rendered table (authoritative)](../Sources/Handbooks/figures/API-RP-2A_Table6.4.3-1_cohesionless-design-params.png).
+
+### 6.2(c) Grouted piles in rock  §6.4.4
+- Shaft ≤ triaxial shear strength of rock or grout (usually **much less**, per installation
+  disturbance; limit may be the steel-grout bond, §7.4.3). Base ≤ **9,58 MPa** (100 tsf).
+
+### 6.2(d) Pullout / tension  §6.5
+- Ultimate pullout ≤ **Q_f** (total skin friction only; no base). Clay f per (a), sand/silt f per (b),
+  rock per (c). Include effective pile weight + hydrostatic uplift + soil-plug weight.
+
+## 6.5 — SLS: axial load-transfer (t-z) & tip (Q-z) curves — API  §6.7
+*Stage task 6.5.* Non-linear soil springs for pile settlement/load-transfer analysis. `t_max = f`
+(unit skin friction from §6.4); full tip mobilisation needs **z ≈ 0,10·D**. *(Non-carbonate soils;
+recommended in the absence of site-specific curves.)*
+
+- **t-z (shaft), clay:** z/D → t/t_max = 0,0016→0,30 · 0,0031→0,50 · 0,0057→0,75 · 0,0080→0,90 ·
+  0,0100→1,00 · 0,0200→(0,70–0,90) · ∞→(0,70–0,90 residual).
+- **t-z (shaft), sand:** z (in) → t/t_max = 0→0 · 0,10→1,00 · ∞→1,00.
+- **Q-z (tip), sand & clay:** z/D → Q/Q_p = 0,002→0,25 · 0,013→0,50 · 0,042→0,75 · 0,073→0,90 ·
+  0,100→1,00. Residual adhesion ratio t_res/t_max = **0,70–0,90**.
+- [Rendered t-z figure 6.7.2-1](../Sources/Handbooks/figures/API-RP-2A_Fig6.7.2-1_t-z_axial-load-transfer-curves.png).
+- *Lateral p-y curves (§6.8, Matlock soft clay etc.) — the lateral analysis is adjacent to the axial
+  MVP core (stage doc 6.5.2 scope note); noted, not seeded here.*
+
+## 6.x(API) — Safety format: Working Stress Design (global FoS) — API
+*The third safety-format paradigm* (alongside EC7 LRFD §ξ/partial factors and AS 2159 LSD φg). API
+sizes the pile so **allowable capacity = ultimate/FoS ≥ working load**; FoS by load condition
+(§6.3.4):
+
+| Load condition | FoS |
+|---|---|
+| Design environmental + appropriate drilling loads | 1,5 |
+| Operating environmental during drilling | 2,0 |
+| Design environmental + appropriate producing loads | 1,5 |
+| Operating environmental during producing | 2,0 |
+| Design environmental + minimum loads (pullout) | 1,5 |
+
+- **Architectural note:** because API is **WSD**, its capacity methods §6.2 pair with **unfactored
+  (working) actions** and a **global FoS** — *not* with the EC/AU factored-action machinery. When the
+  engineer selects API capacity methods *inside* an EC or AS project, only the **capacity numbers**
+  (`R_cal`) transfer; the safety format stays the active pack's (ξ/φg), **never mix FoS with partial
+  factors**. API's own WSD format is used when **API is the governing standard** (offshore/marine).
+- FoS ranges are lower than typical onshore (1,5–2,0) because they pair with **environmental load
+  conditions** already defined conservatively — another reason not to transplant them across packs.
+
+## Status — Stage 6 axial pile (seeding in progress)
+**Seeded: API RP 2A-WSD** *(offshore, WSD)* — α method (clay), K·p₀·tanδ + N_q (sand, Table 6.4.3-1),
+rock sockets, pullout, t-z/Q-z curves, and the WSD FoS format (§6.x). **Still to add (full step C):**
+JRC 2013 Ch 8/Annex A.8 *(EC guidance)*, AS 2159 risk-φg machinery *(code)*, Look Ch 21 α/β/N-method
+*(non-code, much in §2.7c)*, and the CPT pile methods (LCPC/Bustamante, Eslami–Fellenius, ICP) once
+their sources are added.
