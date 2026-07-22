@@ -88,7 +88,7 @@ judgment (ξ vs risk-φg) applied to it.
 |---|---|---|
 | c_u (clay, undrained) | **α method** `f_s = α·c_u`; base `q_b = N_c·c_u` (N_c=9) | EN 1997-1 §7.6 via ground params ✓; **API RP 2A-WSD §6.4.2 — α = f(ψ=c/p′₀) ✓** (offshore standard, in library §6.2a); Look Tbl 21.14/21.16 (Poulos α; non-code) ◇; Tomlinson α |
 | c′/φ′ or σ′_v (drained) | **β method** `f_s = β·σ′_v = K_s·tanδ·σ′_v`; base `q_b = N_q·σ′_v` (cap 10 MPa) | EN 1997-1 §7.6 ✓; **API RP 2A-WSD §6.4.3 — K·p₀·tanδ + N_q, Table 6.4.3-1 ✓** (in library §6.2b); Look Tbl 21.14/21.16 (k_s·tanδ, N_q; non-code) ◇ |
-| **CPT (q_c, f_s)** | **LCPC/Bustamante**, **Eslami–Fellenius**, **ICP** — direct q_c → f_s, q_b | EN 1997-2 §4.3.4 direct CPT design ✓; method refs ◇ (to add as sources) |
+| **CPT (q_c, f_s)** | **Eslami–Fellenius** (CPTu, q_E=q_t−u₂), **Nottingham–Schmertmann** (K_s/α′/C_f), (LCPC, ICP later) | EN 1997-2 §4.3.4 direct CPT design ✓; **FHWA GEC-12 Ch 7 ✓** (in library §6.2e); LCPC/ICP refs ◇ (to add) |
 | **SPT N (no CPT/lab)** | Meyerhof N-method — shaft 2N/N/0.67N, base 40N·L/D | Look Tbl 21.17/21.18 (Meyerhof 1976; non-code fallback) ◇ |
 | rock socket | shaft `τ = ψ·√(q_u·P_a)`; base bearing-from-RQD | Look Tbl 22.14/22.17 (non-code) ◇ — already in `../method-library.md` §2.7d |
 | **installation φ shift** | shaft φ₁ (bored) / ¾φ₁+10 (driven); base φ₁−3 (bored) / (φ₁+40)/2 (driven) | Look Tbl 21.15 (Poulos 1980; non-code) ◇ |
@@ -217,8 +217,9 @@ The operational "how" (In/Does/Out/Gates) will be in `06-axial-pile-procedures.m
   and the report (Stage 7).
 
 ## Open items (◇ — to confirm with founder)
-- **(a)** CPT pile-method references (LCPC/Bustamante 1982, Eslami–Fellenius, ICP) — add as sources
-  (not yet in `Sources/`), same pattern as adding JRC 2013.
+- ~~**(a)** CPT pile-method references (Eslami–Fellenius, Nottingham–Schmertmann)~~ — **added via
+  FHWA GEC-12** (library §6.2e). Still open: **LCPC/Bustamante 1982** and **ICP-05** (+ UWA/Fugro/NGI
+  offshore CPT-2005) — add from the French annex / API-ISO commentary / Jardine 2005 when sourced.
 - **(b)** AS 2159 tension, downdrag, and group-effect clauses (§4.4 sub-clauses) — confirm exact
   references for 6.3/6.4/6.6.
 - **(c)** Scope confirmation: transverse/lateral (§7.7) kept **out** of the axial-MVP core (flagged

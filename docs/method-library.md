@@ -43,6 +43,16 @@ this file at each step; the per-pack code references live in
   D38 special-structures discussion). File: `../Sources/Handbooks/API-RP-2A-WSD-Section6-Foundations.pdf`
   (+ `.txt`, an excerpt: §5.5, §6). Table 6.4.3-1 + the t-z figure rendered to
   `../Sources/Handbooks/figures/API-RP-2A_*.png`.
+- **FHWA GEC-12** — U.S. FHWA / NHI, *Design and Construction of Driven Pile Foundations*, Vol. I,
+  Publication **FHWA-NHI-16-009 (GEC No. 12)**, 2016. **National design manual** (US DOT) — Chapter 7
+  consolidates the standard **static analysis + CPT pile methods** with **AASHTO LRFD resistance
+  factors**. **Tag: *(FHWA/AASHTO — US LRFD)*.** Role for the selection rule: supplies the **CPT
+  direct methods** (Eslami–Fellenius 1997; Nottingham–Schmertmann 1975) as **pack-agnostic capacity
+  methods** (the fₛ/q_b computation), *and* documents a **fourth safety-format variant** — AASHTO's
+  **method-keyed static resistance factor φstat** (e.g. Schmertmann 0,50, α-method 0,35, Nordlund
+  0,45 — a *per-method calibrated* resistance factor, distinct from AS 2159's risk-derived φg). File:
+  `../Sources/Handbooks/nhi16009_v1.pdf` (+ `.txt`, full). Ch-7 design curves/tables rendered to
+  `../Sources/Handbooks/figures/FHWA-GEC12_*.png`.
 
 ## How the procedure uses this library — the selection rule
 Per the founder's rule (extends D8 run-several-and-compare + D26 out-of-code):
@@ -850,10 +860,11 @@ same steps.
 
 > **Selection-rule reminder (piles):** capacity **methods** (α, β, CPT, N-method, API) are largely
 > **pack-agnostic** — they each compute an ultimate shaft/base resistance `R_cal`/`R_ug`. The
-> **safety format** is what forks (and here it is *three*-way): EC7 partial factors + ξ (LRFD),
-> AS 2159 risk-φg (LSD), and **API global FoS (WSD)**. So a method entry says *how to compute
-> resistance*; the pack says *how to make it safe*. Offer + compare per the header rule; the engineer
-> selects the method and owns the reliability judgment (ξ / risk assessment / FoS).
+> **safety format** is what forks (and here it is **four**-way): EC7 partial factors + ξ (LRFD),
+> AS 2159 risk-φg (LSD), **API global FoS (WSD)**, and **AASHTO method-keyed φstat (US LRFD)**. So a
+> method entry says *how to compute resistance*; the pack says *how to make it safe*. Offer + compare
+> per the header rule; the engineer selects the method and owns the reliability judgment (ξ / risk
+> assessment / FoS / φstat).
 
 ## 6.2 — Axial capacity: shaft f_s & base q_b — API RP 2A-WSD method
 *Stage task 6.2.* The offshore-standard α/β formulation. **Ultimate capacity** `Q_d = Q_f + Q_p =
@@ -893,6 +904,33 @@ offshore load-test calibration; **pack-agnostic capacity**, WSD safety format is
 - Ultimate pullout ≤ **Q_f** (total skin friction only; no base). Clay f per (a), sand/silt f per (b),
   rock per (c). Include effective pile weight + hydrostatic uplift + soil-plug weight.
 
+### 6.2(e) CPT direct methods — *(FHWA GEC-12 Ch 7)*
+Two direct CPT correlations — **pack-agnostic capacity** (compute R_s + R_p from CPT profiles); the
+AASHTO φstat that GEC-12 pairs with them is one safety-format option (§6.x(US) below).
+
+**Eslami–Fellenius (1997) — CPTu, mixed soils** *(GEC-12 §7.2.1.3.6; High for CPTu):*
+- **Shaft:** `f_s = C_s·q_E` (Eq 7-24), with **effective (Eslami) cone stress** `q_E = q_t − u₂`
+  (Eq 7-25) and pore-corrected tip `q_t = q_c + u₂·(1−a)` (Eq 7-26). `C_s` = shaft coefficient by soil
+  type (Tbl 7-11): soft-sensitive **8,0%** · clay **5,0%** · silty/stiff clay & silt **2,5%** · sandy
+  silt/silt **1,5%** · fine/silty sand **1,0%** · sand **0,4%**.
+- **Toe:** `q_p = C_p·q_Eg` (Eq 7-27); `q_Eg` = **geometric mean** of q_E over the toe influence zone
+  (4b below → 8b above through weak-into-dense; 4b below → 2b above dense-into-weak); `C_p = 1,0`
+  except piles > 16 in (Eq 7-28). *(No AASHTO φstat — use the field-verification φdyn.)*
+
+**Nottingham–Schmertmann (1975) — CPT, mixed soils** *(GEC-12 §7.2.1.3.7; AASHTO **φstat = 0,50**):*
+- **Shaft, cohesionless:** `R_s = K_s·[Σ(f_s·A_s)₀–₈b + Σ(f_s·A_s)₈b–D]` (Eq 7-29); `K_s` = f(D/b, pile
+  material, cone type) from Fig 7-19. No-sleeve-data fallback: `R_s = C_f·q_c·A_s` (Eq 7-30), `C_f`
+  (Tbl 7-12): precast concrete 0,012 · timber 0,018 · steel displacement 0,012 · open-end steel pipe
+  0,008.
+- **Shaft, cohesive:** `R_s = α′·f_s·A_s` (Eq 7-31), `α′` = f(f_s) from Fig 7-20 (Tomlinson-α patterned).
+- **Toe:** weighted average of q_c from 8b above to 3,75b below the toe, favouring lower q_c (Fig 7-21);
+  **limit q_p 105–315 ksf** (≈5–15 MPa); mechanical cone in cohesive → reduce q_p **40%**.
+- Figures: [Fig 7-19/7-20 shaft K_s & α′ curves](../Sources/Handbooks/figures/FHWA-GEC12_Fig7.19-20_Nottingham-Schmertmann_shaft-Ks-alpha-curves.png)
+  · [Fig 7-21 toe averaging](../Sources/Handbooks/figures/FHWA-GEC12_Fig7.21_Nottingham-Schmertmann_toe-resistance-averaging.png).
+
+*(ICP-05 and the other offshore CPT-2005 methods — UWA/Fugro/NGI — are candidates to add from the
+API/ISO 19901-4 commentary or Jardine et al. 2005 when sourced.)*
+
 ## 6.5 — SLS: axial load-transfer (t-z) & tip (Q-z) curves — API  §6.7
 *Stage task 6.5.* Non-linear soil springs for pile settlement/load-transfer analysis. `t_max = f`
 (unit skin friction from §6.4); full tip mobilisation needs **z ≈ 0,10·D**. *(Non-carbonate soils;
@@ -928,9 +966,29 @@ sizes the pile so **allowable capacity = ultimate/FoS ≥ working load**; FoS by
 - FoS ranges are lower than typical onshore (1,5–2,0) because they pair with **environmental load
   conditions** already defined conservatively — another reason not to transplant them across packs.
 
+## 6.x(US) — Safety format: AASHTO method-keyed φstat (US LRFD) — FHWA GEC-12
+*The fourth safety-format paradigm.* US LRFD: `R_r = φstat·R_n` — a **resistance factor calibrated
+per static-analysis method**, so the factor *travels with the method*, not with a project-wide choice
+(EC DA) or a site risk score (AS 2159). Examples (GEC-12 Tbl 7-3, AASHTO 2014): Meyerhof **0,30** ·
+α-method **0,35** · λ-method **0,40** · Nordlund **0,45** · Schmertmann/CPT **0,50**. Methods without a
+calibrated φstat (e.g. Eslami–Fellenius) fall back to the **field-verification** factor φdyn.
+- **Contrast with AS 2159:** both are LRFD-style single resistance factors, but AS derives φg from a
+  **site/design/installation risk assessment** (project-specific), whereas AASHTO φstat is a
+  **reliability-calibrated constant per method** (method-specific). Same equation shape, opposite
+  source of the number — reinforcing that the safety format is a *gated procedure whose form is
+  pack-specific*, the abstraction the pile module exists to surface.
+- [Methods summary + φstat table (GEC-12 Tbl 7-3)](../Sources/Handbooks/figures/FHWA-GEC12_Table7.3_static-methods-summary-AASHTO-phistat.png).
+
 ## Status — Stage 6 axial pile (seeding in progress)
-**Seeded: API RP 2A-WSD** *(offshore, WSD)* — α method (clay), K·p₀·tanδ + N_q (sand, Table 6.4.3-1),
-rock sockets, pullout, t-z/Q-z curves, and the WSD FoS format (§6.x). **Still to add (full step C):**
-JRC 2013 Ch 8/Annex A.8 *(EC guidance)*, AS 2159 risk-φg machinery *(code)*, Look Ch 21 α/β/N-method
-*(non-code, much in §2.7c)*, and the CPT pile methods (LCPC/Bustamante, Eslami–Fellenius, ICP) once
-their sources are added.
+**Seeded so far:**
+- **API RP 2A-WSD** *(offshore, WSD)* — α (clay), K·p₀·tanδ + N_q (sand, Tbl 6.4.3-1), rock, pullout,
+  t-z/Q-z curves, WSD FoS (§6.x(API)).
+- **FHWA GEC-12** *(US LRFD)* — **CPT direct methods** Eslami–Fellenius & Nottingham–Schmertmann
+  (§6.2e) + the AASHTO method-keyed **φstat** safety format (§6.x(US)).
+
+**Safety-format paradigms now covered: four** — EC7 partial-factors+ξ, AS 2159 risk-φg, API WSD FoS,
+AASHTO φstat.
+
+**Still to add (finish step C):** JRC 2013 Ch 8/Annex A.8 *(EC guidance)*, AS 2159 risk-φg machinery
+*(code)*, Look Ch 21 α/β/N-method *(non-code, much in §2.7c)*; **LCPC/Bustamante** and **ICP-05 / UWA /
+Fugro / NGI** offshore CPT-2005 methods once their sources are added.
