@@ -16,7 +16,7 @@ Canonical, version-able spec for **Geo**: an agentic-AI assistant for geotechnic
 | `05-mvp-scope.md` | MVP definition, v1 method set, open questions, next step |
 | `06-decision-log.md` | Chronological log of decisions and their status |
 | `method-library.md` | The Method Registry (core IP): all methods/correlations/ranges per step, codes + non-code refs, tagged by source + reliability. Interpretation 2.0–2.7 seeded from Look 2007; Stage 5 shallow foundation §5 seeded from JRC 2013 (EC), AS 5100.3 §10 (AU), and Look 2007 (non-code). |
-| `stages/` | Detailed per-stage specs, each as a *what/reference-map* doc + a *per-task In/Does/Out/Gates procedures* doc: **Stage 2 interpretation** (`stages/02-interpretation.md` + `…-procedures.md`), **Stage 5 shallow foundation** (`stages/05-shallow-foundation.md` + `…-procedures.md`), and **Stage 6 axial pile** (`stages/06-axial-pile.md`; procedures pending). |
+| `stages/` | Detailed per-stage specs, each as a *what/reference-map* doc + a *per-task In/Does/Out/Gates procedures* doc: **Stage 2 interpretation** (`stages/02-interpretation.md` + `…-procedures.md`), **Stage 5 shallow foundation** (`stages/05-shallow-foundation.md` + `…-procedures.md`), and **Stage 6 axial pile** (`stages/06-axial-pile.md` + `…-procedures.md`). |
 
 ## Status legend
 - **Accepted** — agreed by the founder.

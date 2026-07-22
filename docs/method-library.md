@@ -866,11 +866,17 @@ same steps.
 > per the header rule; the engineer selects the method and owns the reliability judgment (ξ / risk
 > assessment / FoS / φstat).
 
-## 6.2 — Axial capacity: shaft f_s & base q_b — API RP 2A-WSD method
-*Stage task 6.2.* The offshore-standard α/β formulation. **Ultimate capacity** `Q_d = Q_f + Q_p =
-f·A_s + q·A_p` (§6.4.1); shaft f acts inside + outside; base capped by the internal-plug capacity
-(plugged → full section, unplugged → annulus only). *(API RP 2A-WSD §6.4; High reliability — extensive
-offshore load-test calibration; **pack-agnostic capacity**, WSD safety format is API's own — see §6.x.)*
+## 6.2 — Axial capacity: shaft f_s & base q_b
+*Stage task 6.2.* The **pack-agnostic capacity mechanics** — shaft + base resistance from the ground.
+Subsections: (a–d) **API** α/β/rock/pullout · (e) **CPT direct** (Eslami–Fellenius, Nottingham–
+Schmertmann) · (f) **EC / AU / non-code** routes over the same mechanics. The result `R_cal`/`R_d,ug`
+then feeds the pack's safety format (§6.x). General form `Q_d = Q_f + Q_p = f·A_s + q·A_p`; shaft f
+acts inside + outside; base capped by the internal-plug capacity (plugged → full section, unplugged →
+annulus only).
+
+### 6.2(a–d) API RP 2A-WSD — α/β/rock/pullout
+*(API RP 2A-WSD §6.4; High reliability — extensive offshore load-test calibration; WSD safety format
+is API's own — see §6.x(API).)*
 
 ### 6.2(a) Cohesive soil (clay) — α method  §6.4.2
 - **Shaft:** `f = α·c` (c = undrained shear strength at the point).

@@ -142,7 +142,8 @@ Method Library §6.x(API).
 ## Task breakdown (operational steps)
 🔒 = **step gate**. **Exception gates** also fire mid-task on any trigger (see
 `../03-workflow-and-human-ai-model.md` → Gate model). **←CP** = supplied by the selected Code Pack.
-The operational "how" (In/Does/Out/Gates) will be in `06-axial-pile-procedures.md` (step B).
+The operational "how" (In/Does/Out/Gates) is in
+[`06-axial-pile-procedures.md`](06-axial-pile-procedures.md).
 
 **6.0 — Stage entry & input contract** *(once)*
 - 6.0.1 Detect entry point (fresh from Stage 3/4 vs jump-in — input contract: characteristic params +
@@ -235,8 +236,9 @@ AS 2159 verified in the `.txt` (pp. 22 printed). Risk-factor Table 4.3.2(A) (gar
 φgb Table 4.3.2(C) rendered from the PDF to `../../Sources/Handbooks/figures/AS2159_*.png`.
 
 ## Next
-- **B** — task-level procedures for 6.0–6.8 (In/Does/Out/Gates), with **6.2 (axial resistance +
-  two-sided safety-format fork)** and **6.4 (downdrag)** the deeper treatments.
+- ✓ **B (done)** — task-level procedures for 6.0–6.8 (In/Does/Out/Gates) in
+  [`06-axial-pile-procedures.md`](06-axial-pile-procedures.md), with **6.2 (axial resistance +
+  two-sided safety-format fork)** and **6.4 (downdrag)** given the deeper treatment.
 - ✓ **C (essentially done)** — Method Library **§6** now carries **all packs + all four safety-format
   paradigms**: EC7 ξ+partial-factors *(EN 1997-1 §7 / JRC 2013 Ch 8)*, AS 2159 risk-φg, API WSD FoS,
   FHWA/AASHTO φstat; capacity via α/β/CPT (API + GEC-12) + EC/AU routes + Look non-code. See
