@@ -931,6 +931,24 @@ AASHTO φstat that GEC-12 pairs with them is one safety-format option (§6.x(US)
 *(ICP-05 and the other offshore CPT-2005 methods — UWA/Fugro/NGI — are candidates to add from the
 API/ISO 19901-4 commentary or Jardine et al. 2005 when sourced.)*
 
+### 6.2(f) EC & AU capacity routes — *(shared mechanics, pack-consumed)*
+Both packs use the **same shaft+base mechanics** (§6.2a–e above); they differ only in how the result
+is made characteristic/safe (§6.x(EC)/(AU)).
+- **EC pack — EN 1997-1 §7.6 / EN 1997-2 (JRC 2013 Ch 8).** `R_cal = R_b;cal + R_s;cal`. Three routes
+  to `R_cal`: (i) **from ground-test profiles** (CPT), e.g. EN 1997-2 Annex D.6/D.7 correlations
+  (p_b, p_s vs q_c) or the α/β/CPT methods here → then ξ₃/ξ₄ (§6.x(EC), "Model Pile" procedure);
+  (ii) **from static load tests** → ξ₁/ξ₂; (iii) **from ground parameters** `R_b;k = A_b·q_b;k`,
+  `R_s;k = Σ A_si·q_si;k` with cautious (characteristic) parameters — a **model factor > 1,0** may be
+  required (national annex, e.g. Ireland). Worked pile examples: JRC 2013 **Annex A.8** (A.8.1 from
+  CPT, A.8.2 from soil parameters) — validation cases.
+- **AU pack — AS 2159 §4.4.1.** `R_d,ug = f_m,s·A_s + (f_b + p_o)·A_b − W ≈ f_m,s·A_s + f_b·A_b`.
+  AS 2159 fixes the **structure**, not the method — `f_m,s` (mean shaft) and `f_b` (base) come from
+  "analysis using site-investigation data" (§4.3.3), i.e. **engineer-selected** capacity methods (the
+  same α/β/CPT above). The pack's distinctive content is the **risk-φg** safety format (§6.x(AU)).
+- **Non-code — Look 2007 Ch 21** *(already transcribed in §2.7c)*: Poulos α (bored/driven, cap
+  100 kPa) & k_s·tanδ; base N_c=9 (clay), N_q (sand, cap 10 MPa); Meyerhof SPT-N shaft (2N/N/0.67N) &
+  base (40N·L/D); **installation φ shift** (Tbl 21.15). Cross-checks/fallbacks for both packs.
+
 ## 6.5 — SLS: axial load-transfer (t-z) & tip (Q-z) curves — API  §6.7
 *Stage task 6.5.* Non-linear soil springs for pile settlement/load-transfer analysis. `t_max = f`
 (unit skin friction from §6.4); full tip mobilisation needs **z ≈ 0,10·D**. *(Non-carbonate soils;
@@ -979,16 +997,92 @@ calibrated φstat (e.g. Eslami–Fellenius) fall back to the **field-verificatio
   pack-specific*, the abstraction the pile module exists to surface.
 - [Methods summary + φstat table (GEC-12 Tbl 7-3)](../Sources/Handbooks/figures/FHWA-GEC12_Table7.3_static-methods-summary-AASHTO-phistat.png).
 
-## Status — Stage 6 axial pile (seeding in progress)
-**Seeded so far:**
-- **API RP 2A-WSD** *(offshore, WSD)* — α (clay), K·p₀·tanδ + N_q (sand, Tbl 6.4.3-1), rock, pullout,
-  t-z/Q-z curves, WSD FoS (§6.x(API)).
-- **FHWA GEC-12** *(US LRFD)* — **CPT direct methods** Eslami–Fellenius & Nottingham–Schmertmann
-  (§6.2e) + the AASHTO method-keyed **φstat** safety format (§6.x(US)).
+## 6.x(EC) — Safety format: characteristic-resistance ξ + partial factors — EC pack
+*The EC7 pile format (JRC 2013 Ch 8; EN 1997-1 §7.6 + Annex A).* Two moves: (1) turn the calculated
+resistance(s) into a **characteristic** resistance with a **correlation factor ξ** (the reliability
+judgment — number of tests/profiles, mean vs minimum; the `../03` gate #3), then (2) apply **partial
+resistance factors** by pile type and Design Approach.
 
-**Safety-format paradigms now covered: four** — EC7 partial-factors+ξ, AS 2159 risk-φg, API WSD FoS,
-AASHTO φstat.
+### Characteristic resistance R_c;k — the ξ step
+- **From static load tests** (§7.6.2.2): `R_c;k = Min( R_c;m,mean/ξ₁ , R_c;m,min/ξ₂ )`. ULS "failure"
+  = pile-head settlement 10% of base diameter. ξ₁/ξ₂ by **n piles tested** (Tbl A.9):
 
-**Still to add (finish step C):** JRC 2013 Ch 8/Annex A.8 *(EC guidance)*, AS 2159 risk-φg machinery
-*(code)*, Look Ch 21 α/β/N-method *(non-code, much in §2.7c)*; **LCPC/Bustamante** and **ICP-05 / UWA /
-Fugro / NGI** offshore CPT-2005 methods once their sources are added.
+  | n | 1 | 2 | 3 | 4 | ≥5 |
+  |---|---|---|---|---|---|
+  | ξ₁ | 1,4 | 1,3 | 1,2 | 1,1 | 1,0 |
+  | ξ₂ | 1,4 | 1,2 | 1,05 | 1,0 | 1,0 |
+
+- **From ground-test profiles** (§7.6.2.3, the *"Model Pile"* procedure): `R_c;k = Min( R_c;cal,mean/ξ₃ ,
+  R_c;cal,min/ξ₄ )`, R_c;cal from the capacity methods (§6.2) or EN 1997-2 Annex D.6/D.7. ξ₃/ξ₄ by
+  **n profiles** (Tbl A.10 — note these differ from ξ₁/ξ₂):
+
+  | n | 1 | 2 | 3 | 4 | 5 | 7 | 10 |
+  |---|---|---|---|---|---|---|---|
+  | ξ₃ | 1,4 | 1,35 | 1,33 | 1,31 | 1,29 | 1,27 | 1,25 |
+  | ξ₄ | 1,4 | 1,27 | 1,23 | 1,20 | 1,15 | 1,12 | 1,08 |
+
+- **Dynamic tests** → ξ₅/ξ₆ (Tbl A.11). **Stiff structure** (redistributes weak→strong piles): ξ may be
+  **÷1,1** (≥1,0). **From ground parameters** route (§6.2f-i): a **model factor > 1,0** may apply.
+- More tests/profiles → lower ξ → higher R_c;k: the format **rewards testing**, like AS's K uplift but
+  via the correlation factor rather than an explicit term.
+
+### Design resistance R_c;d — partial factors
+`R_c;d = R_c;k/γ_t` (total) **or** `R_b;k/γ_b + R_s;k/γ_s` (base+shaft split). Factors by **pile type**
+(recommended, Annex A; national annex may override):
+
+| γ (persistent/transient) | Set R1 | R2 | R3 | **R4** |
+|---|---|---|---|---|
+| Driven — base γ_b / shaft γ_s / total γ_t (A.6) | 1,0 / 1,0 / 1,0 | 1,1 / 1,1 / 1,1 | 1,0 / 1,0 / 1,0 | 1,3 / 1,3 / 1,3 |
+| Bored — γ_b / γ_s / γ_t (A.7) | 1,25 / 1,0 / 1,15 | 1,1 / 1,1 / 1,1 | 1,0 / 1,0 / 1,0 | 1,6 / 1,3 / 1,5 |
+| CFA — γ_b / γ_s / γ_t (A.8) | 1,1 / 1,0 / 1,1 | 1,1 / 1,1 / 1,1 | 1,0 / 1,0 / 1,0 | 1,45 / 1,3 / 1,4 |
+| tension γ_s;t (all types) | 1,25 | 1,15 | 1,1 | 1,6 |
+
+- **DA choice → which R-set** (§2.4.7.3.4.2(2)P, piles are the EC exception): **DA1 Comb1** = A1+M1+**R1**;
+  **DA1 Comb2** = A2+(M1 or M2)+**R4**; **DA2** = A1+M1+**R2**; **DA3** = (A1/A2)+M2+**R3** (R3 mostly 1,0 —
+  DA3 factors the *ground parameters* via M2 instead). So DA1's second combination pushes the biggest
+  resistance factors (R4, up to 1,6) — the pile-specific severity.
+- Governing: `F_c;d ≤ R_c;d` (§7.6.2.1).
+
+## 6.x(AU) — Safety format: AS 2159 risk-based φg — AU pack
+*The most elaborate of the four (AS 2159 §4.3).* `R_d,g = φg·R_d,ug` (§4.3.1), but φg is **built from a
+quantitative risk assessment + a testing-benefit uplift** — not looked up.
+- **φg = φgb + (φtf − φgb)·K ≥ φgb** where:
+  - **φgb** (basic factor) from a **weighted risk assessment**: rate ~9 factors — *Site* (geological
+    complexity w=2, extent of investigation w=2, amount/quality of data w=2), *Design* (experience w=1,
+    parameter-assessment method w=2, design method w=1, use of in-situ/installation data w=2),
+    *Installation* (construction control w=2, performance monitoring w=0,5) — each **IRR 1–5** (Tbl
+    4.3.2(A)/(B)) → **ARR = Σ(w_i·IRR_i)/Σw_i** → **φgb** from Tbl 4.3.2(C) by ARR band × **redundancy**:
+
+    | ARR band | ≤1,5 | 1,5–2,0 | 2,0–2,5 | 2,5–3,0 | 3,0–3,5 | 3,5–4,0 | 4,0–4,5 | >4,5 |
+    |---|---|---|---|---|---|---|---|---|
+    | φgb low-redundancy | 0,67 | 0,61 | 0,56 | 0,52 | 0,48 | 0,45 | 0,42 | 0,40 |
+    | φgb high-redundancy | 0,76 | 0,70 | 0,64 | 0,60 | 0,56 | 0,53 | 0,50 | 0,47 |
+
+  - **φtf** (intrinsic test factor): static **0,90** · bi-directional **0,85** · dynamic-preformed
+    **0,80** · rapid / dynamic-other **0,75** · no testing → φtf = φgb (no uplift).
+  - **K** (testing benefit): `K = 1,33p/(p+3,3) ≤ 1` (static/rapid) or `1,13p/(p+3,3) ≤ 1` (dynamic),
+    `p` = % of piles tested meeting acceptance. So **load testing lifts φg toward φtf**.
+- **R_d,ug** = `f_m,s·A_s + f_b·A_b` (§4.4.1), capacity from engineer-selected methods (§6.2f).
+  Governing: `E_d ≤ R_d,g` (§4.3.1). Figures: risk Tbls 4.3.2(A)/(C) rendered as
+  [`AS2159_Table4.3.2A_*`](../Sources/Handbooks/figures/AS2159_Table4.3.2A_risk-factors-weighting_p1.png)
+  and [`AS2159_Table4.3.2C_*`](../Sources/Handbooks/figures/AS2159_Table4.3.2C_phi-gb_ARR-redundancy.png).
+- **The two-sided fork:** both EC (ξ) and AU (risk φg) make an **engineer-owned in-stage judgment on
+  resistance reliability** — EC via a *statistical correlation factor on test data* (objective,
+  n-driven), AU via a *weighted qualitative risk score* (subjective, judgement-driven). This is the
+  strongest case that the safety format is "a gated procedure, form pack-specific" (stage doc §deep).
+
+## Status — Stage 6 axial pile — step C essentially complete ✓
+Carries **all packs + all four safety-format paradigms**, mirroring §5:
+- **EC pack** *(EN 1997-1 §7 / JRC 2013 Ch 8)* — capacity routes §6.2f-i; **ξ + partial-factor**
+  safety format §6.x(EC) (ξ₁–ξ₄ tables, R1–R4 by pile type, DA1 R4 exception); worked examples Annex A.8.
+- **AU pack** *(AS 2159)* — capacity `R_d,ug = f_m,s·A_s + f_b·A_b` §6.2f; **risk-based φg** §6.x(AU)
+  (weighted risk assessment → φgb Tbl 4.3.2(C), + φtf·K testing uplift) — the most elaborate format.
+- **API** *(offshore, WSD)* — α/β capacity §6.2a–d, t-z/Q-z §6.5, **global-FoS** §6.x(API).
+- **FHWA GEC-12** *(US LRFD)* — **CPT direct methods** §6.2e, **method-keyed φstat** §6.x(US).
+- **Non-code** *(Look Ch 21)* — α/k_s·tanδ/N-method fallbacks §6.2f (much in §2.7c).
+
+**Four safety-format paradigms covered** — EC ξ+partial-factors · AS risk-φg · API WSD FoS · AASHTO
+φstat — the pile module's core validation of "safety format = gated procedure, form pack-specific."
+
+**Remaining (optional, needs external sources):** **LCPC/Bustamante 1982** and the offshore
+**CPT-2005** methods (**ICP-05 / UWA / Fugro / NGI**) as extra CPT capacity options.

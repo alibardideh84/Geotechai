@@ -237,8 +237,9 @@ AS 2159 verified in the `.txt` (pp. 22 printed). Risk-factor Table 4.3.2(A) (gar
 ## Next
 - **B** — task-level procedures for 6.0–6.8 (In/Does/Out/Gates), with **6.2 (axial resistance +
   two-sided safety-format fork)** and **6.4 (downdrag)** the deeper treatments.
-- **C (started)** — Method Library **§6** seeded first with **API RP 2A-WSD** *(offshore, WSD)* —
-  α/β capacity, rock, pullout, t-z/Q-z, WSD FoS (on founder request). Still to add: JRC 2013 Ch 8 /
-  Annex A.8 *(EC guidance)* + AS 2159 *(code)* risk-φg machinery + Look Ch 21 *(non-code)* α/β/N-method
-  fallbacks (much already in §2.7c) + the CPT methods once their sources are added.
+- ✓ **C (essentially done)** — Method Library **§6** now carries **all packs + all four safety-format
+  paradigms**: EC7 ξ+partial-factors *(EN 1997-1 §7 / JRC 2013 Ch 8)*, AS 2159 risk-φg, API WSD FoS,
+  FHWA/AASHTO φstat; capacity via α/β/CPT (API + GEC-12) + EC/AU routes + Look non-code. See
+  [`../method-library.md` §6](../method-library.md#stage-6--axial-pile-design). Optional remaining:
+  **LCPC/Bustamante** + offshore **CPT-2005** (ICP/UWA/Fugro/NGI) once sourced.
 - After axial pile: the MVP design modules are complete → **Stage 7 report / GDR** packaging.
